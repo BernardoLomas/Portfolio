@@ -1,3 +1,10 @@
 export default function Home() {
-    return <h1 className="text-3xl font-bold">Home</h1>
+    return (
+        <section className="space-y-3">
+            <h1 className="text-4xl font-bold tracking-tight">Home</h1>
+            <p className="text-zinc-300">
+                Portfólio em construção - Layout base pronto.
+            </p>
+        </section>
+    );
 }
