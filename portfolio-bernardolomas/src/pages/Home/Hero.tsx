@@ -4,13 +4,13 @@ export default function Hero() {
   return (
     <section className="flex min-h-[70vh] flex-col justify-center gap-8">
       <header className="space-y-4">
-        <span className="text-sm uppercase tracking-widest tex-zinc-400">
+        <span className="text-sm uppercase tracking-widest text-emerald-400">
           Full Stack Sotware Developer
         </span>
 
         <h1 className="max-w-3xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
           Construindo aplicações{" "}
-          <span className="text-zinc-400">escaláveis, perfomáticas</span> e bem
+          <span className="text-emerald-400">escaláveis, perfomáticas</span> e bem
           arquitetadas.
         </h1>
 
