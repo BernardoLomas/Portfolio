@@ -1,3 +1,13 @@
+import Bio from "./Bio"
+import Stack from "./Stack"
+import Experience from "./Experience"
+
 export default function About() {
-  return <h1 className="text-3xl font-bold">Sobre</h1>;
+  return (
+    <div className="space-y-24">
+      <Bio />
+      <Stack />
+      <Experience />
+    </div>
+  )
 }
