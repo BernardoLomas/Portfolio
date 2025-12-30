@@ -1,7 +1,7 @@
 import { hardSkills } from "../../data/hardskills";
 import { softSkills } from "../../data/softskills";
 import { motion } from "framer-motion"
-import { fadeUp, stagger } from "../../utils/motion";
+import { stagger } from "../../utils/motion";
 
 export default function Highlights() {
   return (
