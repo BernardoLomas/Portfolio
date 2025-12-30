@@ -16,8 +16,7 @@ export default function Highlights() {
         <header className="max-w-2xl space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Hard Skills</h2>
           <p className="text-zinc-300">
-            Pilares técnicos que norteiam meus projetos e decisões como
-            desenvolvedor.
+            Technical features that guide me in projects and make me a good software developer.
           </p>
         </header>
 
@@ -36,8 +35,7 @@ export default function Highlights() {
         <div className="max-w-2xl space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Soft Skills</h2>
           <p className="text-zinc-300">
-            Pilares técnicos que norteiam meus projetos e decisões como
-            desenvolvedor.
+            Skills that make me a highly requested professional.
           </p>
         </div>
 
