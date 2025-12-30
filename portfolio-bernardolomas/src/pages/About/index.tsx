@@ -7,8 +7,8 @@ export default function About() {
   return (
     <>
       <Seo
-        title="Bernardo Lomas | Full Stack Developer"
-        description="Desenvolvedor full stack"
+        title="About | Bernardo Lomas"
+        description="More about my history"
       />
       <div className="space-y-24">
         <Bio />

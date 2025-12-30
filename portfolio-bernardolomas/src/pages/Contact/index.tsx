@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Bernardo Lomas | Full Stack Developer"
-        description="Desenvolvedor full stack"
+        title="Contact | Bernardo Lomas"
+        description="Contact me for work, projects and build something important!"
       />
       <section className="mx-auto max-w-2xl space-y-10">
         <header className="space-y-2">

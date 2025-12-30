@@ -6,8 +6,8 @@ export default function Projects() {
   return (
     <>
       <Seo
-        title="Bernardo Lomas | Full Stack Developer"
-        description="Desenvolvedor full stack"
+        title="Projects | Bernardo Lomas"
+        description="Full Stack projects developed with React, TypeScript and NodeJs"
       />
       <section className="space-y-8">
         <header className="space-y-2">

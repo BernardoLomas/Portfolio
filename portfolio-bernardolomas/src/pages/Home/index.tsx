@@ -8,7 +8,7 @@ export default function Home() {
     <>
         <Seo 
             title="Bernardo Lomas | Full Stack Developer"
-            description="Desenvolvedor full stack"
+            description="Full Stack Developer focused on React, TypeScript and NodeJs"
         />
 
       <div className="space-y-24">
