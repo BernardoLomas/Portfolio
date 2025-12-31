@@ -1,6 +1,7 @@
 import Seo from "../../components/seo/Seo";
 import Bio from "./Bio";
 import Metrics from "./Metrics";
+import Process from "./Process";
 import Stack from "./Stack";
 import Experience from "./Experience";
 
@@ -11,6 +12,7 @@ export default function About() {
       <div className="space-y-24">
         <Bio />
         <Metrics />
+        <Process />
         <Stack />
         <Experience />
       </div>
