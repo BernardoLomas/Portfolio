@@ -11,7 +11,7 @@ export default function Contact() {
         <header className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">Contacts</h1>
           <p className="text-zinc-300">
-            Entre em contato comigo por email ou redes profissionais.
+            Contact me by e-mail or professional social medias.
           </p>
         </header>
 
