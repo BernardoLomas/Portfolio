@@ -12,7 +12,7 @@ export default function StackGroup({ title, items }: Props) {
                 {title}
             </h3>
 
-            <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-5">
+            <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
                 {items.map((item) => (
                     <StackCard key={item.name} {...item} />
                 ))}
