@@ -1,44 +1,27 @@
-export type Stacks = {
-    title: string,
-    items: string [],
-};
-
-export const stacks: Stacks[] = [
-  {
-    title: "Frontend",
-    items: ["React", "TypeScript", "Vite", "Tailwind CSS", "NextJs"],
-  },
-  {
-    title: "Backend",
-    items: ["NodeJs", "Express", "NestJs", "C#", "REST APIs"],
-  },
-  {
-    title: "DataBase",
-    items: ["MySQL", "PostgreSQL", "SQLite", "Prisma"],
-  },
-  {
-    title: "Good Practices",
-    items: [
-        "Clean Code",
-        "Conventional commits",
-        "Swagger Documentation",
-    ]
-  },
-  {
-    title: "Learning",
-    items: [
-        "Jest",   
-        "Docker", 
-        "Linux", 
-        "Kubernetes"
-    ],
-  },
-  {
-    title: "Improving",
-    items: [
-        "NextJs",
-        "NestJs",
-        "MySQL",
-    ]
-  }
-];
+export const stackData = {
+  main: [
+    { name: "JavaScript", icon: ""},
+    { name: "TypeScript", icon: ""},
+    { name: "APIs REST", icon: ""},
+    { name: "C#", icon: ""},
+    { name: "HTML", icon: ""},
+    { name: "CSS", icon: ""},
+  ],
+  improving: [
+    { name: "React.Js", icon: ""},
+    { name: "Node.Js", icon: ""},
+    { name: "Express", icon: ""},
+    { name: "Tailwind CSS", icon: ""},
+    { name: "Vite", icon: ""},
+    { name: "SQL", icon: ""},
+  ],
+  future: [
+    { name: "Next.Js", icon: ""},
+    { name: "Nest.Js", icon: ""},
+    { name: "NoSQL", icon: ""},
+    { name: "Linux OS", icon: ""},
+    { name: "Docker", icon: ""},
+    { name: "GraphQL", icon: ""},
+    { name: "Kubernetes", icon: ""},
+  ]
+}
