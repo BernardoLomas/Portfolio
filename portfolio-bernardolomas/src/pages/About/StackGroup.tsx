@@ -2,7 +2,7 @@ import StackCard from "./StackCard";
 
 type Props = {
     title: string;
-    items: { name: string; icon: string}[];
+    items: { name: string; icon: any }[];
 }
 
 export default function StackGroup({ title, items }: Props) {

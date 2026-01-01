@@ -1,27 +1,30 @@
+export type StackItem = {
+  name: string;
+  icon: keyof typeof import("../utils/iconMap").iconMap
+}
+
 export const stackData = {
   main: [
-    { name: "JavaScript", icon: ""},
-    { name: "TypeScript", icon: ""},
-    { name: "APIs REST", icon: ""},
-    { name: "C#", icon: ""},
-    { name: "HTML", icon: ""},
-    { name: "CSS", icon: ""},
+    { name: "JavaScript", icon: "javascript"},
+    { name: "TypeScript", icon: "typescript"},
+    { name: "HTML", icon: "html"},
+    { name: "CSS", icon: "css"},
   ],
   improving: [
-    { name: "React.Js", icon: ""},
-    { name: "Node.Js", icon: ""},
-    { name: "Express", icon: ""},
-    { name: "Tailwind CSS", icon: ""},
-    { name: "Vite", icon: ""},
-    { name: "SQL", icon: ""},
+    { name: "React.Js", icon: "reactjs"},
+    { name: "Node.Js", icon: "nodejs"},
+    { name: "Express", icon: "express"},
+    { name: "Tailwind CSS", icon: "tailwind"},
+    { name: "Vite", icon: "vite"},
+    { name: "SQLite", icon: "sqlite"},
   ],
   future: [
-    { name: "Next.Js", icon: ""},
-    { name: "Nest.Js", icon: ""},
-    { name: "NoSQL", icon: ""},
-    { name: "Linux OS", icon: ""},
-    { name: "Docker", icon: ""},
-    { name: "GraphQL", icon: ""},
-    { name: "Kubernetes", icon: ""},
+    { name: "Next.Js", icon: "nextjs"},
+    { name: "Nest.Js", icon: "nestjs"},
+    { name: "MySQL", icon: "mysql"},
+    { name: "Linux OS", icon: "linux"},
+    { name: "Docker", icon: "docker"},
+    { name: "GraphQL", icon: "graphql"},
+    { name: "Kubernetes", icon: "kubernetes"},
   ]
 }
