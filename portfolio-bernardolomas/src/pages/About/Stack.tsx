@@ -11,7 +11,7 @@ export default function Stack() {
         items={stackData.main}
       />
 
-      <StackGroup
+      <StackGroup 
         title="Currently improving"
         items={stackData.improving}
       />
