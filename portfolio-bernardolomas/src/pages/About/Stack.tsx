@@ -4,7 +4,7 @@ import StackGroup from "./StackGroup";
 export default function Stack() {
   return (
     <section className="space-y-8">
-      <h2 className="text-2xl font-semibold">Tech Stack</h2>
+      <h2 className="text-4xl font-bold">Tech Stack</h2>
 
       <StackGroup
         title="Technologies that i work with"

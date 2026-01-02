@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <Seo title="About | Bernardo Lomas" description="More about my history" />
-      <div className="space-y-24">
+      <div className="space-y-10">
         <Bio />
         <Metrics />
         <Process />
