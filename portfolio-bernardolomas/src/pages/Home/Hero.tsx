@@ -42,7 +42,7 @@ export default function Hero() {
 
           <Link
             to="/contact"
-            className="rounded-md border border-white/20 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+            className="rounded-md border border-white/10 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
           >
             Reach out
           </Link>
