@@ -11,7 +11,7 @@ export default function Home() {
             description="Full Stack Developer focused on React, TypeScript and NodeJs"
         />
 
-      <div className="space-y-24">
+      <div className="space-y-7">
         <Hero />
         <Highlights />
         <CallToAction />
