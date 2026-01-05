@@ -15,7 +15,7 @@ export default function Metrics() {
         <motion.article
           key={item.label}
           variants={fadeInUpSoft}
-          className="rounded-xl border border-white/10 bg-zinc-900/60 p-6"
+          className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
         >
           <span className="text-4xl font-bold text-emerald-300">
             {item.value}

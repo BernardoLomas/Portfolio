@@ -25,7 +25,7 @@ export default function Process() {
           <motion.article
             key={step.title}
             variants={fadeInUpSoft}
-            className="flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-6"
+            className="flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
           >
             <span className="text-3xl">{step.icon}</span>
 
