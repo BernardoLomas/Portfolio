@@ -15,26 +15,25 @@ export default function Hero() {
       className="flex min-h-[70vh] flex-col-reverse items-center gap-16 lg:flex-row lg:items-center lg:justify-between"
     >
 
-      <section className="max-w-xl space-y-8">
-        <header>
-          <span className="text-sm uppercase tracking-widest text-emerald-400">
-            Full Stack Software Developer
-          </span>
+      <div className="max-w-xl space-y-8">
+        <span className="text-sm uppercase tracking-widest text-emerald-400">
+          Full Stack Software Developer
+        </span>
 
-          <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
-            Transforming{" "}
-            <span className="text-emerald-400">ideas</span> into {" "}
-            <span className="text-emerald-400">code</span> and {" "}
-            <span className="text-emerald-400">code</span> into {" "}
-            <span className="text-emerald-400">solutions</span>
-          </h1>
+        <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
+          Transforming{" "}
+          <span className="text-emerald-400">ideas</span> into {" "}
+          <span className="text-emerald-400">code</span> and {" "}
+          <span className="text-emerald-400">code</span> into {" "}
+          <span className="text-emerald-400">solutions</span>
+        </h1>
 
-          <p className="max-w-2xl text-lg font-semibold text-zinc-300">
-            Full Stack developer focused on web-development with{" "}
-            <span className="text-emerald-400">TypeScript, Nest.Js, React.Js</span> and {" "}
-            <span className="text-emerald-400">Node.Js</span>
-          </p>
-        </header>
+        <p className="max-w-2xl text-lg font-semibold text-zinc-300">
+          Full Stack developer focused on web-development with{" "}
+          <span className="text-emerald-400">TypeScript, Nest.Js, React.Js</span> and {" "}
+          <span className="text-emerald-400">Node.Js</span>
+        </p>
+
 
         <div className="flex flex-wrap gap-4">
           <Link
@@ -58,7 +57,7 @@ export default function Hero() {
             Reach out
           </Link>
         </div>
-      </section>
+      </div>
 
       <HeroImage onOpen={() => setOpen(true)} />
     </motion.section>
