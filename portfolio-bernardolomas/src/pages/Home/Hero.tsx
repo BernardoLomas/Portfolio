@@ -1,23 +1,27 @@
+import { useState } from "react";
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { fadeInUpSoft } from "../../utils/motion";
+import { fadeInUpSoft } from "../../utils/motion"
+import HeroImage from "./HeroImage";
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
   return (
     <motion.section
       variants={fadeInUpSoft}
       initial="hidden"
       animate="visible"
-      className="flex min-h-[70vh] flex-col justify-center gap-8"
+      className="flex min-h-[70vh] flex-col-reverse items-center gap-16 lg:flex-row lg:items-center lg:justify-between"
     >
 
-      <section className="flex min-h-[70vh] flex-col justify-center gap-5">
-        <header className="space-y-7">
+      <section className="max-w-xl space-y-8">
+        <header>
           <span className="text-sm uppercase tracking-widest text-emerald-400">
             Full Stack Software Developer
           </span>
 
-          <h1 className="max-w-3xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
+          <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
             Transforming{" "}
             <span className="text-emerald-400">ideas</span> into {" "}
             <span className="text-emerald-400">code</span> and {" "}
@@ -55,6 +59,8 @@ export default function Hero() {
           </Link>
         </div>
       </section>
+
+      <HeroImage onOpen={() => setOpen(true)} />
     </motion.section>
   );
 }
