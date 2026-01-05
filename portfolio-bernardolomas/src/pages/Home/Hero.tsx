@@ -35,14 +35,21 @@ export default function Hero() {
         <div className="flex flex-wrap gap-4">
           <Link
             to="/projects"
-            className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-zinc-900 transition hover:bg-zinc-200"
+            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
           >
             Projects
           </Link>
 
           <Link
+            to="/About"
+            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+          >
+            Stack
+          </Link>
+
+          <Link
             to="/contact"
-            className="rounded-md border border-white/10 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
           >
             Reach out
           </Link>
