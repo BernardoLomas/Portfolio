@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from "../../utils/motion";
+import { fadeInUpSoft, staggerSoft } from "../../utils/motion";
 import { metrics } from "../../data/metrics";
 
 export default function Metrics() {
   return (
     <motion.section
-      variants={stagger}
+      variants={staggerSoft}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -14,7 +14,7 @@ export default function Metrics() {
       {metrics.map((item) => (
         <motion.article
           key={item.label}
-          variants={fadeUp}
+          variants={fadeInUpSoft}
           className="rounded-xl border border-white/10 bg-zinc-900/60 p-6"
         >
           <span className="text-4xl font-bold text-emerald-300">

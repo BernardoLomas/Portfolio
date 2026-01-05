@@ -1,18 +1,19 @@
 import { hardSkills } from "../../data/hardskills";
 import { softSkills } from "../../data/softskills";
 import { motion } from "framer-motion"
-import { stagger } from "../../utils/motion";
+import { fadeInUpSoft, hoverLiftSoft, staggerSoft } from "../../utils/motion";
 
 export default function Highlights() {
   return (
     <motion.section
-      variants={stagger}
+      variants={staggerSoft}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
       className="space-y-10"
     >
       <section className="space-y-10">
+
         <header className="max-w-2xl space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Hard Skills</h2>
           <p className="text-zinc-300">
@@ -22,15 +23,25 @@ export default function Highlights() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {hardSkills.map((item) => (
-            <article
+            <motion.div
               key={item.title}
-              className="rounded-xl border border-white/10 bg-zinc-900/60 p-6"
+              variants={fadeInUpSoft}
             >
-              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm text-zinc-300">{item.description}</p>
-            </article>
+              <motion.article
+                whileHover={hoverLiftSoft}
+                className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
+              >
+                <h3 className="mb-2 text-lg font-semibold">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-zinc-300">
+                  {item.description}
+                </p>
+              </motion.article>
+            </motion.div>
           ))}
         </div>
+
 
         <div className="max-w-2xl space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Soft Skills</h2>
@@ -41,16 +52,22 @@ export default function Highlights() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {softSkills.map((item) => (
-            <article
+            <motion.article
               key={item.title}
-              className="rounded-xl border border-white/10 bg-zinc-900/60 p-6"
+              variants={fadeInUpSoft}
+              whileHover={hoverLiftSoft}
+              className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
             >
-              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-              <p className="text-sm text-zinc-300">{item.description}</p>
-            </article>
+              <h3 className="mb-2 text-lg font-semibold">
+                {item.title}
+              </h3>
+              <p className="text-sm text-zinc-300">
+                {item.description}
+              </p>
+            </motion.article>
           ))}
         </div>
       </section>
-    </motion.section>
+    </motion.section >
   );
 }

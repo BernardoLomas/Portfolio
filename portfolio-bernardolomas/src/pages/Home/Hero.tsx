@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { fadeUp } from "../../utils/motion";
+import { fadeInUpSoft } from "../../utils/motion";
 
 export default function Hero() {
   return (
     <motion.section
-      variants={fadeUp}
+      variants={fadeInUpSoft}
       initial="hidden"
       animate="visible"
       className="flex min-h-[70vh] flex-col justify-center gap-8"
