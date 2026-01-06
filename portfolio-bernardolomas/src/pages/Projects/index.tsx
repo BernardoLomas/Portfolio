@@ -13,7 +13,7 @@ export default function Projects() {
         <header className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">Projects</h1>
           <p className="max-w-2xl text-zinc-300">
-            Some Projects that i developed to practice arch and different
+            Some Projects that i developed to practice architecture and different
             stacks.
           </p>
         </header>

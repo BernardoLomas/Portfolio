@@ -8,7 +8,7 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   return (
     <Link to={`/projects/${project.id}`}>
-      <article className="flex h-full flex-col justify-between rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-white/20">
+      <article className="flex h-full flex-col justify-between rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40">
         <div className="space-y-3">
           <h3 className="text-lg font-semibold">{project.title}</h3>
           <p className="text-sm text-zinc-300">{project.description}</p>
