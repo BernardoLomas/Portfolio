@@ -5,11 +5,12 @@ export default function CallToAction() {
         <section className="rounded-2xl border border-white/10 bg-zinc-900/60 p-10">
             <div className="mx-auto max-w-3xl space-y-6 text-center">
                 <h2 className="text-3xl font-bold tracking-tight">
-                    Lets build something togheter?
+                    Lets build something together?
                 </h2>
 
                 <p className="tex-zinc-300">
-                    Texto sobre estar aberto a propostas
+                    I specialize in bridging the gap between big ideas and functional code. 
+                    Let’s collaborate to transform your vision into a powerful solution and build something extraordinary together.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4">
