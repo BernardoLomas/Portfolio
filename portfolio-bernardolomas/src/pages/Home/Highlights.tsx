@@ -26,6 +26,8 @@ export default function Highlights() {
             <motion.div
               key={item.title}
               variants={fadeInUpSoft}
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 120, damping: 18 }}
             >
               <motion.article
                 whileHover={hoverLiftSoft}
@@ -52,19 +54,24 @@ export default function Highlights() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {softSkills.map((item) => (
-            <motion.article
+            <motion.div
               key={item.title}
               variants={fadeInUpSoft}
-              whileHover={hoverLiftSoft}
-              className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 120, damping: 18 }}
             >
-              <h3 className="mb-2 text-lg font-semibold">
-                {item.title}
-              </h3>
-              <p className="text-sm text-zinc-300">
-                {item.description}
-              </p>
-            </motion.article>
+              <motion.article
+                whileHover={hoverLiftSoft}
+                className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
+              >
+                <h3 className="mb-2 text-lg font-semibold">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-zinc-300">
+                  {item.description}
+                </p>
+              </motion.article>
+            </motion.div>
           ))}
         </div>
       </section>
