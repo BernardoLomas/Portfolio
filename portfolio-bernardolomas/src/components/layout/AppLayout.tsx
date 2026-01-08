@@ -1,17 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../navigation/Navbar";
+import Footer from "../navigation/Footer";
 
 export default function AppLayout() {
     return (
-        <div className="min-h-dvh bg-zinc-950">
+        <>
             <Navbar />
-
-            <main className="mx-auto w-full max-w-6xl px-1 py-7">
+            <main>
                 <Outlet />
             </main>
-
             <Footer />
-        </div>
+        </>
     )
 }
