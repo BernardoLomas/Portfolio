@@ -8,7 +8,7 @@ export const fadeInUp = {
             ease: "easeOut",
         },
     },
-}
+} as const;
 
 export const stagger = {
     visible: {
@@ -25,4 +25,4 @@ export const hoverLift = {
         stiffness: 120,
         damping: 18,
     },
-}
+} as const;

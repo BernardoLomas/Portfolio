@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { fadeInUpSoft, staggerSoft } from "../../utils/motion";
+import { fadeInUp, stagger } from "../../components/motion/motion.presets";
 import { process } from "../../data/process";
 
 export default function Process() {
   return (
     <motion.section
-      variants={staggerSoft}
+      variants={stagger}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -24,7 +24,7 @@ export default function Process() {
         {process.map((step) => (
           <motion.article
             key={step.title}
-            variants={fadeInUpSoft}
+            variants={fadeInUp}
             className="flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
           >
             <span className="text-3xl">{step.icon}</span>

@@ -1,15 +1,15 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { fadeInUpSoft } from "../../utils/motion"
+import { fadeInUp } from "../../components/motion/motion.presets";
 import HeroImage from "./HeroImage";
+import Button from "../../components/ui/Button";
 
 export default function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
     <motion.section
-      variants={fadeInUpSoft}
+      variants={fadeInUp}
       initial="hidden"
       animate="visible"
       className="flex min-h-[70vh] flex-col-reverse items-center gap-16 lg:flex-row lg:items-center lg:justify-between"
@@ -36,26 +36,9 @@ export default function Hero() {
 
 
         <div className="flex flex-wrap gap-4">
-          <Link
-            to="/projects"
-            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
-          >
-            Projects
-          </Link>
-
-          <Link
-            to="/About"
-            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
-          >
-            Stack
-          </Link>
-
-          <Link
-            to="/contact"
-            className="rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
-          >
-            Reach out
-          </Link>
+          <Button to="/projects">Projects</Button>
+          <Button to="/about">Stack</Button>
+          <Button to="/contact">Reach out</Button>
         </div>
       </div>
 

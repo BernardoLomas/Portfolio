@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { iconMap } from "../../utils/iconMap";
-import { hoverLiftSoft } from "../../utils/motion";
+import { hoverLift } from "../../components/motion/motion.presets"
 
 type Props = {
   name: string;
@@ -17,7 +17,7 @@ export default function StackCard({ name, icon }: Props) {
 
   return (
     <motion.div
-      whileHover={hoverLiftSoft}
+      whileHover={hoverLift}
     >
       <div className="flex min-h-[200px] w-[200px] flex-col items-center justify-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-5 transition hover:border-emerald-400/40">
         <Icon 

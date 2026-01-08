@@ -1,12 +1,12 @@
 import { hardSkills } from "../../data/hardskills";
 import { softSkills } from "../../data/softskills";
 import { motion } from "framer-motion"
-import { fadeInUpSoft, hoverLiftSoft, staggerSoft } from "../../utils/motion";
+import { fadeInUp, stagger, hoverLift } from "../../components/motion/motion.presets";
 
 export default function Highlights() {
   return (
     <motion.section
-      variants={staggerSoft}
+      variants={stagger}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -25,12 +25,12 @@ export default function Highlights() {
           {hardSkills.map((item) => (
             <motion.div
               key={item.title}
-              variants={fadeInUpSoft}
+              variants={fadeInUp}
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 120, damping: 18 }}
             >
               <motion.article
-                whileHover={hoverLiftSoft}
+                whileHover={hoverLift}
                 className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
               >
                 <h3 className="mb-2 text-lg font-semibold">
@@ -56,12 +56,12 @@ export default function Highlights() {
           {softSkills.map((item) => (
             <motion.div
               key={item.title}
-              variants={fadeInUpSoft}
+              variants={fadeInUp}
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 120, damping: 18 }}
             >
               <motion.article
-                whileHover={hoverLiftSoft}
+                whileHover={hoverLift}
                 className="rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
               >
                 <h3 className="mb-2 text-lg font-semibold">
