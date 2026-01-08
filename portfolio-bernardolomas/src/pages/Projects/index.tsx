@@ -1,6 +1,8 @@
 import Seo from "../../components/seo/Seo";
-import ProjectCard from "../../components/ui/ProjectCard";
-import { projects } from "../../data/projects";
+import Container from "../../components/layout/Container";
+import Section from "../../components/layout/Section";
+import SectionHeader from "../../components/ui/SectionHeader";
+import ProjectsGrid from "./ProjectsGrid";
 
 export default function Projects() {
   return (
@@ -9,21 +11,16 @@ export default function Projects() {
         title="Projects | Bernardo Lomas"
         description="Full Stack projects developed with React, TypeScript and NodeJs"
       />
-      <section className="space-y-8">
-        <header className="space-y-2">
-          <h1 className="text-4xl font-bold tracking-tight">Projects</h1>
-          <p className="max-w-2xl text-zinc-300">
-            Some Projects that i developed to practice architecture and different
-            stacks.
-          </p>
-        </header>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </section>
+      <Section>
+        <Container>
+          <SectionHeader
+            title="Projects"
+            subtitle="Selected projects showcasing my experience in full stack web developent"
+          />
+          <ProjectsGrid />
+        </Container>
+      </Section>
     </>
   );
 }
