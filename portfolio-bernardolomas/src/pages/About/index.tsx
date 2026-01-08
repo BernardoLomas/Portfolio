@@ -1,4 +1,7 @@
 import Seo from "../../components/seo/Seo";
+import Container from "../../components/layout/Container";
+import Section from "../../components/layout/Section";
+import SectionHeader from "../../components/ui/SectionHeader"
 import Bio from "./Bio";
 import Metrics from "./Metrics";
 import Process from "./Process";
@@ -10,11 +13,44 @@ export default function About() {
     <>
       <Seo title="About | Bernardo Lomas" description="More about my history" />
       <div className="space-y-10">
-        <Bio />
-        <Metrics />
-        <Process />
-        <Stack />
-        <Experience />
+
+        <Section>
+          <Container>
+            <Bio />
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <Metrics />
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <Process />
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <SectionHeader
+              title="Tech Stack"
+              subtitle="Technologies that i work with, improving and planning to learn"
+            />
+            <Stack />
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <SectionHeader
+              title="Experience"
+              subtitle="Academic, professional and leadership experiences"
+            />
+            <Experience />
+          </Container>
+        </Section>
       </div>
     </>
   );
