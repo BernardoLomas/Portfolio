@@ -1,46 +1,84 @@
 import Container from "../layout/Container"
+import Button from "../ui/Button";
+import profile from "../../assets/images/FotoProfi.jpeg"
+
+const socials = [
+  {
+    name: "LinkedIn",
+    handle: "bernardolomas",
+    url: "https://www.linkedin.com/in/bernardolomas/",
+    icon: "/icons/linkedin.svg"
+  },
+  {
+    name: "GitHub",
+    handle: "BernardoLomas",
+    url: "https://github.com/BernardoLomas",
+    icon: "/icons/github.svg"
+  },
+  {
+    name: "Email",
+    handle: "bernardo.lomasb@gmail.com",
+    url: "mailto:bernardo.lomasb@gmail.com",
+    icon: "/icons/gmail.svg"
+  }
+]
 
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <Container>
-        <div className="flex flex-col gap-6 py-12 md:flex-row md-items-center md:justify-between">
-          <div className="space-y-2">
-            <span className="block text-lg font-bold text-emerald-400">
-              Bernardo Lomas
-            </span>
-            <p className="text-sm text-zinc-400">
+        <div className="grid gap-12 py-20 text-center lg:grid-cols-3 lg:text-left">
+
+          <div className="flex flex-col items-center gap-4 lg:items-start">
+            <img
+              src={profile}
+              alt="Bernardo Lomas"
+              className="h-40 w-40 rounded-full border border-emerald-400 object-cover"
+            />
+            <span className="text-sm text-zinc-400">
               Full Stack Software Developer
-            </p>
+            </span>
           </div>
 
-          <div className="flex flex-wrap gap-6 text-sm text-zinc-300">
-            <a
-              href="https://github.com/BernardoLomas"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-white"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://www.linkedin.com/in/bernardolomas/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-white"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="mailto:bernardo.lomasb@gmail.com"
-              className="hover:text-white"
-            >
-              Email
-            </a>
+          <div className="flex flex-col items-center gap-6 lg:items-start">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">
+              Social
+            </h3>
+
+            <ul className="space-y-3">
+              {socials.map((social) => (
+                <li key={social.name}>
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-zinc-300 transition hover:text-emerald-400"
+                  >
+                    <img 
+                      src={social.icon}
+                      alt={social.name}
+                      className="h-5 w-5 [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
+                    />
+                    <span className="font-medium">{social.name}</span>
+                    <span className="text-zinc-500">{social.handle}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col items-center gap-6 lg:items-start">
+            <p className="max-w-xs text-sm text-zinc-300 text-justify">
+              I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.
+            </p>
+
+            <Button to="mailto:bernardo.lomasb@gmail.com" variant="primary">
+              Let's talk
+            </Button>
           </div>
         </div>
 
-        <div className="pb-6 text-center text-xs text-zinc-500">
+        <div className="py-6 text-center text-sm text-zinc-500">
           © {new Date().getFullYear()} Bernardo Lomas. Built with React & TypeScript
         </div>
       </Container>
