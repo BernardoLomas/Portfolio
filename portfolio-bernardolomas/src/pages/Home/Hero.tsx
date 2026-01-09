@@ -12,7 +12,7 @@ export default function Hero() {
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="flex min-h-[70vh] flex-col-reverse items-center gap-16 lg:flex-row lg:items-center lg:justify-between"
+      className="flex flex-col items-center gap-10 text-center lg:flex-row lg:justify-between lg:text-left"
     >
 
       <div className="max-w-xl space-y-8">
@@ -20,7 +20,7 @@ export default function Hero() {
           Full Stack Software Developer
         </span>
 
-        <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
+        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Transforming{" "}
           <span className="text-emerald-400">ideas</span> into {" "}
           <span className="text-emerald-400">code</span> and {" "}
@@ -28,15 +28,15 @@ export default function Hero() {
           <span className="text-emerald-400">solutions</span>
         </h1>
 
-        <p className="max-w-2xl text-lg font-semibold text-zinc-300">
+        <p className="text-base font-semibold text-zinc-300 sm:text-lg">
           Full Stack developer focused on web-development with{" "}
           <span className="text-emerald-400">TypeScript, Nest.Js, React.Js</span> and {" "}
           <span className="text-emerald-400">Node.Js</span>
         </p>
 
 
-        <div className="flex flex-wrap gap-4">
-          <Button to="/projects">Projects</Button>
+        <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
+          <Button to="/projects" variant="primary">Projects</Button>
           <Button to="/about">Stack</Button>
           <Button to="/contact">Reach out</Button>
         </div>
