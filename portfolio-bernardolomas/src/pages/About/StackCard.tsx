@@ -1,33 +1,26 @@
-import { motion } from "framer-motion";
-import { iconMap } from "../../utils/iconMap";
-import { hoverLift } from "../../components/motion/motion.presets"
+import Card from "../../components/ui/Card"
 
-type Props = {
+type Item = {
   name: string;
-  icon: keyof typeof iconMap;
+  icon: string;
 };
 
-export default function StackCard({ name, icon }: Props) {
-  const Icon = iconMap[icon];
+type Props = {
+  item: Item;
+}
 
-  if (!Icon) {
-    console.warn(`Icon not found: ${icon}`);
-    return null;
-  }
-
+export default function StackCard({ item }: Props) {
   return (
-    <motion.div
-      whileHover={hoverLift}
-    >
-      <div className="flex min-h-[200px] w-[200px] flex-col items-center justify-center gap-3 rounded-xl border border-white/10 bg-zinc-900/60 p-5 transition hover:border-emerald-400/40">
-        <Icon 
-          className="h-20 w-20 text-emerald-400 hover:text-emerald-300 transition-colors" 
-          color="#34d399"
-          fill="#34d399"
-        />
+    <Card className="aspect-square flex flex-col items-center justify-center gap-4 rounded-2xl text-center transition hover:scale-[1.03]">
+      <img
+        src={item.icon}
+        alt={item.name}
+        className="h-20 w-15 transition [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
+      />
 
-        <span className="text-lg font-bold text-emerald-200 p-2">{name}</span>
-      </div>
-    </motion.div>
+      <span className="text-sm font-semibold text-emerald-400">
+        {item.name}
+      </span>
+    </Card>
   );
 }

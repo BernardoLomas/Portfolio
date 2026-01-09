@@ -1,25 +1,36 @@
-import { stackData } from "../../data/stacks";
+import SectionHeader from "../../components/ui/SectionHeader";
 import StackGroup from "./StackGroup";
+import { main, improving, learning } from "../../data/stacks";
 
 export default function Stack() {
   return (
-    <section className="space-y-8">
-      <h2 className="text-4xl font-bold">Tech Stack</h2>
+    <div className="space-y-20">
+      <div>
+        <SectionHeader
+          title="Main"
+          subtitle="Technologies that i work with confidently in real projects"
+          align="center"
+        />
+        <StackGroup items={main} />
+      </div>
 
-      <StackGroup
-        title="Technologies that i work with"
-        items={stackData.main}
-      />
+      <div>
+        <SectionHeader
+          title="Improving"
+          subtitle="Technologies i actively use and deepen my knowledge"
+          align="center"
+        />
+        <StackGroup items={improving} />
+      </div>
 
-      <StackGroup 
-        title="Currently improving"
-        items={stackData.improving}
-      />
-
-      <StackGroup
-        title="Planning to learn"
-        items={stackData.future}
-      />
-    </section>
+      <div>
+        <SectionHeader
+          title="Learning"
+          subtitle="Technologies that i plan to explore in the near future"
+          align="center"
+        />
+        <StackGroup items={learning} />
+      </div>
+    </div>
   );
 }

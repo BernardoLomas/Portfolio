@@ -1,22 +1,30 @@
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "../../components/motion/motion.presets";
 import StackCard from "./StackCard";
 
-type Props = {
-    title: string;
-    items: { name: string; icon: any }[];
+type Item = {
+    name: string;
+    icon: string;
 }
 
-export default function StackGroup({ title, items }: Props) {
-    return (
-        <section className="space-y-4">
-            <h3 className="text-xl font-semibold text-white">
-                {title}
-            </h3>
+type Props = {
+    items: Item[]
+};
 
-            <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-5">
-                {items.map((item) => (
-                    <StackCard key={item.name} {...item} />
-                ))}
-            </div>
-        </section>
-    )
+export default function StackGroup({ items }: Props) {
+  return (
+    <motion.div
+      variants={stagger}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-5"
+    >
+      {items.map((item) => (
+        <motion.div key={item.name} variants={fadeInUp}>
+          <StackCard item={item} />
+        </motion.div>
+      ))}
+    </motion.div>
+  );
 }

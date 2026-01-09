@@ -1,38 +1,38 @@
 export type StackItem = {
   name: string;
-  icon: keyof typeof import("../utils/iconMap").iconMap
-}
+  icon: string;
+};
 
-export const stackData = {
-  main: [
-    { name: "JavaScript", icon: "javascript"},
-    { name: "TypeScript", icon: "typescript"},
-    { name: "C#", icon: "csharp"},
-    { name: "React.Js", icon: "reactjs"},
-    { name: "SQLite", icon: "sqlite"},
-    { name: "HTML", icon: "html"},
-    { name: "CSS", icon: "css"},
-    { name: "Node.Js", icon: "nodejs"},
-    { name: "Express", icon: "express"},
-    { name: "Git", icon: "git"},
-  ],
-  improving: [
-    { name: "Next.Js", icon: "nextjs"},
-    { name: "Tailwind CSS", icon: "tailwind"},
-    { name: "Vite", icon: "vite"},
-    { name: "Swagger", icon: "swagger"},
-    { name: "Linux OS", icon: "linux"},
-  ],
-  future: [
-    { name: "Nest.Js", icon: "nestjs"},
-    { name: "Php", icon: "php"},
-    { name: "MySQL", icon: "mysql"},
-    { name: "PostgreSQL", icon: "postgresql"},
-    { name: "GraphQL", icon: "graphql"},
-    { name: "Docker", icon: "docker"},
-    { name: "Jest", icon: "jest"},
-    { name: "Kubernetes", icon: "kubernetes"},
-    { name: "Figma", icon: "figma"},
-    { name: "Cloud", icon: "cloud"}
-  ]
-}
+export const main: StackItem[] = [
+  { name: "JavaScript", icon: "/icons/javascript.svg" },
+  { name: "TypeScript", icon: "/icons/typescript.svg" },
+  { name: "C#", icon: "/icons/csharp.svg" },
+  { name: "React.Js", icon: "/icons/react.svg" },
+  { name: "SQLite", icon: "/icons/sqlite.svg" },
+  { name: "HTML", icon: "/icons/html5.svg" },
+  { name: "CSS", icon: "/icons/css.svg" },
+  { name: "Node.Js", icon: "/icons/nodedotjs.svg" },
+  { name: "Express", icon: "/icons/express.svg" },
+  { name: "Git", icon: "/icons/git.svg" },
+];
+
+export const improving: StackItem[] = [
+  { name: "Next.Js", icon: "/icons/nextdotjs.svg" },
+  { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
+  { name: "Vite", icon: "/icons/vite.svg" },
+  { name: "Swagger", icon: "/icons/swagger.svg" },
+  { name: "Linux OS", icon: "/icons/linux.svg" },
+];
+
+export const learning: StackItem[] = [
+  { name: "Nest.Js", icon: "/icons/nestjs.svg" },
+  { name: "Php", icon: "/icons/php.svg" },
+  { name: "MySQL", icon: "/icons/mysql.svg" },
+  { name: "PostgreSQL", icon: "/icons/postgresql.svg" },
+  { name: "GraphQL", icon: "/icons/graphql.svg" },
+  { name: "Docker", icon: "/icons/docker.svg" },
+  { name: "Jest", icon: "/icons/jest.svg" },
+  { name: "Kubernetes", icon: "/icons/kubernetes.svg" },
+  { name: "Figma", icon: "/icons/figma.svg" },
+  { name: "Cloud", icon: "/icons/icloud.svg" },
+];
