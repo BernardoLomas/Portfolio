@@ -27,20 +27,17 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <Container>
-        <div className="grid gap-12 py-20 text-center lg:grid-cols-3 lg:text-left">
+        <div className="grid gap-2 py-10 text-center lg:grid-cols-3 lg:text-left">
 
-          <div className="flex flex-col items-center gap-4 lg:items-start">
+          <div className="flex flex-col items-center gap-2 lg:items-start">
             <img
               src={profile}
               alt="Bernardo Lomas"
-              className="h-40 w-40 rounded-full border border-emerald-400 object-cover"
+              className="h-48 w-48 rounded-full border-4 border-emerald-400 object-cover"
             />
-            <span className="text-sm text-zinc-400">
-              Full Stack Software Developer
-            </span>
           </div>
 
-          <div className="flex flex-col items-center gap-6 lg:items-start">
+          <div className="flex flex-col items-center gap-7 lg:items-start">
             <h3 className="text-sm font-semibold uppercase tracking-widest text-zinc-400">
               Social
             </h3>
@@ -67,7 +64,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center gap-6 lg:items-start">
+          <div className="flex flex-col items-center gap-4 lg:items-start">
             <p className="max-w-xs text-sm text-zinc-300 text-justify">
               I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.
             </p>
@@ -78,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="py-6 text-center text-sm text-zinc-500">
+        <div className="border-t border-white/10 py-5 text-center text-xs text-zinc-500">
           © {new Date().getFullYear()} Bernardo Lomas. Built with React & TypeScript
         </div>
       </Container>
