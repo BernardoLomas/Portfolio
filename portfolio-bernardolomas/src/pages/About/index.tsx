@@ -7,6 +7,7 @@ import Metrics from "./Metrics";
 import Process from "./Process";
 import Stack from "./Stack";
 import Experience from "./Experience";
+import CareerCarousel from "./CareerCarousel";
 
 export default function About() {
   return (
@@ -16,7 +17,10 @@ export default function About() {
 
         <Section>
           <Container>
-            <Bio />
+            <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+              <Bio />
+              <CareerCarousel />
+            </div>
           </Container>
         </Section>
 

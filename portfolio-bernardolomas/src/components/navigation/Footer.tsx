@@ -1,6 +1,6 @@
 import Container from "../layout/Container"
 import Button from "../ui/Button";
-import profile from "../../assets/images/FotoProfi.jpeg"
+import profile from "/images/FotoProfi.jpeg"
 
 const socials = [
   {
