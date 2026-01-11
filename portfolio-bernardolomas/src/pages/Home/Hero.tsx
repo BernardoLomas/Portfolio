@@ -15,7 +15,7 @@ export default function Hero() {
       className="flex flex-col items-center gap-10 text-center lg:flex-row lg:justify-between lg:text-left"
     >
 
-      <div className="max-w-xl space-y-8">
+      <div className="max-w-xl space-y-10">
         <span className="text-sm uppercase tracking-widest text-emerald-400">
           Full Stack Software Developer
         </span>

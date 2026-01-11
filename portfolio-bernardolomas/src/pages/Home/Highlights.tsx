@@ -12,8 +12,7 @@ export default function Highlights() {
       viewport={{ once: true }}
       className="space-y-10"
     >
-      <section className="space-y-10">
-
+      <section className="space-y-6">
         <header className="max-w-2xl space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Hard Skills</h2>
           <p className="text-zinc-300">

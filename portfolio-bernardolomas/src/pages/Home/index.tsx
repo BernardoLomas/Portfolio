@@ -14,7 +14,7 @@ export default function Home() {
         description="Full Stack Developer focused on React, TypeScript and NodeJs"
       />
 
-      <Section variant="hero">
+      <Section variant="first">
         <Container>
           <motion.div variants={fadeInUp} initial="hidden" animate="visible">
             <Hero />
@@ -22,7 +22,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section variant="compact">
+      <Section>
         <Container>
           <Highlights />
         </Container>
