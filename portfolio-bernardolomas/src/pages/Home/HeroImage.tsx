@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profile from "../../assets/images/FotoProfi.jpeg";
+import profile from "/images/FotoProfi.jpeg";
 
 type Props = {
   onOpen: () => void;
