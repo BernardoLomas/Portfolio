@@ -19,7 +19,7 @@ export default function Navbar() {
           <nav className="flex h-16 items-center justify-between">
             <Link
               to="/"
-              className="text-lg font-bold tracking-tight text-white-400"
+              className="text-lg font-bold tracking-tight"
             >
               Bernardo Lomas
             </Link>

@@ -9,7 +9,7 @@ type Props = {
 export default function Section({ children, className, variant = "default"}: Props) {
     const variants = {
         hero: "py-12 sm:py-16 lg:py-20",
-        default: "py-14 sm:py-18 lg:py-22",
+        default: "py-14 sm:py-16 lg:py-20",
         compact: "py-10 sm:py-12 lg:py-14",
         tight: "py-8 sm:py-10 lg:py-12",
         first: "pt-6 pb-12 sm:pb-16 lg:pb-20"
