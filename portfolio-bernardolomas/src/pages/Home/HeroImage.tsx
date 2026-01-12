@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import profile from "/images/FotoProfi.jpeg";
 
 type Props = {
-  onOpen: () => void;
+  onOpen?: () => void;
 };
 
 export default function HeroImage({ onOpen }: Props) {
   return (
     <motion.div
-      onClick={onOpen}
+      onClick={onOpen ? onOpen : undefined}
       whileHover={{ scale: 1.04 }}
       transition={{ type: "spring", stiffness: 140, damping: 20 }}
       className="relative flex items-center justify-center cursor-pointer"

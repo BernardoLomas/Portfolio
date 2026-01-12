@@ -1,12 +1,9 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../components/motion/motion.presets";
 import HeroImage from "./HeroImage";
 import Button from "../../components/ui/Button";
 
 export default function Hero() {
-  const [open, setOpen] = useState(false);
-
   return (
     <motion.section
       variants={fadeInUp}
@@ -53,7 +50,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <HeroImage onOpen={() => setOpen(true)} />
+      <HeroImage />
     </motion.section>
   );
 }
