@@ -9,10 +9,11 @@ export default function Hero() {
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="grid gap-10 text-center lg:grid-cols-2 lg:items-center lg:gap-8 lg:text-left"
+      className="grid gap-14 text-center lg:grid-cols-2 lg:items-center lg:justify-center lg:text-left"
     >
-      <div className="max-w-xl space-y-8">
-        <span className="text-sm uppercase tracking-widest text-emerald-400">
+      <div className="max-w-xl space-y-8 lg:ml-auto">
+
+        <span className="text-sm uppercase tracking-widest text-emerald-400 space-x-8">
           Full Stack Software Developer
         </span>
 
