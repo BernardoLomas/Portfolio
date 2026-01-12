@@ -38,8 +38,16 @@ export default function Hero() {
           <Button to="/projects" variant="primary">
             Projects
           </Button>
+
           <Button to="/about">Stack</Button>
           <Button to="/contact">Reach out</Button>
+          <a
+            href="/cv/Bernardo_Lomas_CV.pdf"
+            download
+            className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+          >
+            Download CV
+          </a>
         </div>
       </div>
       <HeroImage onOpen={() => setOpen(true)} />
