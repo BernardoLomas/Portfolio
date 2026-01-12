@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { fadeInUp } from "../../components/motion/motion.presets";
 import HeroImage from "./HeroImage";
 import Button from "../../components/ui/Button";
@@ -12,36 +12,36 @@ export default function Hero() {
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="flex flex-col items-center gap-10 text-center lg:flex-row lg:justify-between lg:text-left"
+      className="grid gap-10 text-center lg:grid-cols-2 lg:items-center lg:gap-8 lg:text-left"
     >
-
-      <div className="max-w-xl space-y-10">
+      <div className="max-w-xl space-y-8">
         <span className="text-sm uppercase tracking-widest text-emerald-400">
           Full Stack Software Developer
         </span>
 
         <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          Transforming{" "}
-          <span className="text-emerald-400">ideas</span> into {" "}
-          <span className="text-emerald-400">code</span> and {" "}
-          <span className="text-emerald-400">code</span> into {" "}
+          Transforming <span className="text-emerald-400">ideas</span> into{" "}
+          <span className="text-emerald-400">code</span> and{" "}
+          <span className="text-emerald-400">code</span> into{" "}
           <span className="text-emerald-400">solutions</span>
         </h1>
 
         <p className="text-base font-semibold text-zinc-300 sm:text-lg">
           Full Stack developer focused on web-development with{" "}
-          <span className="text-emerald-400">TypeScript, Nest.Js, React.Js</span> and {" "}
-          <span className="text-emerald-400">Node.Js</span>
+          <span className="text-emerald-400">
+            TypeScript, Nest.Js, React.Js
+          </span>{" "}
+          and <span className="text-emerald-400">Node.Js</span>
         </p>
 
-
         <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-          <Button to="/projects" variant="primary">Projects</Button>
+          <Button to="/projects" variant="primary">
+            Projects
+          </Button>
           <Button to="/about">Stack</Button>
           <Button to="/contact">Reach out</Button>
         </div>
       </div>
-
       <HeroImage onOpen={() => setOpen(true)} />
     </motion.section>
   );
