@@ -12,7 +12,7 @@ export const softSkills: SoftSkills[] = [
   {
     title: "Adaptability & Knowledge Sharing",
     description: 
-      "Quick to master new stacks and tools while fostering a collaborative culture by sharing insights and mentoring team members, enabling a productive teamwork"
+      "Quick to master new stacks and tools while fostering a collaborative culture by sharing insights and mentoring team members, enabling a productive teamwork."
   },
   {
     title: "Collaborative Mindset",

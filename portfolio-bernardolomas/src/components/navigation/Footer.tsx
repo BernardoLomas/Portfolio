@@ -1,34 +1,32 @@
-import Container from "../layout/Container"
-import Button from "../ui/Button";
-import profile from "/images/FotoProfi.jpeg"
+import Container from "../layout/Container";
+import profile from "/images/FotoProfi.jpeg";
 
 const socials = [
   {
     name: "LinkedIn",
     handle: "bernardolomas",
     url: "https://www.linkedin.com/in/bernardolomas/",
-    icon: "/icons/linkedin.svg"
+    icon: "/icons/linkedin.svg",
   },
   {
     name: "GitHub",
     handle: "BernardoLomas",
     url: "https://github.com/BernardoLomas",
-    icon: "/icons/github.svg"
+    icon: "/icons/github.svg",
   },
   {
     name: "Email",
     handle: "bernardo.lomasb@gmail.com",
     url: "mailto:bernardo.lomasb@gmail.com",
-    icon: "/icons/gmail.svg"
-  }
-]
+    icon: "/icons/gmail.svg",
+  },
+];
 
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <Container>
         <div className="grid gap-2 py-10 text-center lg:grid-cols-3 lg:text-left">
-
           <div className="flex flex-col items-center gap-2 lg:items-start">
             <img
               src={profile}
@@ -51,7 +49,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-sm text-zinc-300 transition hover:text-emerald-400"
                   >
-                    <img 
+                    <img
                       src={social.icon}
                       alt={social.name}
                       className="h-5 w-5 [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
@@ -66,17 +64,23 @@ export default function Footer() {
 
           <div className="flex flex-col items-center gap-4 lg:items-start">
             <p className="max-w-xs text-sm text-zinc-300 text-justify">
-              I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.
+              I'm always open to discussing new projects, creative ideas or
+              opportunities to build impactful software together.
             </p>
 
-            <Button to="mailto:bernardo.lomasb@gmail.com" variant="primary">
+            <a
+              href="https://www.linkedin.com/in/bernardolomas/"
+              download
+              className="bg-white text-black inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold"
+            >
               Let's talk
-            </Button>
+            </a>
           </div>
         </div>
 
         <div className="border-t border-white/10 py-5 text-center text-xs text-zinc-500">
-          © {new Date().getFullYear()} Bernardo Lomas. Built with React & TypeScript
+          © {new Date().getFullYear()} Bernardo Lomas. Built with React &
+          TypeScript
         </div>
       </Container>
     </footer>

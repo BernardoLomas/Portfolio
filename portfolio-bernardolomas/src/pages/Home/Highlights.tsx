@@ -35,7 +35,7 @@ export default function Highlights() {
                 <h3 className="mb-2 text-lg font-semibold text-emerald-400">
                   {item.title}
                 </h3>
-                <p className="text-sm text-zinc-300">
+                <p className="text-sm text-zinc-300 text-justify">
                   {item.description}
                 </p>
               </motion.article>
@@ -66,7 +66,7 @@ export default function Highlights() {
                 <h3 className="mb-2 text-lg font-semibold text-emerald-400">
                   {item.title}
                 </h3>
-                <p className="text-sm text-zinc-300">
+                <p className="text-sm text-zinc-300 text-justify">
                   {item.description}
                 </p>
               </motion.article>

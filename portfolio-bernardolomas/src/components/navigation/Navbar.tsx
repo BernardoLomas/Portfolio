@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../layout/Container";
-import Button from "../ui/Button";
 
 const links = [
   { label: "Home", to: "/" },
@@ -44,9 +43,13 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:block">
-              <Button to="mailto:bernardo.lomasb@gmail.com" variant="outline">
+              <a
+                href="https://www.linkedin.com/in/bernardolomas/"
+                download
+                className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+              >
                 Let's talk
-              </Button>
+              </a>
             </div>
 
             <button
@@ -92,9 +95,13 @@ export default function Navbar() {
                 </NavLink>
               ))}
 
-              <Button to="mailto:bernardo.lomasb@gmail.com" variant="primary">
-                Let's talk
-              </Button>
+              <a
+                href="https://www.linkedin.com/in/bernardolomas/"
+                download
+                className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+              >
+                Reach out
+              </a>
             </motion.div>
           </motion.div>
         )}
