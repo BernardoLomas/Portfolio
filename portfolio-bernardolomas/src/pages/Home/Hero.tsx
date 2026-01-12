@@ -35,12 +35,15 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-          <Button to="/projects" variant="primary">
-            Projects
-          </Button>
-
-          <Button to="/about">Stack</Button>
-          <Button to="/contact">Reach out</Button>
+          <Button to="/projects" variant="primary">Projects</Button>
+          <Button to="/about">About me</Button>
+          <a
+            href="https://www.linkedin.com/in/bernardolomas/"
+            download
+            className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+          >
+            Reach out
+          </a>
           <a
             href="/cv/Bernardo_Lomas_CV.pdf"
             download
