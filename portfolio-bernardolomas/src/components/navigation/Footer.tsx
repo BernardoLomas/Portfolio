@@ -70,7 +70,8 @@ export default function Footer() {
 
             <a
               href="https://www.linkedin.com/in/bernardolomas/"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-black inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold"
             >
               Let's talk

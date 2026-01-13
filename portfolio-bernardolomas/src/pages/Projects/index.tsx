@@ -12,7 +12,7 @@ export default function Projects() {
         description="Full Stack projects developed with React, TypeScript and NodeJs"
       />
 
-      <Section>
+      <Section variant="first">
         <Container>
           <SectionHeader
             title="Projects"

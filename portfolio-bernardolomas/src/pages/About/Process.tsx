@@ -12,7 +12,7 @@ export default function Process() {
       className="space-y-10"
     >
       <header className="max-w-2xl space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight text-white">
+        <h2 className="text-3xl font-bold tracking-tight text-emerald-400">
           From fundation to real impact
         </h2>
         <p className="text-zinc-300">

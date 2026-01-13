@@ -43,10 +43,11 @@ export default function About() {
 
       <Section variant="default">
         <Container>
-          <SectionHeader 
+          <SectionHeader
+            title="Projects"
+            subtitle="Selected projects showcasing my experience in full stack web developent" 
             align="center"
-            title="Experience"
-          />
+            />
           <Experience />
         </Container>
       </Section>

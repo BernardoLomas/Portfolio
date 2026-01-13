@@ -37,6 +37,8 @@ export default function Hero() {
           <Button to="/about">About me</Button>
           <a
             href="https://www.linkedin.com/in/bernardolomas/"
+            target="_blank"
+            rel="noopener noreferrer"
             download
             className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
           >

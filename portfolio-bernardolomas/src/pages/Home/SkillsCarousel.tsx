@@ -61,9 +61,9 @@ export default function SkillsCarousel({ title, subtitle, items }: Props) {
           onClick={prev}
           className="
             rounded-full
-            border
+            border-2
             border-white/10
-            px-4
+            px-5
             py-1.5
             text-xs
             text-zinc-300
@@ -79,7 +79,7 @@ export default function SkillsCarousel({ title, subtitle, items }: Props) {
           onClick={next}
           className="
             rounded-full
-            border
+            border-2
             border-white/10
             px-4
             py-1.5
