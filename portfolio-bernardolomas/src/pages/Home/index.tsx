@@ -12,13 +12,13 @@ export default function Home() {
         description="Full Stack Developer focused on React, TypeScript and NodeJs"
       />
 
-      <Section variant="hero">
+      <Section variant="compact">
         <Container>
             <Hero />
         </Container>
       </Section>
 
-      <Section variant="default">
+      <Section variant="compact">
         <Container>
           <Highlights />
         </Container>

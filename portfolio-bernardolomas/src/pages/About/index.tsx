@@ -14,7 +14,7 @@ export default function About() {
     <>
       <Seo title="About | Bernardo Lomas" description="More about my history" />
 
-      <Section>
+      <Section variant="compact">
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <Bio />
@@ -23,25 +23,25 @@ export default function About() {
         </Container>
       </Section>
 
-      <Section variant="tight">
+      <Section variant="first">
         <Container>
           <Metrics />
         </Container>
       </Section>
 
-      <Section variant="tight">
+      <Section variant="first">
         <Container>
           <Process />
         </Container>
       </Section>
 
-      <Section variant="default">
+      <Section variant="first">
         <Container>
           <Stack />
         </Container>
       </Section>
 
-      <Section variant="default">
+      <Section variant="first">
         <Container>
           <SectionHeader
             title="Projects"

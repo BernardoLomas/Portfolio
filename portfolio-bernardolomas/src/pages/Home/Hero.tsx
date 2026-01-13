@@ -17,7 +17,7 @@ export default function Hero() {
           Full Stack Software Developer
         </span>
 
-        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+        <h1 className="text-6xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Transforming <span className="text-emerald-400">ideas</span> into{" "}
           <span className="text-emerald-400">code</span> and{" "}
           <span className="text-emerald-400">code</span> into{" "}
