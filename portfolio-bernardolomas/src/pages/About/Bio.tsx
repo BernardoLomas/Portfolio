@@ -5,7 +5,7 @@ export default function Bio() {
         <h1 className="text-4xl font-bold tracking-tight">
           Turning <span className="text-emerald-400 font-bold">logic</span> into
           <span className="text-emerald-400 font-bold"> experiences:</span>{" "}
-          developing software and people
+          developing <span className="text-emerald-400 font-bold"> software</span> and <span className="text-emerald-400 font-bold">people</span>
         </h1>
       </header>
 
