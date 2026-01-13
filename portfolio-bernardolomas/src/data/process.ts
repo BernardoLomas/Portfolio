@@ -7,19 +7,19 @@ export type Process = {
 export const process: Process[] = [
   {
     title: "Learning",
-    icon: "📘",
+    icon: "/icons/book.svg",
     description:
       "Continuous study of programming fundamentals, software architecture and modern technologies.",
   },
   {
     title: "Practice",
-    icon: "💻",
+    icon: "/icons/code.svg",
     description:
       "Hands-on projects, real problem solving and integration between frontend and backend.",
   },
   {
     title: "Results",
-    icon: "🚀",
+    icon: "/icons/rocket.svg",
     description:
       "Functional systems, technical growth and real impact on people and products.",
   },

@@ -19,7 +19,7 @@ export default function Process() {
           My workflow is guided by a simple and effective cycle.
         </p>
       </header>
-      
+
       <div className="grid gap-6 md:grid-cols-3">
         {process.map((step) => (
           <motion.article
@@ -27,7 +27,10 @@ export default function Process() {
             variants={fadeInUp}
             className="flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
           >
-            <span className="text-3xl">{step.icon}</span>
+            <img
+              src={step.icon}
+              className="h-10 w-15 transition [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
+            />
 
             <h3 className="text-xl font-semibold text-white">{step.title}</h3>
 
