@@ -7,18 +7,18 @@ import Metrics from "./Metrics";
 import Process from "./Process";
 import Stack from "./Stack";
 import Experience from "./Experience";
-import CareerCarousel from "./CareerCarousel";
+import Video from "./Video";
 
 export default function About() {
   return (
     <>
       <Seo title="About | Bernardo Lomas" description="More about my history" />
 
-      <Section variant="first">
+      <Section>
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <Bio />
-            <CareerCarousel />
+            <Video />
           </div>
         </Container>
       </Section>
