@@ -7,5 +7,14 @@
     "about": "About me",
     "contact": "Reach out",
     "download": "Download CV"
+  },
+
+  "skills": {
+    "title": "Skills Overview",
+    "subtitle": "A quick look at the skills I apply in real-world projects",
+    "hardTitle": "Hard Skills",
+    "hardSubtitle": "Technical capabilities applied in development",
+    "softTitle": "Soft Skills",
+    "softSubtitle": "Interpersonal skills that drive collaboration"
   }
 }

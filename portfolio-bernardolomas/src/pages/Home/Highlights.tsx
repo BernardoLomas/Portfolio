@@ -4,8 +4,10 @@ import { hardSkills } from "../../data/hardskills";
 import { softSkills } from "../../data/softskills";
 import { motion } from "framer-motion";
 import { stagger } from "../../components/motion/motion.presets";
+import { useTranslation } from "react-i18next";
 
 export default function Highlights() {
+  const { t } = useTranslation();
   return (
     <motion.section
       variants={stagger}
@@ -18,23 +20,23 @@ export default function Highlights() {
         <div className="mx-auto max-w-8xl space-y-10">
           <header className="max-w-2xl space-y-2">
             <h2 className="text-3xl font-bold tracking-tight text-emerald-400">
-              Skills Overview
+              {t("skills.title")}
             </h2>
             <p className="text-zinc-300">
-              A quick look at the skills I apply in real-world projects.
+              {t("skills.subtitle")}
             </p>
           </header>
 
           <div className="grid gap-10 lg:grid-cols-2">
             <SkillsCarousel
-              title="Hard Skills"
-              subtitle="Technical capabilities used in development."
+              title={t("skills.hardTitle")}
+              subtitle={t("skills.hardSubtitle")}
               items={hardSkills}
             />
 
             <SkillsCarousel
-              title="Soft Skills"
-              subtitle="Interpersonal skills that drive collaboration."
+              title={t("skills.softTitle")}
+              subtitle={t("skills.softSubtitle")}
               items={softSkills}
             />
           </div>

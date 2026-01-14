@@ -7,5 +7,14 @@
     "stack": "Stack",
     "contact": "Contato",
     "download": "Baixar CV"
+  },
+
+  "skills": {
+    "title": "Visão Geral de Skills",
+    "subtitle": "Um resumo das habilidades que aplico em projetos reais",
+    "hardTitle": "Hard Skills",
+    "hardSubtitle": "Competências técnicas aplicadas no desenvolvimento",
+    "softTitle": "Soft Skills",
+    "softSubtitle": "Habilidades interpessoais que impulsionam a colaboração"
   }
 }
