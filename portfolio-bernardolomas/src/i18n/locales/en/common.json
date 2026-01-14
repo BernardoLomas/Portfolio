@@ -1,10 +1,10 @@
 {
   "hero": {
     "role": "Full Stack Software Developer",
-    "title": "Transforming ideas into code and code into solutions",
-    "description": "Full Stack developer focused on web development with TypeScript, React and Node.js",
+    "title": "Transforming <1>ideas</1> into <1>code</1> and <1>code</1> into <1>solutions</1>",
+    "description": "Full Stack developer focused on web development with <1>TypeScript</1>, <1>NestJS</1>, <1>React</1> and <1>Node.js</1>",
     "projects": "Projects",
-    "stack": "Tech Stack",
+    "about": "About me",
     "contact": "Reach out",
     "download": "Download CV"
   }
