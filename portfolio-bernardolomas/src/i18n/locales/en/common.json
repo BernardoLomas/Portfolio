@@ -18,20 +18,47 @@
     "softSubtitle": "Interpersonal skills that drive collaboration"
   },
 
-  
   "about": {
     "headline": "Turning <1>logic</1> into <1>experiences</1>: developing <1>software</1> and <1>people</1>",
     "p1": "I'm a <1>full stack software developer</1> with a strong background in both technology and education, combining technical problem-solving with clear communication and purpose-driven work.",
     "p2": "Over the past year, I've focused on building <1>real-world academic and personal projects</1>, while also teaching English to more than <1>20 students</1>, consistently improving their performance through personalized learning strategies.",
     "p3": "I'm driven by building functional, well-structured systems and sharing knowledge that creates <1>measurable impact</1> both in software and in people."
   },
-  
+
   "aboutSections": {
     "processTitle": "From fundation to real impact",
     "processSubtitle": "My workflow is guided by a simple and effective cycle.",
     "experienceTitle": "Experience",
     "experienceSubtitle": "Academic, professional and leadership experiences"
+  },
+
+  "hardSkills": {
+    "cleanCode": {
+      "title": "Clean Architecture",
+      "description": "Architecting scalable systems with a strict separation of concerns, ensuring maintainability through decoupled layers."
+    },
+    "fullStackDevelopment": {
+      "title": "Full Stack development",
+      "description": "End-to-end delivery using diverse toolsets, demonstrating high adaptability and a creative approach to solving complex technical challenges."
+    },
+    "professionalGrade": {
+      "title": "Professional grade code",
+      "description": "Writing robust code with TypeScript, explicit typing, and strict linting. Committed to version control excellence through semantic commits."
+    }
+  },
+
+  "softSkills": {
+    "communication": {
+      "title": "Global Communication (English)",
+      "description": "Advanced proficiency, enabling seamless collaboration with international squads and stakeholders across diverse cultural and professional environments."
+    },
+    "adaptability": {
+      "title": "Adaptability & Knowledge Sharing",
+      "description": "Quick to master new stacks and tools while fostering a collaborative culture by sharing insights and mentoring team members, enabling a productive teamwork."
+    },
+    "collaborative": {
+      "title": "Collaborative Mindset",
+      "description": "Passionate about cross-functional collaboration. I believe that teamwork and open communication are the foundations of building exceptional software."
+    }
   }
-
-
 }

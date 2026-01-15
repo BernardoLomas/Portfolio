@@ -30,5 +30,35 @@
     "processSubtitle": "Meu fluxo de trabalho é composto por etapas simples.",
     "experienceTitle": "Experience",
     "experienceSubtitle": "Academic, professional and leadership experiences"
+  },
+
+  "hardSkills": {
+    "cleanCode": {
+      "title": "Código Limpo",
+      "description": "Escrita de código legível, manutenível e escalável."
+    },
+    "fullStackDevelopment": {
+      "title": "Desenvolvimento de APIs",
+      "description": "Criação e design de APIs RESTful com Node.js."
+    },
+    "professionalGrade": {
+      "title": "Arquitetura Frontend",
+      "description": "Estruturação de aplicações frontend escaláveis e organizadas."
+    }
+  },
+
+  "softSkills": {
+    "communication": {
+      "title": "Inglês",
+      "description": "Advanced proficiency, enabling seamless collaboration with international squads and stakeholders across diverse cultural and professional environments."
+    },
+    "adaptability": {
+      "title": "Adaptability & Knowledge Sharing",
+      "description": "Quick to master new stacks and tools while fostering a collaborative culture by sharing insights and mentoring team members, enabling a productive teamwork."
+    },
+    "collaborative": {
+      "title": "Collaborative Mindset",
+      "description": "Passionate about cross-functional collaboration. I believe that teamwork and open communication are the foundations of building exceptional software."
+    }
   }
 }
