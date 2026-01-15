@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "../../components/motion/motion.presets";
 import { process } from "../../data/process";
+import { useTranslation } from "react-i18next";
 
 export default function Process() {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       variants={stagger}
@@ -13,10 +16,10 @@ export default function Process() {
     >
       <header className="max-w-2xl space-y-2">
         <h2 className="text-3xl font-bold tracking-tight text-emerald-400">
-          From fundation to real impact
+          {t("aboutSections.processTitle")}
         </h2>
         <p className="text-zinc-300">
-          My workflow is guided by a simple and effective cycle.
+          {t("aboutSections.processSubtitle")}
         </p>
       </header>
 

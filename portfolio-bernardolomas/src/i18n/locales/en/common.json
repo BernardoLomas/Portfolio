@@ -2,7 +2,7 @@
   "hero": {
     "role": "Full Stack Software Developer",
     "title": "Transforming <1>ideas</1> into <1>code</1> and <1>code</1> into <1>solutions</1>",
-    "description": "Full Stack developer focused on web development with <1>TypeScript</1>, <1>NestJS</1>, <1>React</1> and <1>Node.js</1>",
+    "description": "Full Stack developer focused on web development with <1>TypeScript</1>, <1>NestJs</1>, <1>React</1> and <1>NodeJs</1>",
     "projects": "Projects",
     "about": "About me",
     "contact": "Reach out",
@@ -16,5 +16,22 @@
     "hardSubtitle": "Technical capabilities applied in development",
     "softTitle": "Soft Skills",
     "softSubtitle": "Interpersonal skills that drive collaboration"
+  },
+
+  
+  "about": {
+    "headline": "Turning <1>logic</1> into <1>experiences</1>: developing <1>software</1> and <1>people</1>",
+    "p1": "I'm a <1>full stack software developer</1> with a strong background in both technology and education, combining technical problem-solving with clear communication and purpose-driven work.",
+    "p2": "Over the past year, I've focused on building <1>real-world academic and personal projects</1>, while also teaching English to more than <1>20 students</1>, consistently improving their performance through personalized learning strategies.",
+    "p3": "I'm driven by building functional, well-structured systems and sharing knowledge that creates <1>measurable impact</1> both in software and in people."
+  },
+  
+  "aboutSections": {
+    "processTitle": "From fundation to real impact",
+    "processSubtitle": "My workflow is guided by a simple and effective cycle.",
+    "experienceTitle": "Experience",
+    "experienceSubtitle": "Academic, professional and leadership experiences"
   }
+
+
 }

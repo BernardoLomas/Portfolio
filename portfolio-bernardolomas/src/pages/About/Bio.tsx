@@ -1,44 +1,47 @@
+import { useTranslation, Trans } from "react-i18next";
+
 export default function Bio() {
+  useTranslation();
+
   return (
     <section className="max-w-3xl space-y-8 text-zinc-300">
       <header className="space-y-2">
-        <h1 className="text-4xl font-bold tracking-tight">
-          Turning <span className="text-emerald-400 font-bold">logic</span> into
-          <span className="text-emerald-400 font-bold"> experiences:</span>{" "}
-          developing <span className="text-emerald-400 font-bold"> software</span> and <span className="text-emerald-400 font-bold">people</span>
+        <h1 className="text-4xl font-bold tracking-tight leading-tight">
+          <Trans
+            i18nKey="about.headline"
+            components={{
+              1: <span className="text-emerald-400 font-bold" />,
+            }}
+          />
         </h1>
       </header>
 
-      <div className="space-y-2 text-justify">
+      <div className="space-y-3 text-justify">
         <p>
-          I'm a{" "}
-          <span className="text-emerald-400 font-bold">
-            full stack software developer
-          </span>{" "}
-          with a strong background in both technology and education, combining
-          technical problem-solving with clear communication and purpose-driven
-          work.
+          <Trans
+            i18nKey="about.p1"
+            components={{
+              1: <span className="text-emerald-400 font-bold" />,
+            }}
+          />
         </p>
 
         <p>
-          Over the past year, I've been focused on building{" "}
-          <span className="text-emerald-400 font-bold">
-            real-world academic and personal projects
-          </span>
-          , while also teaching English to more than{" "}
-          <span className="text-emerald-400 font-bold">20 students</span>,
-          consistently improving their performance through personalized learning
-          strategies.
+          <Trans
+            i18nKey="about.p2"
+            components={{
+              1: <span className="text-emerald-400 font-bold" />,
+            }}
+          />
         </p>
 
         <p>
-          I'm driven by the challenge of building functional, well-structured
-          systems and sharing knowledge in a way that creates
-          <span className="text-emerald-400 font-bold">
-            {" "}
-            measurable impact
-          </span>{" "}
-          both in software and in people.
+          <Trans
+            i18nKey="about.p3"
+            components={{
+              1: <span className="text-emerald-400 font-bold" />,
+            }}
+          />
         </p>
       </div>
     </section>
