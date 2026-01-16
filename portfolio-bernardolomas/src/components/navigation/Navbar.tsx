@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "../layout/Container";
 import LanguageSwitcher from "../ui/Switcher";
+import { useTranslation } from "react-i18next";
 
 const links = [
   { label: "Home", to: "/" },
@@ -12,15 +13,14 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/70 backdrop-blur">
         <Container>
           <nav className="flex h-16 items-center justify-between">
-            <Link to="/" className="text-lg font-bold tracking-tight">
-              Bernardo Lomas
-            </Link>
+            <LanguageSwitcher />
 
             <div className="flex hidden items-center gap-8 md:flex">
               {links.map((link) => (
@@ -38,7 +38,6 @@ export default function Navbar() {
                   {link.label}
                 </NavLink>
               ))}
-              <LanguageSwitcher />
             </div>
 
             <div className="hidden md:block">
@@ -48,7 +47,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
               >
-                Let's talk
+                {t("navbar.buttons.talk")}
               </a>
             </div>
 

@@ -60,5 +60,13 @@
       "title": "Collaborative Mindset",
       "description": "Passionate about cross-functional collaboration. I believe that teamwork and open communication are the foundations of building exceptional software."
     }
+  },
+
+    "navbar": {
+    "buttons": {
+      "projects": "Projetos",
+      "about": "Sobre mim",
+      "talk": "Vamos conversar"
+    }
   }
 }
