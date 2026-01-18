@@ -1,12 +1,10 @@
 import Seo from "../../components/seo/Seo";
 import Container from "../../components/layout/Container";
 import Section from "../../components/layout/Section";
-import SectionHeader from "../../components/ui/SectionHeader";
 import Bio from "./Bio";
 import Metrics from "./Metrics";
 import Process from "./Process";
 import Stack from "./Stack";
-import Experience from "./Experience";
 import Video from "./Video";
 
 export default function About() {
@@ -38,17 +36,6 @@ export default function About() {
       <Section variant="first">
         <Container>
           <Stack />
-        </Container>
-      </Section>
-
-      <Section variant="first">
-        <Container>
-          <SectionHeader
-            title="Projects"
-            subtitle="Selected projects showcasing my experience in full stack web developent" 
-            align="center"
-            />
-          <Experience />
         </Container>
       </Section>
     </>
