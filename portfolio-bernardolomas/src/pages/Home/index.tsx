@@ -3,6 +3,7 @@ import Container from "../../components/layout/Container";
 import Section from "../../components/layout/Section";
 import Hero from "./Hero";
 import Highlights from "./Highlights";
+import Experience from "./Experience";
 
 export default function Home() {
   return (
@@ -21,6 +22,12 @@ export default function Home() {
       <Section variant="compact">
         <Container>
           <Highlights />
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Experience />
         </Container>
       </Section>
     </>

@@ -7,7 +7,6 @@ import { stagger } from "../../components/motion/motion.presets";
 import { useTranslation } from "react-i18next";
 
 export default function Highlights() {
-
   const { t } = useTranslation();
 
   const translatedHardSkills = hardSkills.map((skill) => ({
@@ -30,13 +29,6 @@ export default function Highlights() {
     >
       <Container>
         <div className="mx-auto max-w-8xl space-y-10">
-          <header className="max-w-2xl space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight text-emerald-400">
-              {t("skills.title")}
-            </h2>
-            <p className="text-zinc-300">{t("skills.subtitle")}</p>
-          </header>
-
           <div className="grid gap-10 lg:grid-cols-2">
             <SkillsCarousel
               title={t("skills.hardTitle")}

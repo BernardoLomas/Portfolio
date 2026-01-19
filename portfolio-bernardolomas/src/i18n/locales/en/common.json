@@ -125,7 +125,29 @@
       "learning": {
         "title": "Planning to learn",
         "subtitle": "Technologies that i plan to explore in the near future"
-      } 
+      }
+    }
+  },
+
+  "homeExperience": {
+    "title": "Experience & Background",
+    "subtitle": "A snapshot of my academic, professional and leadership journey",
+
+    "academic": {
+      "title": "Academic Background",
+      "description": "Information Systems undergraduate with strong foundations in software development."
+    },
+    "leadership": {
+      "title": "Technical Leadership",
+      "description": "Led academic projects ensuring clean code, organization and on-time delivery."
+    },
+    "teaching": {
+      "title": "Teaching & Communication",
+      "description": "English teacher for over 20 students, developing strong communication skills."
+    },
+    "projects": {
+      "title": "Real Projects",
+      "description": "Full stack applications built with real-world concerns and best practices."
     }
   }
 }
