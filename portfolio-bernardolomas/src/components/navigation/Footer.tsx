@@ -1,5 +1,6 @@
 import Container from "../layout/Container";
 import profile from "/images/FotoProfi.jpeg";
+import { useTranslation } from "react-i18next";
 
 const socials = [
   {
@@ -23,6 +24,9 @@ const socials = [
 ];
 
 export default function Footer() {
+
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <Container>
@@ -64,8 +68,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-center gap-4 lg:items-start">
             <p className="max-w-xs text-sm text-zinc-300 text-justify">
-              I'm always open to discussing new projects, creative ideas or
-              opportunities to build impactful software together.
+              {t("footer.about")}
             </p>
 
             <a
@@ -74,14 +77,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="bg-white text-black inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold"
             >
-              Let's talk
+              {t("footer.talk")}
             </a>
           </div>
         </div>
 
         <div className="border-t border-white/10 py-5 text-center text-xs text-zinc-500">
-          © {new Date().getFullYear()} Bernardo Lomas. Built with React &
-          TypeScript
+          © {new Date().getFullYear()} Bernardo Lomas. {t("footer.rights")}
         </div>
       </Container>
     </footer>

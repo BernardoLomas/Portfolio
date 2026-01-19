@@ -68,5 +68,11 @@
       "about": "About me",
       "talk": "Let's Talk"
     }
+  },
+
+  "footer": {
+    "about": "I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.",
+    "rights": "All rights reserved.",
+    "talk": "Let's Talk"
   }
 }

@@ -62,11 +62,17 @@
     }
   },
 
-    "navbar": {
+  "navbar": {
     "buttons": {
       "projects": "Projetos",
       "about": "Sobre mim",
       "talk": "Vamos conversar"
     }
+  },
+
+  "footer": {
+    "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir projetos em equipe.",
+    "rights": "Todos os direitos reservados",
+    "talk": "Vamos conversar"
   }
 }
