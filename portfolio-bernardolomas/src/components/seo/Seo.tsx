@@ -1,33 +1,30 @@
-import { Helmet } from "react-helmet-async"
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
-type SeoProps = {
-    title: string;
-    description: string;
-    url?: string;
+type Props = {
+  title: string;
+  description: string;
 };
 
-export default function Seo({ title, description, url }: SeoProps) {
-    const siteName = "Bernardo Lomas | Full Stack Developer";
-    const siteUrl = "dominio";
+export default function Seo({ title, description }: Props) {
+  const { i18n } = useTranslation();
 
-    return (
-        <Helmet>
-            <title>{title}</title>
+  useEffect(() => {
+    document.title = title;
 
-            <meta name="description" content={description} />
+    const setMeta = (name: string, content: string) => {
+      let tag = document.querySelector(`meta[name="${name}"]`);
+      if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("name", name);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute("content", content);
+    };
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content={title}/>
-            <meta property="og:description" content={description}/>
-            <meta property="og:site_name" content={siteName}/>
-            <meta property="og:url" content={url ?? siteUrl}/>
+    setMeta("description", description);
+    setMeta("language", i18n.language);
+  }, [title, description, i18n.language]);
 
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content={title} />
-            <meta
-                name="twitter:description"
-                content={description}
-            />
-        </Helmet>
-    );
+  return null;
 }
