@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "../../components/motion/motion.presets";
-import { process } from "../../data/process";
 import { useTranslation } from "react-i18next";
+import { processSteps } from "../../data/process";
 
 export default function Process() {
   const { t } = useTranslation();
+
+  const translatedSteps = processSteps.map((step) => ({
+    icon: step.icon,
+    title: t(`process.${step.key}.title`),
+    description: t(`process.${step.key}.description`),
+  }));
 
   return (
     <motion.section
@@ -24,20 +30,42 @@ export default function Process() {
       </header>
 
       <div className="grid gap-6 md:grid-cols-3">
-        {process.map((step) => (
+        {translatedSteps.map((step) => (
           <motion.article
             key={step.title}
             variants={fadeInUp}
-            className="flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-zinc-900/60 p-6 transition hover:border-emerald-400/40"
+            className="
+              flex
+              flex-col
+              items-start
+              gap-4
+              rounded-xl
+              border
+              border-white/10
+              bg-zinc-900/60
+              p-6
+              transition
+              hover:border-emerald-400/40
+            "
           >
             <img
               src={step.icon}
-              className="h-10 w-15 transition [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
+              alt={step.title}
+              className="
+                h-10
+                w-10
+                transition
+                [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]
+              "
             />
 
-            <h3 className="text-xl font-semibold text-white">{step.title}</h3>
+            <h3 className="text-xl font-semibold text-white">
+              {step.title}
+            </h3>
 
-            <p className="text-sm text-zinc-300">{step.description}</p>
+            <p className="text-sm text-zinc-300">
+              {step.description}
+            </p>
           </motion.article>
         ))}
       </div>

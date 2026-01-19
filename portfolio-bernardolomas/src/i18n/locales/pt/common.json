@@ -80,5 +80,20 @@
     "title": "Projetos",
     "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
     "code": "Código"
+  },
+
+  "process": {
+    "learn": {
+      "title": "Aprender",
+      "description": "Estudo contínuo de fundamentos de programação, arquitetura de software e tecnologias atuais."
+    },
+    "practice": {
+      "title": "Prática",
+      "description": "Praticar o aprendizado adquirido construindo softwares."
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "Softwares funcionais, crescimento em aprendizado técnico e impacto real com produtos."
+    }
   }
 }

@@ -4,23 +4,19 @@ export type Process = {
   description: string;
 };
 
-export const process: Process[] = [
-  {
-    title: "Learning",
-    icon: "/icons/book.svg",
-    description:
-      "Continuous study of programming fundamentals, software architecture and modern technologies.",
+export const processSteps = [
+  { 
+    key: "learn", 
+    icon: "/icons/book.svg"
   },
-  {
-    title: "Practice",
-    icon: "/icons/code.svg",
-    description:
-      "Hands-on projects, real problem solving and integration between frontend and backend.",
+
+  { 
+    key: "practice",
+    icon: "/icons/code.svg"
   },
-  {
-    title: "Results",
-    icon: "/icons/rocket.svg",
-    description:
-      "Functional systems, technical growth and real impact on people and products.",
-  },
+
+  { 
+    key: "results", 
+    icon: "/icons/rocket.svg"
+  }
 ];

@@ -80,5 +80,20 @@
     "title": "Projects",
     "subtitle": "Selected projects showcasing my experience in full stack web developent.",
     "code": "Code"
+  },
+
+  "process": {
+    "learn": {
+      "title": "Learn",
+      "description": "Continuous study of programming fundamentals, software architecture and modern technologies."
+    },
+    "practice": {
+      "title": "Build",
+      "description": "Hands-on projects, real problem solving and integration between frontend and backend."
+    },
+    "results": {
+      "title": "Iterate",
+      "description": "Functional systems, technical growth and real impact on people and products."
+    }
   }
 }
