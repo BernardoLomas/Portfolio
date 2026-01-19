@@ -4,20 +4,17 @@ export type Metrics = {
   description: string;
 };
 
-export const metrics: Metrics[] = [
+export const metrics = [
   {
+    key: "students",
     value: "20+",
-    label: "Students taught",
-    description: "With measurable performance improvement",
   },
   {
+    key: "projects",
     value: "10+",
-    label: "Projects delivered",
-    description: "Academic and personal full stack projects",
   },
   {
-    value: "1+ year",
-    label: "Hands-on experience",
-    description: "Development and education combined",
+    key: "years",
+    value: "1+",
   },
 ];

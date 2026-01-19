@@ -95,5 +95,20 @@
       "title": "Iterate",
       "description": "Functional systems, technical growth and real impact on people and products."
     }
+  },
+
+  "metrics": {
+    "students": {
+      "label": "Students taught",
+      "description": "People impacted through teaching and mentoring"
+    },
+    "projects": {
+      "label": "Projects delivered",
+      "description": "Academic and personal projects completed"
+    },
+    "experience": {
+      "label": "Years of experience",
+      "description": "Hands-on experience in software development"
+    }
   }
 }

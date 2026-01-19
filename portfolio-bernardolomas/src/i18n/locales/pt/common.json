@@ -95,5 +95,20 @@
       "title": "Resultados",
       "description": "Softwares funcionais, crescimento em aprendizado técnico e impacto real com produtos."
     }
+  },
+
+  "metrics": {
+    "students": {
+      "label": "Alunos ensinados",
+      "description": "Pessoas impactadas através do ensino e mentoria"
+    },
+    "projects": {
+      "label": "Projetos entregues",
+      "description": "Projetos acadêmicos e pessoais concluídos"
+    },
+    "years": {
+      "label": "Anos de experiência",
+      "description": "Experiência prática em desenvolvimento de software"
+    }
   }
 }
