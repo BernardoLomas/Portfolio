@@ -3,12 +3,15 @@ import { fadeInUp, hoverLift } from "../../components/motion/motion.presets"
 import type { Project } from "../../data/projects"
 import Card from "../../components/ui/Card"
 import Button from "../../components/ui/Button"
+import { useTranslation } from "react-i18next"
 
 type Props = {
     project: Project;
 }
 
 export default function ProjectCard({ project }: Props) {
+    const { t } = useTranslation();
+
     return (
         <motion.div variants={fadeInUp}>
             <motion.div whileHover={hoverLift}>
@@ -37,7 +40,7 @@ export default function ProjectCard({ project }: Props) {
                     <div className="mt-6 flex gap-3">
                         {project.github && (
                             <Button to={project.github} variant="outline">
-                                Code
+                                {t("projects.code")}
                             </Button>
                         )}
 

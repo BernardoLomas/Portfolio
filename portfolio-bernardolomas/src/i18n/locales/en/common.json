@@ -74,5 +74,11 @@
     "about": "I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.",
     "rights": "All rights reserved.",
     "talk": "Let's Talk"
+  },
+
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected projects showcasing my experience in full stack web developent.",
+    "code": "Code"
   }
 }
