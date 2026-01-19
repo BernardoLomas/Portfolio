@@ -8,7 +8,6 @@
     "contact": "Contato",
     "download": "Baixar CV"
   },
-
   "skills": {
     "title": "Visão Geral de Skills",
     "subtitle": "Um resumo das habilidades que aplico em projetos reais",
@@ -17,21 +16,18 @@
     "softTitle": "Soft Skills",
     "softSubtitle": "Habilidades interpessoais que impulsionam a colaboração"
   },
-
   "about": {
     "headline": "Transformando <1>lógica</1> em <1>experiências</1>: desenvolvendo <1>softwares</1> e <1>pessoas</1>",
     "p1": "Sou um <1>desenvolvedor full stack</1> com forte atuação em tecnologia e educação, unindo resolução de problemas técnicos com comunicação clara e trabalho orientado a propósito.",
     "p2": "No último ano, foquei na construção de <1>projetos acadêmicos e pessoais reais</1>, além de lecionar inglês para mais de <1>20 alunos</1>, melhorando consistentemente seu desempenho com estratégias personalizadas.",
     "p3": "Sou movido por criar sistemas funcionais e bem estruturados e por compartilhar conhecimento que gere <1>impacto mensurável</1> tanto em software quanto em pessoas."
   },
-
   "aboutSections": {
     "processTitle": "Dos fundamentos para impacto real",
     "processSubtitle": "Meu fluxo de trabalho é composto por etapas simples.",
     "experienceTitle": "Experience",
     "experienceSubtitle": "Academic, professional and leadership experiences"
   },
-
   "hardSkills": {
     "cleanCode": {
       "title": "Código Limpo",
@@ -46,7 +42,6 @@
       "description": "Estruturação de aplicações frontend escaláveis e organizadas."
     }
   },
-
   "softSkills": {
     "communication": {
       "title": "Inglês",
@@ -61,7 +56,6 @@
       "description": "Passionate about cross-functional collaboration. I believe that teamwork and open communication are the foundations of building exceptional software."
     }
   },
-
   "navbar": {
     "buttons": {
       "projects": "Projetos",
@@ -69,19 +63,16 @@
       "talk": "Vamos conversar"
     }
   },
-
   "footer": {
     "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir projetos em equipe.",
     "rights": "Todos os direitos reservados",
     "talk": "Vamos conversar"
   },
-
   "projects": {
     "title": "Projetos",
     "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
     "code": "Código"
   },
-
   "process": {
     "learn": {
       "title": "Aprender",
@@ -96,7 +87,6 @@
       "description": "Softwares funcionais, crescimento em aprendizado técnico e impacto real com produtos."
     }
   },
-
   "metrics": {
     "students": {
       "label": "Alunos ensinados",
@@ -109,6 +99,22 @@
     "years": {
       "label": "Anos de experiência",
       "description": "Experiência prática em desenvolvimento de software"
+    }
+  },
+  "stack": {
+    "groups": {
+      "main": {
+        "title": "Stack principal",
+        "subtitle": "Tecnologias que eu trabalho em projetos reais"
+      },
+      "improving": {
+        "title": "Aprofundando",
+        "subtitle": "Tecnologias que estou buscando melhorar e me aprofundar"
+      },
+      "learning": {
+        "title": "Aprender futuramente",
+        "subtitle": "Tecnologias que pretendo aprender em um futuro próximo"
+      }
     }
   }
 }

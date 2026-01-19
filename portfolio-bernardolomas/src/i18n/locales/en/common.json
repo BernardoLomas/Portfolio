@@ -110,5 +110,22 @@
       "label": "Years of experience",
       "description": "Hands-on experience in software development"
     }
+  },
+
+  "stack": {
+    "groups": {
+      "main": {
+        "title": "Main stack",
+        "subtitle": "Technologies that i work with confidently in real projects"
+      },
+      "improving": {
+        "title": "Currently improving",
+        "subtitle": "Technologies i actively use and deepen my knowledge"
+      },
+      "learning": {
+        "title": "Planning to learn",
+        "subtitle": "Technologies that i plan to explore in the near future"
+      } 
+    }
   }
 }
