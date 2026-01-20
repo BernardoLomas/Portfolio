@@ -1,22 +1,27 @@
-import type { ReactNode } from "react"
+import type { ReactNode } from "react";
+import clsx from "clsx";
 
 type Props = {
-    children: ReactNode;
-    className?: string;
-    variant?: "hero" | "default" | "compact" | "tight" | "first";
-}
+  children: ReactNode;
+  className?: string;
+  variant?: "first" | "default" | "alt";
+};
 
-export default function Section({ children, className, variant = "default"}: Props) {
-    const variants = {
-        hero: "py-12 sm:py-16 lg:py-20",
-        default: "py-14 sm:py-16 lg:py-20",
-        compact: "py-10 sm:py-12 lg:py-14",
-        tight: "py-8 sm:py-10 lg:py-12",
-        first: "pt-6 pb-12 sm:pb-16 lg:pb-20"
-    }
-    return(
-        <section className={`${variants[variant]} ${className ?? ""}`}>
-            {children}
-        </section>
-    )
+export default function Section({
+  children,
+  className,
+  variant = "default",
+}: Props) {
+  return (
+    <section
+      className={clsx(
+        "py-16 sm:py-20 lg:py-24",
+        variant === "first" && "pt-20 sm:pt-24 lg:pt-28",
+        variant === "alt" && "bg-zinc-950/40",
+        className
+      )}
+    >
+      {children}
+    </section>
+  );
 }
