@@ -19,17 +19,18 @@ export default function Home() {
         </Container>
       </Section>
 
+      <Section>
+        <Container>
+          <Experience />
+        </Container>
+      </Section>
+      
       <Section variant="compact">
         <Container>
           <Highlights />
         </Container>
       </Section>
 
-      <Section>
-        <Container>
-          <Experience />
-        </Container>
-      </Section>
     </>
   );
 }

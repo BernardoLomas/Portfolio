@@ -17,7 +17,7 @@ export default function ExperienceSection() {
   return (
     <section className="space-y-12">
       <header className="mx-auto max-w-2xl space-y-2 text-center">
-        <h2 className="text-3xl font-bold tracking-tight">
+        <h2 className="text-3xl font-bold tracking-tight text-emerald-400">
           {t("homeExperience.title")}
         </h2>
         <p className="text-zinc-300">

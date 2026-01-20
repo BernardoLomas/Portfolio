@@ -1,36 +1,41 @@
 export type Project = {
-    slug: string,
-    title: string,
-    description: string,
-    longDescription: string,
-    stack: string[],
-    github?: string,
-    demo?: string;
+  slug: string;
+  title: string;
+  shortDescription: string;
+  longDescription: string;
+  stack: string[];
+  highlights: string[];
+  challenges: string[];
+  learnings: string[];
+  repo?: string;
+  live?: string;
+  github?: string;
+  images: string[];
 };
 
 export const projects: Project[] = [
-    {
-        slug: "Order System",
-        title: "Bernardo Lomas Watches",
-        description: "Full Stack web application",
-        longDescription: "asdjaksdjkasjdsajkd",
-        stack: ["TypeScript", "ReactJs", "Tailwind CSS", "Express", "SQLite"],
-        github: "https://github.com/BernardoLomas/POC-OrderSystem.git"
-    },
-    {
-        slug: "Rick and Morty API",
-        title: "Rick and Morty API",
-        description: "Frontend project",
-        longDescription: "asdjaksdjkasjdsajkd",
-        stack: ["TypeScript", "ReactJs", "Tailwind CSS"],
-        github: "https://github.com/BernardoLomas/RickandMorty.git"
-    },
-    {
-        slug: "Reminders",
-        title: "Reminders Project",
-        description: "Full Stack web application",
-        longDescription: "asdjaksdjkasjdsajkd",
-        stack: ["TypeScript", "JavaScript", "Express"],
-        github: "https://github.com/BernardoLomas/RickandMorty.git"
-    }
-]
+  {
+    slug: "sistema-de-pombos",
+    title: "Sistema de Pombos",
+    shortDescription: "A real-world SaaS built to manage logistics and traceability in a niche domain.",
+    longDescription:
+      "A full stack system developed to solve real operational problems in a pigeon breeding business, focusing on management, traceability and scalability.",
+    stack: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "React"],
+    highlights: [
+      "Real user and real business requirements",
+      "Scalable architecture and clean domain modeling",
+      "Focus on maintainability over overengineering",
+    ],
+    challenges: [
+      "Modeling a niche domain correctly",
+      "Avoiding unnecessary complexity in a SaaS-like architecture",
+    ],
+    learnings: [
+      "Domain-driven thinking",
+      "Balancing simplicity and scalability",
+      "Building software for real users",
+    ],
+    repo: "https://github.com/...",
+    images: ["/images/projects/pombos-1.png"],
+  },
+];
