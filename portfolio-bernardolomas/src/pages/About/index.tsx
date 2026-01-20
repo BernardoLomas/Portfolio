@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Seo title="About | Bernardo Lomas" description="More about my history" />
 
-      <Section variant="compact">
+      <Section variant="first">
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <Bio />
@@ -21,19 +21,19 @@ export default function About() {
         </Container>
       </Section>
 
-      <Section variant="first">
+      <Section>
         <Container>
           <Metrics />
         </Container>
       </Section>
 
-      <Section variant="first">
+      <Section>
         <Container>
           <Process />
         </Container>
       </Section>
 
-      <Section variant="first">
+      <Section>
         <Container>
           <Stack />
         </Container>
