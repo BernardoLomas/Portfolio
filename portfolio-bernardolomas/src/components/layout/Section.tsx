@@ -15,8 +15,8 @@ export default function Section({
   return (
     <section
       className={clsx(
-        "py-16 sm:py-20 lg:py-24",
-        variant === "first" && "pt-20 sm:pt-24 lg:pt-28",
+        "py-16 sm:py-20 lg:py-16",
+        variant === "first" && "pt-20 sm:pt-24 lg:pt-10",
         variant === "alt" && "bg-zinc-950/40",
         className
       )}
