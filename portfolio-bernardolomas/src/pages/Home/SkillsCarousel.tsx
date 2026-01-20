@@ -26,8 +26,8 @@ export default function SkillsCarousel({ title, subtitle, items }: Props) {
   return (
     <div className="space-y-4">
       <div className="space-y-1">
-        <h3 className="text-xl font-semibold text-emerald-400">{title}</h3>
-        <p className="text-sm text-zinc-400">{subtitle}</p>
+        <h3 className="text-3xl font-bold text-emerald-400 text-center">{title}</h3>
+        <p className="text-sm text-center text-zinc-400">{subtitle}</p>
       </div>
 
       <div className="overflow-hidden rounded-xl">
