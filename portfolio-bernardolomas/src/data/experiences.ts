@@ -4,7 +4,7 @@ export const homeExperience = [
     image: "/images/experience/academic.jpg",
   },
   {
-    key: "leadership",
+    key: "teamwork",
     image: "/images/experience/leadership.jpg",
   },
   {

@@ -132,19 +132,19 @@
   
   "homeExperience": {
     "title": "Experiência & Formação",
-    "subtitle": "Um resumo da minha trajetória acadêmica, profissional e de liderança",
+    "subtitle": "Um resumo da minha trajetória acadêmica e profissional",
 
     "academic": {
       "title": "Formação Acadêmica",
       "description": "Graduando em Sistemas de Informação com base sólida em desenvolvimento de software."
     },
-    "leadership": {
-      "title": "Liderança Técnica",
-      "description": "Atuação como líder técnico em projetos acadêmicos, garantindo organização e qualidade."
+    "teamwork": {
+      "title": "Trabalho em equipe",
+      "description": "Atuação técnica em equipe em projetos acadêmicos, garantindo organização e qualidade."
     },
     "teaching": {
       "title": "Ensino & Comunicação",
-      "description": "Professor de inglês para mais de 20 alunos, desenvolvendo comunicação clara."
+      "description": "Professor de inglês para mais de 10 alunos, desenvolvendo comunicação clara."
     },
     "projects": {
       "title": "Projetos Reais",

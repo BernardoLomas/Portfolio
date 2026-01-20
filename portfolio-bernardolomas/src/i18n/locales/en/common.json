@@ -131,19 +131,19 @@
 
   "homeExperience": {
     "title": "Experience & Background",
-    "subtitle": "A snapshot of my academic, professional and leadership journey",
+    "subtitle": "A snapshot of my academic and professional journey",
 
     "academic": {
       "title": "Academic Background",
       "description": "Information Systems undergraduate with strong foundations in software development."
     },
-    "leadership": {
-      "title": "Technical Leadership",
-      "description": "Led academic projects ensuring clean code, organization and on-time delivery."
+    "teamwork": {
+      "title": "Teamwork",
+      "description": "Led in teamwork academic projects ensuring clean code, organization and on-time delivery."
     },
     "teaching": {
       "title": "Teaching & Communication",
-      "description": "English teacher for over 20 students, developing strong communication skills."
+      "description": "English teacher for over 10 students, developing strong communication skills."
     },
     "projects": {
       "title": "Real Projects",
