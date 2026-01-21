@@ -1,5 +1,4 @@
 import SkillsCarousel from "./SkillsCarousel";
-import Container from "../../components/layout/Container";
 import { hardSkills } from "../../data/hardskills";
 import { softSkills } from "../../data/softskills";
 import { motion } from "framer-motion";
