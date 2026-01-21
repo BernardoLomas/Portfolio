@@ -96,7 +96,7 @@ export default function Navbar() {
 
               <a
                 href="https://www.linkedin.com/in/bernardolomas/"
-                download
+                target="_blank"
                 className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
               >
                 {t("navbar.mobile.reachOut")}
