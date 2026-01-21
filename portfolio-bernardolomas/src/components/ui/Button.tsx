@@ -11,9 +11,9 @@ export default function Button({ children, to, variant = "outline"}: Props) {
     const base = "inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-semibold transition"
     const styles = {
         primary: 
-            "bg-white text-zinc-900 hover:bg-zinc-200",
+            "rounded-xl bg-white text-zinc-900 hover:bg-zinc-200",
         outline:
-            "border border-white/50 hover:border-emerald-400/40",
+            "rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40",
     };
 
     if(to) {

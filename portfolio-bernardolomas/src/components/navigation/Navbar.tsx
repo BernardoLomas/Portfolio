@@ -28,7 +28,7 @@ export default function Navbar() {
                   key={link.to}
                   to={link.to}
                   className={({ isActive }) =>
-                    `text-sm transition ${
+                    `text-md font-semibold transition ${
                       isActive
                         ? "text-emerald-400"
                         : "text-zinc-300 hover:text-white"
@@ -45,7 +45,7 @@ export default function Navbar() {
                 href="https://www.linkedin.com/in/bernardolomas/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+                className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
               >
                 {t("navbar.buttons.talk")}
               </a>

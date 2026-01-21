@@ -50,7 +50,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/bernardolomas/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+            className="inline-flex items-center justify-center  px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
           >
             {t("hero.contact")}
           </a>
@@ -58,7 +58,7 @@ export default function Hero() {
           <a
             href="/cv/Bernardo_Lomas_CV.pdf"
             download
-            className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
+            className="inline-flex items-center justify-center  px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
           >
             {t("hero.download")}
           </a>

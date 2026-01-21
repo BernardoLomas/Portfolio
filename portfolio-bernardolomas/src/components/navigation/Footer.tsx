@@ -75,7 +75,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/bernardolomas/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-black inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold"
+              className="rounded-xl bg-white text-black inline-flex items-center justify-center border border-white/50 px-6 py-3 text-sm font-semibold"
             >
               {t("footer.talk")}
             </a>
