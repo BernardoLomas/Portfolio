@@ -40,7 +40,7 @@
     },
     "fullStackDevelopment": {
       "title": "Desenvolvimento Full Stack",
-      "description": "Entrega de projetos de ponta a ponta utilizando diversos conjuntos de ferramentas, demonstrando alta adaptabilidade e uma abordagem criativa para solucionar desafios técnicos complexos."
+      "description": "Entrega de projetos de ponta a ponta utilizando diversos conjuntos de ferramentas com abordagem criativa para solucionar desafios técnicos complexos."
     },
     "professionalGrade": {
       "title": "Stack e boas práticas",
@@ -64,15 +64,25 @@
   },
 
   "navbar": {
+    "links": {
+      "home": "Início",
+      "projects": "Projetos",
+      "about": "Sobre"
+    },
     "buttons": {
       "projects": "Projetos",
       "about": "Sobre mim",
       "talk": "Vamos conversar"
+    },
+    "mobile": {
+      "menu": "Menu",
+      "close": "Fechar",
+      "reachOut": "Contato"
     }
   },
 
   "footer": {
-    "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir projetos em equipe.",
+    "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir softwares em equipe.",
     "rights": "Todos os direitos reservados",
     "talk": "Vamos conversar"
   },

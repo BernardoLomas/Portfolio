@@ -5,16 +5,16 @@ import Container from "../layout/Container";
 import LanguageSwitcher from "../ui/Switcher";
 import { useTranslation } from "react-i18next";
 
-const links = [
-  { label: "Home", to: "/" },
-  { label: "Projects", to: "/projects" },
-  { label: "About", to: "/about" },
-];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
-
+  const links = [
+    { label: t("navbar.links.home"), to: "/" },
+    { label: t("navbar.links.projects"), to: "/projects" },
+    { label: t("navbar.links.about"), to: "/about" },
+  ];
+  
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/70 backdrop-blur">
@@ -55,7 +55,7 @@ export default function Navbar() {
               onClick={() => setOpen(true)}
               className="md:hidden text-sm font-semibold"
             >
-              Menu
+              {t("navbar.mobile.menu")}
             </button>
           </nav>
         </Container>
@@ -80,7 +80,7 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className="absolute top-6 right-6 text-sm text-zinc-400"
               >
-                Close
+                {t("navbar.mobile.close")}
               </button>
 
               {links.map((link) => (
@@ -99,7 +99,7 @@ export default function Navbar() {
                 download
                 className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
               >
-                Reach out
+                {t("navbar.mobile.reachOut")}
               </a>
             </motion.div>
           </motion.div>

@@ -63,10 +63,20 @@
   },
 
   "navbar": {
+    "links": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About me"
+    },
     "buttons": {
       "projects": "Projects",
       "about": "About me",
       "talk": "Let's Talk"
+    },
+    "mobile": {
+      "menu": "Menu",
+      "close": "Close",
+      "reachOut": "Reach out"
     }
   },
 
@@ -100,7 +110,7 @@
   "metrics": {
     "students": {
       "label": "Students taught",
-      "description": "People impacted through teaching and mentoring"
+      "description": "People impacted through teaching"
     },
     "projects": {
       "label": "Projects delivered",
