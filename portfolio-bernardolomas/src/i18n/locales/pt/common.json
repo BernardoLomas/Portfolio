@@ -35,31 +35,31 @@
 
   "hardSkills": {
     "cleanCode": {
-      "title": "Código Limpo",
-      "description": "Escrita de código legível, manutenível e escalável."
+      "title": "Arquiterura clean",
+      "description": "Projeto sistemas escaláveis com uma separação rigorosa de responsabilidades, garantindo a manutentabilidade e revisão buscando o melhor resultado possível."
     },
     "fullStackDevelopment": {
-      "title": "Desenvolvimento de APIs",
-      "description": "Criação e design de APIs RESTful com Node.js."
+      "title": "Desenvolvimento Full Stack",
+      "description": "Entrega de projetos de ponta a ponta utilizando diversos conjuntos de ferramentas, demonstrando alta adaptabilidade e uma abordagem criativa para solucionar desafios técnicos complexos."
     },
     "professionalGrade": {
-      "title": "Arquitetura Frontend",
-      "description": "Estruturação de aplicações frontend escaláveis e organizadas."
+      "title": "Stack e boas práticas",
+      "description": "Desenvolvo códigos robustos com TypeScript, React e NestJs. Comprometido com a excelência e boas práticas durante todo o desenvolvimento do software."
     }
   },
 
   "softSkills": {
     "communication": {
       "title": "Inglês",
-      "description": "Advanced proficiency, enabling seamless collaboration with international squads and stakeholders across diverse cultural and professional environments."
+      "description": "Proficiência avançada, permitindo trabalhar em contextos internacionais, lidar com equipes de diferentes nacionalidades e clientes ao redor do mundo."
     },
     "adaptability": {
-      "title": "Adaptability & Knowledge Sharing",
-      "description": "Quick to master new stacks and tools while fostering a collaborative culture by sharing insights and mentoring team members, enabling a productive teamwork."
+      "title": "Adaptabilidade",
+      "description": "Facilidade em dominar novas tecnologias e ferramentas em um espaço curto de tempo, além de promover o crescimento do time junto ao meu desenvolvimento."
     },
     "collaborative": {
-      "title": "Collaborative Mindset",
-      "description": "Passionate about cross-functional collaboration. I believe that teamwork and open communication are the foundations of building exceptional software."
+      "title": "Perfil colaborativo",
+      "description": "Sou apaixonado por colaboração interfuncional. Acredito que o trabalho em equipe e a comunicação aberta são os alicerces para a criação de softwares excepcionais."
     }
   },
 
