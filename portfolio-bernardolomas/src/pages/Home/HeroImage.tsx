@@ -17,7 +17,7 @@ export default function HeroImage({ onOpen }: Props) {
         <img
           src={profile}
           alt="Bernardo Lomas"
-          className="block h-64 w-64 rounded-full object-cover sm:h-72 sm:w-72 lg:h-96 lg:w-96"
+          className="block h-56 w-56 rounded-full object-cover sm:h-64 sm:w-64 lg:h-96 lg:w-96"
         />
       </div>
 

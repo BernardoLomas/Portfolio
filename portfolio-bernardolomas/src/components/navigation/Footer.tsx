@@ -30,7 +30,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-zinc-950">
       <Container>
-        <div className="grid gap-2 py-10 text-center lg:grid-cols-3 lg:text-left">
+        <div className="grid gap-4 py-10 text-center lg:grid-cols-3 lg:text-left">
           <div className="flex flex-col items-center gap-2 lg:items-start">
             <img
               src={profile}

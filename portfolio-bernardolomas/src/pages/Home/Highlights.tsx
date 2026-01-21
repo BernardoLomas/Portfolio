@@ -27,23 +27,21 @@ export default function Highlights() {
       viewport={{ once: true }}
       className="space-y-10"
     >
-      <Container>
-        <div className="mx-auto max-w-8xl space-y-10">
-          <div className="grid gap-10 lg:grid-cols-2">
-            <SkillsCarousel
-              title={t("skills.hardTitle")}
-              subtitle={t("skills.hardSubtitle")}
-              items={translatedHardSkills}
-            />
+      <div className="mx-auto max-w-8xl space-y-10">
+        <div className="grid gap-10 lg:grid-cols-2">
+          <SkillsCarousel
+            title={t("skills.hardTitle")}
+            subtitle={t("skills.hardSubtitle")}
+            items={translatedHardSkills}
+          />
 
-            <SkillsCarousel
-              title={t("skills.softTitle")}
-              subtitle={t("skills.softSubtitle")}
-              items={translatedsoftSkills}
-            />
-          </div>
+          <SkillsCarousel
+            title={t("skills.softTitle")}
+            subtitle={t("skills.softSubtitle")}
+            items={translatedsoftSkills}
+          />
         </div>
-      </Container>
+      </div>
     </motion.section>
   );
 }

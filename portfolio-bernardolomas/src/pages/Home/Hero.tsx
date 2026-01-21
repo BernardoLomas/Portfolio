@@ -12,14 +12,14 @@ export default function Hero() {
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="grid gap-20 text-center lg:grid-cols-2 lg:items-center lg:justify-center lg:text-left"
+      className="grid gap-10 text-center lg:grid-cols-2 lg:items-center lg:justify-center lg:gap-20 lg:text-left"
     >
       <div className="max-w-xl space-y-8 lg:ml-auto">
         <span className="text-sm uppercase tracking-widest text-emerald-400 space-x-8">
           {t("hero.role")}
         </span>
 
-        <h1 className="text-6xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           <Trans
             i18nKey="hero.title"
             components={{
