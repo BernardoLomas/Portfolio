@@ -6,6 +6,7 @@ import Section from "../../components/layout/Section";
 import ProjectSectionCard from "./ProjectSectionCard";
 import { projectSections } from "../../data/projectDetails";
 import { useTranslation, Trans } from "react-i18next";
+import ProjectMediaCarousel from "./ProjectMediaCarousel";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
@@ -28,9 +29,7 @@ export default function ProjectDetails() {
 
               <div className="rounded-2xl border-2 border-white/10 bg-zinc-900/60 p-4">
                 <div className="w-full h-[300px] rounded-xl bg-black/40 flex items-center justify-center">
-                  <span className="text-zinc-400">
-                    {t("projects.media.placeholder")}
-                  </span>
+                  <ProjectMediaCarousel media={project.media ?? []} />
                 </div>
               </div>
 
@@ -95,7 +94,6 @@ export default function ProjectDetails() {
                   ))}
                 </ul>
               </ProjectSectionCard>
-
 
               <ProjectSectionCard
                 title={t("sections.learnings")}

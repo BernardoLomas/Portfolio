@@ -7,7 +7,7 @@ export type Project = {
   challenges: string[];
   learnings: string[];
   stack: string[];
-  media?: { type: "image" | "video"; src: string }[];
+  media?: { type: "image" | "video"; src: string, alt?: string}[];
   repo?: string;
 };
 
