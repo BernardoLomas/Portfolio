@@ -74,7 +74,7 @@ export default function ProjectDetails() {
 
                 <p className="text-zinc-300 leading-relaxed text-justify">
                   <Trans
-                    i18nKey={project.longDescription}
+                    i18nKey={t(project.longDescription)}
                     components={{
                       1: <span className="text-emerald-400 font-semibold" />
                     }}

@@ -84,8 +84,31 @@
   "projects": {
     "title": "Projetos",
     "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
-    "code": "Código"
+    "code": "Código",
+    "pigeons": {
+      "title": "Pombos",
+      "shortDescription": "Sistema completo de pedidos com foco em arquitetura escalável.",
+      "longDescription": "Projeto full-stack focado em <1>fluxo real de pedidos</1>, com backend modular e integração com banco de dados relacional.",
+  
+      "highlights": [
+        "Fluxo completo de pedidos do cliente ao admin",
+        "Dashboard administrativo com métricas",
+        "Arquitetura REST modular"
+      ],
+  
+      "challenges": [
+        "Modelagem correta das entidades",
+        "Gerenciamento de transações no banco"
+      ],
+  
+      "learnings": [
+        "Arquitetura REST avançada",
+        "Boas práticas de persistência de dados"
+      ]
+    }
   },
+
+  
 
 
 

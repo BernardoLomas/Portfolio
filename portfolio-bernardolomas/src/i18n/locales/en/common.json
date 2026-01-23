@@ -83,8 +83,31 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Selected projects showcasing my experience in full stack web developent.",
-    "code": "Code"
+    "code": "Code",
+    "pigeons": {
+      "title": "Pigeons System",
+      "shortDescription": "Complete ordering system focused on scalable architecture.",
+      "longDescription": "A full-stack project focused on <1>real-world ordering flow</1>, with modular backend and relational database integration.",
+  
+      "highlights": [
+        "Complete ordering flow from client to admin",
+        "Admin dashboard with metrics",
+        "Modular REST architecture"
+      ],
+  
+      "challenges": [
+        "Proper entity modeling",
+        "Transaction management in the database"
+      ],
+  
+      "learnings": [
+        "Advanced REST architecture",
+        "Data persistence best practices"
+      ]
+    }
   },
+
+
 
 
   "sections": {
