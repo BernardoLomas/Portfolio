@@ -27,7 +27,7 @@ export default function ProjectMediaCarousel({ media }: Props) {
     }, [emblaApi, onSelect]);
 
     return (
-        <div className="relative w-full overflow-hidden rounded-xl">
+        <div className="relative w-full overflow-hidden rounded-xl border-2 border-emerald-400/40">
             <div ref={emblaRef} className="overflow-hidden">
                 <div className="flex">
                     {media.map((item, index) => (
@@ -39,7 +39,7 @@ export default function ProjectMediaCarousel({ media }: Props) {
                                 <img
                                     src={item.src}
                                     alt={item.alt || ""}
-                                    className="w-full h-[300px] object-cover rounded-xl"
+                                    className="w-full h-[220px] sm:h-[260px] lg:h-[300px] object-cover rounded-xl"
                                     loading="lazy"
                                 />
                             ) : (
