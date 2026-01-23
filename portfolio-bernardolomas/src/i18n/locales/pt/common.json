@@ -89,6 +89,15 @@
 
 
 
+  "sections": {
+    "stack": "Tecnologias",
+    "highlights": "Destaques",
+    "challenges": "Desafios",
+    "learnings": "Aprendizados"
+  },
+
+
+
   "about": {
     "headline": "Transformando <1>lógica</1> em <1>experiências</1>: desenvolvendo <1>softwares</1> e <1>pessoas</1>",
     "p1": "Sou um <1>desenvolvedor full stack</1> com forte atuação em tecnologia e educação, unindo resolução de problemas técnicos com comunicação clara e trabalho orientado a propósito.",

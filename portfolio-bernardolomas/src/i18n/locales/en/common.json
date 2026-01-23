@@ -87,6 +87,15 @@
   },
 
 
+  "sections": {
+    "stack": "Tech Stack",
+    "highlights": "Key Highlights",
+    "challenges": "Challenges",
+    "learnings": "Learnings"
+  },
+
+
+
 
   "about": {
     "headline": "Turning <1>logic</1> into <1>experiences</1>: developing <1>software</1> and <1>people</1>",
