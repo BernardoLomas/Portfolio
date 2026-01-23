@@ -10,136 +10,8 @@
     "download": "Baixar CV"
   },
 
-  "skills": {
-    "title": "Visão Geral de Skills",
-    "subtitle": "Um resumo das habilidades que aplico em projetos reais",
-    "hardTitle": "Hard Skills",
-    "hardSubtitle": "Competências técnicas aplicadas no desenvolvimento",
-    "softTitle": "Soft Skills",
-    "softSubtitle": "Habilidades interpessoais que impulsionam a colaboração"
-  },
 
-  "about": {
-    "headline": "Transformando <1>lógica</1> em <1>experiências</1>: desenvolvendo <1>softwares</1> e <1>pessoas</1>",
-    "p1": "Sou um <1>desenvolvedor full stack</1> com forte atuação em tecnologia e educação, unindo resolução de problemas técnicos com comunicação clara e trabalho orientado a propósito.",
-    "p2": "No último ano, foquei na construção de <1>projetos acadêmicos e pessoais reais</1>, além de lecionar inglês para mais de <1>10 alunos</1>, melhorando consistentemente seu desempenho com estratégias personalizadas.",
-    "p3": "Sou movido por criar sistemas funcionais e bem estruturados e por compartilhar conhecimento que gere <1>impacto mensurável</1> tanto em software quanto em pessoas."
-  },
 
-  "aboutSections": {
-    "processTitle": "Dos fundamentos para impacto real",
-    "processSubtitle": "Meu fluxo de trabalho é composto por etapas simples.",
-    "experienceTitle": "Experience",
-    "experienceSubtitle": "Academic, professional and leadership experiences"
-  },
-
-  "hardSkills": {
-    "cleanCode": {
-      "title": "Arquiterura clean",
-      "description": "Projeto sistemas escaláveis com uma separação rigorosa de responsabilidades, garantindo a manutentabilidade e revisão buscando o melhor resultado possível."
-    },
-    "fullStackDevelopment": {
-      "title": "Desenvolvimento Full Stack",
-      "description": "Entrega de projetos de ponta a ponta utilizando diversos conjuntos de ferramentas com abordagem criativa para solucionar desafios técnicos complexos."
-    },
-    "professionalGrade": {
-      "title": "Stack e boas práticas",
-      "description": "Desenvolvo códigos robustos com TypeScript, React e NestJs. Comprometido com a excelência e boas práticas durante todo o desenvolvimento do software."
-    }
-  },
-
-  "softSkills": {
-    "communication": {
-      "title": "Inglês",
-      "description": "Proficiência avançada, permitindo trabalhar em contextos internacionais, lidar com equipes de diferentes nacionalidades e clientes ao redor do mundo."
-    },
-    "adaptability": {
-      "title": "Adaptabilidade",
-      "description": "Facilidade em dominar novas tecnologias e ferramentas em um espaço curto de tempo, além de promover o crescimento do time junto ao meu desenvolvimento."
-    },
-    "collaborative": {
-      "title": "Perfil colaborativo",
-      "description": "Sou apaixonado por colaboração interfuncional. Acredito que o trabalho em equipe e a comunicação aberta são os alicerces para a criação de softwares excepcionais."
-    }
-  },
-
-  "navbar": {
-    "links": {
-      "home": "Início",
-      "projects": "Projetos",
-      "about": "Sobre"
-    },
-    "buttons": {
-      "projects": "Projetos",
-      "about": "Sobre mim",
-      "talk": "Contato"
-    },
-    "mobile": {
-      "menu": "Menu",
-      "close": "Fechar",
-      "reachOut": "Contato"
-    }
-  },
-
-  "footer": {
-    "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir softwares em equipe.",
-    "rights": "Todos os direitos reservados",
-    "talk": "Vamos conversar"
-  },
-
-  "projects": {
-    "title": "Projetos",
-    "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
-    "code": "Código"
-  },
-
-  "process": {
-    "learn": {
-      "title": "Aprender",
-      "description": "Estudo contínuo de fundamentos de programação, arquitetura de software e tecnologias atuais."
-    },
-    "practice": {
-      "title": "Prática",
-      "description": "Praticar o aprendizado adquirido construindo softwares."
-    },
-    "results": {
-      "title": "Resultados",
-      "description": "Softwares funcionais, crescimento em aprendizado técnico e impacto real com produtos."
-    }
-  },
-
-  "metrics": {
-    "students": {
-      "label": "Alunos ensinados",
-      "description": "Pessoas impactadas através do ensino e mentoria"
-    },
-    "projects": {
-      "label": "Projetos entregues",
-      "description": "Projetos acadêmicos e pessoais concluídos"
-    },
-    "years": {
-      "label": "Anos de experiência",
-      "description": "Experiência prática em desenvolvimento de software"
-    }
-  },
-
-  "stack": {
-    "groups": {
-      "main": {
-        "title": "Stack principal",
-        "subtitle": "Tecnologias que eu trabalho em projetos reais"
-      },
-      "improving": {
-        "title": "Aprofundando",
-        "subtitle": "Tecnologias que estou buscando melhorar e me aprofundar"
-      },
-      "learning": {
-        "title": "Aprender futuramente",
-        "subtitle": "Tecnologias que pretendo aprender em um futuro próximo"
-      }
-    }
-  },
-  
   "homeExperience": {
     "title": "Experiência & Formação",
     "subtitle": "Um resumo da minha trajetória acadêmica e profissional",
@@ -160,5 +32,158 @@
       "title": "Projetos Reais",
       "description": "Aplicações full stack desenvolvidas com preocupações do mundo real."
     }
+  },
+
+
+
+  "skills": {
+    "title": "Visão Geral de Skills",
+    "subtitle": "Um resumo das habilidades que aplico em projetos reais",
+    "hardTitle": "Hard Skills",
+    "hardSubtitle": "Competências técnicas aplicadas no desenvolvimento",
+    "softTitle": "Soft Skills",
+    "softSubtitle": "Habilidades interpessoais que impulsionam a colaboração"
+  },
+
+
+
+  "hardSkills": {
+    "cleanCode": {
+      "title": "Arquiterura clean",
+      "description": "Projeto sistemas escaláveis com uma separação rigorosa de responsabilidades, garantindo a manutentabilidade e revisão buscando o melhor resultado possível."
+    },
+    "fullStackDevelopment": {
+      "title": "Desenvolvimento Full Stack",
+      "description": "Entrega de projetos de ponta a ponta utilizando diversos conjuntos de ferramentas com abordagem criativa para solucionar desafios técnicos complexos."
+    },
+    "professionalGrade": {
+      "title": "Stack e boas práticas",
+      "description": "Desenvolvo códigos robustos com TypeScript, React e NestJs. Comprometido com a excelência e boas práticas durante todo o desenvolvimento do software."
+    }
+  },
+  
+
+
+  "softSkills": {
+    "communication": {
+      "title": "Inglês",
+      "description": "Proficiência avançada, permitindo trabalhar em contextos internacionais, lidar com equipes de diferentes nacionalidades e clientes ao redor do mundo."
+    },
+    "adaptability": {
+      "title": "Adaptabilidade",
+      "description": "Facilidade em dominar novas tecnologias e ferramentas em um espaço curto de tempo, além de promover o crescimento do time junto ao meu desenvolvimento."
+    },
+    "collaborative": {
+      "title": "Perfil colaborativo",
+      "description": "Sou apaixonado por colaboração interfuncional. Acredito que o trabalho em equipe e a comunicação aberta são os alicerces para a criação de softwares excepcionais."
+    }
+  },
+
+
+
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
+    "code": "Código"
+  },
+
+
+
+  "about": {
+    "headline": "Transformando <1>lógica</1> em <1>experiências</1>: desenvolvendo <1>softwares</1> e <1>pessoas</1>",
+    "p1": "Sou um <1>desenvolvedor full stack</1> com forte atuação em tecnologia e educação, unindo resolução de problemas técnicos com comunicação clara e trabalho orientado a propósito.",
+    "p2": "No último ano, foquei na construção de <1>projetos acadêmicos e pessoais reais</1>, além de lecionar inglês para mais de <1>10 alunos</1>, melhorando consistentemente seu desempenho com estratégias personalizadas.",
+    "p3": "Sou movido por criar sistemas funcionais e bem estruturados e por compartilhar conhecimento que gere <1>impacto mensurável</1> tanto em software quanto em pessoas."
+  },
+
+
+
+
+  "aboutSections": {
+    "processTitle": "Dos fundamentos para impacto real",
+    "processSubtitle": "Meu fluxo de trabalho é composto por etapas simples.",
+    "experienceTitle": "Experience",
+    "experienceSubtitle": "Academic, professional and leadership experiences"
+  },
+  
+
+
+  "process": {
+    "learn": {
+      "title": "Aprender",
+      "description": "Estudo contínuo de fundamentos de programação, arquitetura de software e tecnologias atuais."
+    },
+    "practice": {
+      "title": "Prática",
+      "description": "Praticar o aprendizado adquirido construindo softwares."
+    },
+    "results": {
+      "title": "Resultados",
+      "description": "Softwares funcionais, crescimento em aprendizado técnico e impacto real com produtos."
+    }
+  },
+
+
+
+  "metrics": {
+    "students": {
+      "label": "Alunos ensinados",
+      "description": "Pessoas impactadas através do ensino e mentoria"
+    },
+    "projects": {
+      "label": "Projetos entregues",
+      "description": "Projetos acadêmicos e pessoais concluídos"
+    },
+    "years": {
+      "label": "Anos de experiência",
+      "description": "Experiência prática em desenvolvimento de software"
+    }
+  },
+  
+  
+
+  "stack": {
+    "groups": {
+      "main": {
+        "title": "Stack principal",
+        "subtitle": "Tecnologias que eu trabalho em projetos reais"
+      },
+      "improving": {
+        "title": "Aprofundando",
+        "subtitle": "Tecnologias que estou buscando melhorar e me aprofundar"
+      },
+      "learning": {
+        "title": "Aprender futuramente",
+        "subtitle": "Tecnologias que pretendo aprender em um futuro próximo"
+      }
+    }
+  },
+
+
+
+  "navbar": {
+    "links": {
+      "home": "Início",
+      "projects": "Projetos",
+      "about": "Sobre"
+    },
+    "buttons": {
+      "projects": "Projetos",
+      "about": "Sobre mim",
+      "talk": "Contato"
+    },
+    "mobile": {
+      "menu": "Menu",
+      "close": "Fechar",
+      "reachOut": "Contato"
+    }
+  },
+
+  
+
+  "footer": {
+    "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir softwares em equipe.",
+    "rights": "Todos os direitos reservados",
+    "talk": "Vamos conversar"
   }
 }
