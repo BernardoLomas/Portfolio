@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: Props) {
     <motion.div variants={fadeInUp}>
       <motion.div whileHover={hoverLift}>
         <Link to={`/projects/${project.slug}`} className="block h-full">
-          <Card className="flex h-full flex-col justify-between transition hover:border-emerald-400/40">
+          <Card className="flex h-full flex-col border-2 justify-between transition hover:border-emerald-400/40">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">
                 {project.title}
@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: Props) {
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full border border-white/10 px-2 py-1 text-xs text-zinc-300"
+                    className="rounded-full border-2 border-white/10 px-2 py-1 text-xs text-zinc-300"
                   >
                     {tech}
                   </span>

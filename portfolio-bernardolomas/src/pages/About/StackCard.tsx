@@ -11,7 +11,7 @@ type Props = {
 
 export default function StackCard({ item }: Props) {
   return (
-    <Card className="aspect-square flex flex-col items-center justify-center gap-4 rounded-2xl text-center transition hover:scale-[1.03]">
+    <Card className="aspect-square flex flex-col items-center justify-center gap-4 rounded-2xl border-2 text-center transition hover:scale-[1.03]">
       <img
         src={item.icon}
         alt={item.name}

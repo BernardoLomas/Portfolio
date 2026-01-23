@@ -40,7 +40,7 @@ export default function SkillsCarousel({ title, subtitle, items }: Props) {
             transition={{ duration: 0.35, ease: "easeOut" }}
             className="
               rounded-xl
-              border
+              border-2
               border-white/10
               bg-zinc-900/60
               p-6

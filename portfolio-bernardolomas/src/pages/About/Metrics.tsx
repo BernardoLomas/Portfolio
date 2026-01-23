@@ -20,7 +20,7 @@ export default function Metrics() {
           variants={fadeInUp}
           className="
             rounded-xl
-            border
+            border-2
             border-white/10
             bg-zinc-900/60
             p-6

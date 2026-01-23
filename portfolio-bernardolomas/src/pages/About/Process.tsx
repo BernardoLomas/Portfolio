@@ -40,7 +40,7 @@ export default function Process() {
               items-start
               gap-4
               rounded-xl
-              border
+              border-2
               border-white/10
               bg-zinc-900/60
               p-6

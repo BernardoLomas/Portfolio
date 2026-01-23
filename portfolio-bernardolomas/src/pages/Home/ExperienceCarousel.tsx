@@ -51,7 +51,7 @@ export default function ExperienceCarousel({
   return (
     <div className="flex flex-col items-center space-y-4">
       <div
-        className="relative h-80 w-full overflow-hidden rounded-2xl border border-white/10">
+        className="relative h-80 w-full overflow-hidden rounded-2xl border-2 border-white/10">
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.img
             key={activeIndex}
