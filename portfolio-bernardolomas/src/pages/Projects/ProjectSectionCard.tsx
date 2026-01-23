@@ -14,7 +14,7 @@ export default function ProjectSectionCard({ title, icon, children }: Props) {
       <h2 className="flex items-center gap-3 text-2xl font-semibold mb-4 text-emerald-400">
         <img
           src={icon}
-          className="w-6 h-6 opacity-80"
+          className="w-8 h-8 [filter:brightness(0)_saturate(100%)_invert(75%)_sepia(81%)_saturate(364%)_hue-rotate(83deg)]"
         />
         {t(title)}
       </h2>
