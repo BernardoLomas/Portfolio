@@ -13,61 +13,77 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
   const { t } = useTranslation();
 
+  const isFlagship = project.slug === project.type; 
+
   return (
     <motion.div variants={fadeInUp}>
       <motion.div whileHover={hoverLift}>
-        <Link to={`/projects/${project.slug}`} className="block h-full">
-          <Card className="flex h-full flex-col border-2 justify-between transition hover:border-emerald-400/40">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold">
-                {project.title}
-              </h3>
+        <Card
+          className={`
+            relative
+            flex
+            h-full
+            flex-col
+            justify-between
+            border-2
+            transition
+            hover:border-emerald-400/40
+            ${isFlagship ? "border-emerald-400/40" : "border-white/10"}
+          `}
+        >
 
-              <p className="text-sm text-zinc-300">
-                {project.shortDescription}
-              </p>
+          {isFlagship && (
+            <span className="
+              absolute
+              -top-3
+              right-4
+              rounded-full
+              bg-emerald-400
+              px-3
+              py-1
+              text-xs
+              font-semibold
+              text-black
+            ">
+              Flagship
+            </span>
+          )}
 
-              <div className="flex flex-wrap gap-2">
-                {project.stack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-full border-2 border-white/10 px-2 py-1 text-xs text-zinc-300"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+          
+          <Link to={`/projects/${project.slug}`} className="block flex-1 space-y-4">
+            <h3 className="text-xl font-semibold">
+              {t(project.title)}
+            </h3>
+            <p className="text-sm text-zinc-300">
+              {t(project.shortDescription)}
+            </p>
+
+            <div className="flex flex-wrap gap-2 pt-2">
+              {project.stack.slice(0, 4).map((tech) => (
+                <span
+                  key={tech}
+                  className="text-xs px-2 py-1 rounded bg-emerald-400/20 text-emerald-400">
+                  {tech}
+                </span>
+              ))}
             </div>
+          </Link>
 
-            <div className="mt-6 flex gap-3">
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <Button variant="outline">
-                    {t("projects.code")}
-                  </Button>
-                </a>
-              )}
-
-              {project.liveUrl && (
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <Button variant="primary">
-                    Live
-                  </Button>
-                </a>
-              )}
-            </div>
-          </Card>
-        </Link>
+          <div className="mt-6 flex gap-3">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Button variant="outline">
+                  {t("projects.code")}
+                </Button>
+              </a>
+            )}
+          </div>
+        </Card>
       </motion.div>
     </motion.div>
   );

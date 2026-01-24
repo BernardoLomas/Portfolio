@@ -1,14 +1,27 @@
+export type ProjectType = "flagship" | "fullstack" | "backend" | "frontend" | "academic";
+
 export type Project = {
   slug: string;
+  type: ProjectType;
   title: string;
   shortDescription: string;
   longDescription: string;
   stack: string[];
+  
+  backend?: {
+    api: string;
+    database: string;
+    orm?: string;
+    auth?: string;
+    hosting?: string;
+  };
+
   media: {
     type: "image" | "video";
     src: string;
     alt?: string;
   }[];
+
   highlights: string[];
   challenges: string[];
   learnings: string[];
@@ -16,10 +29,10 @@ export type Project = {
   liveUrl?: string;
 };
 
-
 export const projects: Project[] = [
   {
     slug: "pigeons",
+    type: "flagship",
 
     title: "projects.pigeons.title",
     shortDescription: "projects.pigeons.shortDescription",
@@ -27,28 +40,33 @@ export const projects: Project[] = [
 
     stack: ["Node.js", "NestJS", "PostgreSQL", "Prisma"],
 
+    backend: {
+      api: "REST (NestJS)",
+      database: "PostgreSQL",
+      orm: "Prisma",
+      auth: "JWT + Refresh Tokens",
+      hosting: "Render",
+    },
+
     media: [
       { type: "image", src: "/projects/pigeons/dashboard.png" },
       { type: "image", src: "/projects/pigeons/list.png" },
       { type: "image", src: "/projects/pigeons/details.png" },
-      { type: "video", src: "/projects/pigeons/demo.mp4" }
+      { type: "video", src: "/projects/pigeons/demo.mp4" },
     ],
 
     highlights: [
       "projects.pigeons.highlights.0",
-      "projects.pigeons.highlights.1"
+      "projects.pigeons.highlights.1",
     ],
 
     challenges: [
       "projects.pigeons.challenges.0",
-      "projects.pigeons.challenges.1"
+      "projects.pigeons.challenges.1",
     ],
 
-    learnings: [
-      "projects.pigeons.learnings.0",
-      "projects.pigeons.learnings.1"
-    ],
+    learnings: ["projects.pigeons.learnings.0", "projects.pigeons.learnings.1"],
 
-    githubUrl: "https://github.com/bernardolomas/pigeons"
-  }
+    githubUrl: "https://github.com/bernardolomas/pigeons",
+  },
 ];

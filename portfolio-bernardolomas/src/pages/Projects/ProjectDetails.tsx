@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
+import { useTranslation, Trans } from "react-i18next";
+import { projectSections } from "../../data/projectDetails";
 import Seo from "../../components/seo/Seo";
 import Container from "../../components/layout/Container";
 import Section from "../../components/layout/Section";
 import ProjectSectionCard from "./ProjectSectionCard";
-import { projectSections } from "../../data/projectDetails";
-import { useTranslation, Trans } from "react-i18next";
 import ProjectMediaCarousel from "./ProjectMediaCarousel";
+import BackendOverview from "./BackendOverview";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
@@ -46,6 +47,8 @@ export default function ProjectDetails() {
                   ))}
                 </ul>
               </ProjectSectionCard>
+
+              <BackendOverview project={project} />
 
               <ProjectSectionCard
                 title={t("sections.highlights")}
