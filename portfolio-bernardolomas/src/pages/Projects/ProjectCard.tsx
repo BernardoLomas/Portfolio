@@ -40,9 +40,9 @@ export default function ProjectCard({ project }: Props) {
             </div>
 
             <div className="mt-6 flex gap-3">
-              {project.github && (
+              {project.githubUrl && (
                 <a
-                  href={project.github}
+                  href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
@@ -53,9 +53,9 @@ export default function ProjectCard({ project }: Props) {
                 </a>
               )}
 
-              {project.live && (
+              {project.liveUrl && (
                 <a
-                  href={project.live}
+                  href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}

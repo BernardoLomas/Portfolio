@@ -24,9 +24,7 @@ export default function ProjectDetails() {
       <Section variant="first">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-
             <div className="space-y-10">
-
               <div className="rounded-2xl border-2 border-white/10 bg-zinc-900/60 p-4">
                 <div className="w-full h-[300px] rounded-xl bg-black/40 flex items-center justify-center">
                   <ProjectMediaCarousel media={project.media ?? []} />
@@ -41,7 +39,7 @@ export default function ProjectDetails() {
                   {project.stack.map((tech) => (
                     <li
                       key={tech}
-                      className="rounded-lg border-2 border-white/10 bg-zinc-950/60 px-3 py-1 text-sm transition hover:border-emerald-400/40"
+                      className="rounded-lg border-2 border-white/10 bg-zinc-950/60 px-6 py-1 text-md transition hover:border-emerald-400/40"
                     >
                       {tech}
                     </li>
@@ -65,7 +63,6 @@ export default function ProjectDetails() {
             </div>
 
             <div className="space-y-10">
-
               <div className="rounded-2xl border-2 border-white/10 bg-zinc-900/60 p-8">
                 <h1 className="text-4xl font-bold text-emerald-400 mb-4">
                   {t(project.title)}
@@ -75,7 +72,7 @@ export default function ProjectDetails() {
                   <Trans
                     i18nKey={t(project.longDescription)}
                     components={{
-                      1: <span className="text-emerald-400 font-semibold" />
+                      1: <span className="text-emerald-400 font-semibold" />,
                     }}
                   />
                 </p>
