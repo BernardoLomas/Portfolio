@@ -10,8 +10,6 @@
     "download": "Baixar CV"
   },
 
-
-
   "homeExperience": {
     "title": "Experiência & Formação",
     "subtitle": "Um resumo da minha trajetória acadêmica e profissional",
@@ -34,8 +32,6 @@
     }
   },
 
-
-
   "skills": {
     "title": "Visão Geral de Skills",
     "subtitle": "Um resumo das habilidades que aplico em projetos reais",
@@ -44,8 +40,6 @@
     "softTitle": "Soft Skills",
     "softSubtitle": "Habilidades interpessoais que impulsionam a colaboração"
   },
-
-
 
   "hardSkills": {
     "cleanCode": {
@@ -61,8 +55,6 @@
       "description": "Desenvolvo códigos robustos com TypeScript, React e NestJs. Comprometido com a excelência e boas práticas durante todo o desenvolvimento do software."
     }
   },
-  
-
 
   "softSkills": {
     "communication": {
@@ -79,8 +71,6 @@
     }
   },
 
-
-
   "projects": {
     "title": "Projetos",
     "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
@@ -89,28 +79,24 @@
       "title": "Pombos",
       "shortDescription": "Sistema completo de pedidos com foco em arquitetura escalável.",
       "longDescription": "Projeto full-stack focado em <1>fluxo real de pedidos</1>, com backend modular e integração com banco de dados relacional.",
-  
+
       "highlights": [
         "Fluxo completo de pedidos do cliente ao admin",
         "Dashboard administrativo com métricas",
         "Arquitetura REST modular"
       ],
-  
+
       "challenges": [
         "Modelagem correta das entidades",
         "Gerenciamento de transações no banco"
       ],
-  
+
       "learnings": [
         "Arquitetura REST avançada",
         "Boas práticas de persistência de dados"
       ]
     }
   },
-
-  
-
-
 
   "sections": {
     "stack": "Tecnologias",
@@ -119,8 +105,6 @@
     "learnings": "Aprendizados"
   },
 
-
-
   "about": {
     "headline": "Transformando <1>lógica</1> em <1>experiências</1>: desenvolvendo <1>softwares</1> e <1>pessoas</1>",
     "p1": "Sou um <1>desenvolvedor full stack</1> com forte atuação em tecnologia e educação, unindo resolução de problemas técnicos com comunicação clara e trabalho orientado a propósito.",
@@ -128,17 +112,12 @@
     "p3": "Sou movido por criar sistemas funcionais e bem estruturados e por compartilhar conhecimento que gere <1>impacto mensurável</1> tanto em software quanto em pessoas."
   },
 
-
-
-
   "aboutSections": {
     "processTitle": "Dos fundamentos para impacto real",
     "processSubtitle": "Meu fluxo de trabalho é composto por etapas simples.",
     "experienceTitle": "Experience",
     "experienceSubtitle": "Academic, professional and leadership experiences"
   },
-  
-
 
   "process": {
     "learn": {
@@ -155,8 +134,6 @@
     }
   },
 
-
-
   "metrics": {
     "students": {
       "label": "Alunos ensinados",
@@ -171,8 +148,6 @@
       "description": "Experiência prática em desenvolvimento de software"
     }
   },
-  
-  
 
   "stack": {
     "groups": {
@@ -190,8 +165,6 @@
       }
     }
   },
-
-
 
   "navbar": {
     "links": {
@@ -211,11 +184,20 @@
     }
   },
 
-  
-
   "footer": {
     "about": "Estou sempre disposto para discutir projetos, ideias criativas e oportunidades de construir softwares em equipe.",
     "rights": "Todos os direitos reservados",
     "talk": "Vamos conversar"
+  },
+
+  "seo": {
+    "home": {
+      "title": "Desenvolvedor Full Stack",
+      "description": "Desenvolvedor full stack com foco em backend, APIs e arquitetura escalável."
+    },
+    "projects": {
+      "title": "Projetos",
+      "description": "Projetos full stack com foco em backend, APIs e arquitetura escalável."
+    }
   }
 }

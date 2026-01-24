@@ -9,8 +9,6 @@
     "download": "Download CV"
   },
 
-
-
   "homeExperience": {
     "title": "Experience & Background",
     "subtitle": "A snapshot of my academic and professional journey",
@@ -33,8 +31,6 @@
     }
   },
 
-
-
   "skills": {
     "title": "Skills Overview",
     "subtitle": "A quick look at the skills I apply in real-world projects",
@@ -43,8 +39,6 @@
     "softTitle": "Soft Skills",
     "softSubtitle": "Interpersonal skills that drive collaboration"
   },
-
-
 
   "hardSkills": {
     "cleanCode": {
@@ -61,8 +55,6 @@
     }
   },
 
-
-
   "softSkills": {
     "communication": {
       "title": "Global Communication (English)",
@@ -78,8 +70,6 @@
     }
   },
 
-
-
   "projects": {
     "title": "Projects",
     "subtitle": "Selected projects showcasing my experience in full stack web developent.",
@@ -88,27 +78,24 @@
       "title": "Pigeons System",
       "shortDescription": "Complete ordering system focused on scalable architecture.",
       "longDescription": "A full-stack project focused on <1>real-world ordering flow</1>, with modular backend and relational database integration.",
-  
+
       "highlights": [
         "Complete ordering flow from client to admin",
         "Admin dashboard with metrics",
         "Modular REST architecture"
       ],
-  
+
       "challenges": [
         "Proper entity modeling",
         "Transaction management in the database"
       ],
-  
+
       "learnings": [
         "Advanced REST architecture",
         "Data persistence best practices"
       ]
     }
   },
-
-
-
 
   "sections": {
     "stack": "Tech Stack",
@@ -117,9 +104,6 @@
     "learnings": "Learnings"
   },
 
-
-
-
   "about": {
     "headline": "Turning <1>logic</1> into <1>experiences</1>: developing <1>software</1> and <1>people</1>",
     "p1": "I'm a <1>full stack software developer</1> with a strong background in both technology and education, combining technical problem-solving with clear communication and purpose-driven work.",
@@ -127,16 +111,12 @@
     "p3": "I'm driven by building functional, well-structured systems and sharing knowledge that creates <1>measurable impact</1> both in software and in people."
   },
 
-
-
   "aboutSections": {
     "processTitle": "From fundation to real impact",
     "processSubtitle": "My workflow is guided by a simple and effective cycle.",
     "experienceTitle": "Experience",
     "experienceSubtitle": "Academic, professional and leadership experiences"
   },
-
-
 
   "process": {
     "learn": {
@@ -153,8 +133,6 @@
     }
   },
 
-
-
   "metrics": {
     "students": {
       "label": "Students taught",
@@ -169,8 +147,6 @@
       "description": "Hands-on experience in software development"
     }
   },
-
-
 
   "stack": {
     "groups": {
@@ -188,8 +164,6 @@
       }
     }
   },
-
-
 
   "navbar": {
     "links": {
@@ -209,11 +183,20 @@
     }
   },
 
-  
-
   "footer": {
     "about": "I'm always open to discussing new projects, creative ideas or opportunities to build impactful software together.",
     "rights": "All rights reserved.",
     "talk": "Let's Talk"
+  },
+
+  "seo": {
+    "home": {
+      "title": "Full Stack Developer",
+      "description": "Full stack developer focused on backend-heavy architecture, APIs and scalable systems."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "Full stack projects focused on backend architecture, APIs and scalable systems."
+    }
   }
 }

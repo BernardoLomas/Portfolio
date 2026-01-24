@@ -18,8 +18,9 @@ export default function ProjectDetails() {
   return (
     <>
       <Seo
-        title={`${t(project.title)} | Bernardo Lomas`}
+        title={t(project.title)}
         description={t(project.shortDescription)}
+        url={`https://bernardolomas.dev/projects/${project.slug}`}
       />
 
       <Section variant="first">
