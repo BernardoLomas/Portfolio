@@ -74,6 +74,8 @@
     "title": "Projects",
     "subtitle": "Selected projects showcasing my experience in full stack web developent.",
     "code": "Code",
+    "backend": "Backend",
+
     "pigeons": {
       "title": "Pigeons System",
       "shortDescription": "Complete ordering system focused on scalable architecture.",

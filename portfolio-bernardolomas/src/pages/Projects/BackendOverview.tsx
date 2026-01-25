@@ -13,7 +13,7 @@ export default function BackendOverview({ project }: Props) {
 
   return (
     <ProjectSectionCard
-      title={t("sections.backend")}
+      title={t("projects.backend")}
       icon="/icons/backend.svg"
     >
       <ul className="space-y-2 text-zinc-300">
