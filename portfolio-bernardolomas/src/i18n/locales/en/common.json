@@ -96,6 +96,13 @@
         "Advanced REST architecture",
         "Data persistence best practices"
       ]
+    },
+
+    "poc": {
+      "title": "Bernardo Lomas Watches",
+      "shortDescription": "A full-stack e-commerce application for watches was developed as a technical challenge.",
+      "longDescription": "This is a full-stack e-commerce application for watches, developed as a technical challenge. The main focus was delivering clean code, a scalable architecture, and a fluid and responsive user experience (UX). The project simulates the complete watch purchase flow, from browsing the catalog to finalizing the order. It was designed following best practices in modern software development."
+      
     }
   },
 

@@ -1,4 +1,9 @@
-export type ProjectType = "flagship" | "fullstack" | "backend" | "frontend" | "academic";
+export type ProjectType =
+  | "flagship"
+  | "fullstack"
+  | "backend"
+  | "frontend"
+  | "academic";
 
 export type Project = {
   slug: string;
@@ -7,7 +12,7 @@ export type Project = {
   shortDescription: string;
   longDescription: string;
   stack: string[];
-  
+
   backend?: {
     api: string;
     database: string;
@@ -68,5 +73,45 @@ export const projects: Project[] = [
     learnings: ["projects.pigeons.learnings.0", "projects.pigeons.learnings.1"],
 
     githubUrl: "https://github.com/bernardolomas/pigeons",
+  },
+
+  {
+    slug: "poc",
+    type: "fullstack",
+
+    title: "projects.poc.title",
+    shortDescription: "projects.poc.shortDescription",
+    longDescription: "projects.poc.longDescription",
+
+    stack: ["TypeScript", "React.js", "Node.js", "Prisma"],
+
+    backend: {
+      api: "REST (Express)",
+      database: "Prisma",
+    },
+
+    media: [
+      { type: "image", src: "/projects/poc/dashboard.png" },
+      { type: "image", src: "/projects/poc/list.png" },
+      { type: "image", src: "/projects/poc/details.png" },
+      { type: "video", src: "/projects/poc/demo.mp4" },
+    ],
+
+    highlights: [
+      "projects.poc.highlights.0",
+      "projects.poc.highlights.1",
+    ],
+
+    challenges: [
+      "projects.poc.challenges.0",
+      "projects.poc.challenges.1",
+    ],
+
+    learnings: [
+      "projects.poc.learnings.0", 
+      "projects.poc.learnings.1",
+    ],
+
+    githubUrl: "https://github.com/BernardoLomas/POC-OrderSystem.git",
   },
 ];
