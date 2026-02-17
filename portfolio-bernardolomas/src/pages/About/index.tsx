@@ -6,11 +6,18 @@ import Metrics from "./Metrics";
 import Process from "./Process";
 import Stack from "./Stack";
 import Video from "./Video";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <Seo title="About | Bernardo Lomas" description="More about my history" />
+      <Seo
+        title={t("seo.about.title")}
+        description={t("seo.about.description")}
+        url="https://bernardolomas.dev/about"
+      />
 
       <Section variant="first">
         <Container>

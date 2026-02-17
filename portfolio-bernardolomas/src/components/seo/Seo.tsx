@@ -11,11 +11,16 @@ interface Props {
 export default function Seo({
   title,
   description,
-  image = "/og-image.png",
-  url = "https://bernardolomas.dev"
+  image = "https://bernardolomas.dev/og.png",
+  url,
 }: Props) {
   const { i18n } = useTranslation();
-  const lang = i18n.language;
+  const lang = i18n.language.slice(0, 2);
+  const pageUrl =
+    url ??
+    (typeof window !== "undefined"
+      ? window.location.href
+      : "https://bernardolomas.dev");
 
   const fullTitle = `${title} | Bernardo Lomas`;
 
@@ -24,14 +29,12 @@ export default function Seo({
       <html lang={lang} />
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
-      <link rel="alternate" hrefLang="en" href={`${url}/en`} />
-      <link rel="alternate" hrefLang="pt" href={`${url}/pt`} />
+      <link rel="canonical" href={pageUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
-      <meta property="og:url" content={url} />
+      <meta property="og:url" content={pageUrl} />
       <meta property="og:locale" content={lang === "pt" ? "pt_BR" : "en_US"} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
