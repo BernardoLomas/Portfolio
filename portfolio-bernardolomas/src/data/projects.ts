@@ -36,46 +36,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "pigeons",
-    type: "flagship",
-
-    title: "projects.pigeons.title",
-    shortDescription: "projects.pigeons.shortDescription",
-    longDescription: "projects.pigeons.longDescription",
-
-    stack: ["Node.js", "NestJS", "PostgreSQL", "Prisma"],
-
-    backend: {
-      api: "REST (NestJS)",
-      database: "PostgreSQL",
-      orm: "Prisma",
-      auth: "JWT + Refresh Tokens",
-      hosting: "Render",
-    },
-
-    media: [
-      { type: "image", src: "/projects/pigeons/dashboard.png" },
-      { type: "image", src: "/projects/pigeons/list.png" },
-      { type: "image", src: "/projects/pigeons/details.png" },
-      { type: "video", src: "/projects/pigeons/demo.mp4" },
-    ],
-
-    highlights: [
-      "projects.pigeons.highlights.0",
-      "projects.pigeons.highlights.1",
-    ],
-
-    challenges: [
-      "projects.pigeons.challenges.0",
-      "projects.pigeons.challenges.1",
-    ],
-
-    learnings: ["projects.pigeons.learnings.0", "projects.pigeons.learnings.1"],
-
-    githubUrl: "https://github.com/bernardolomas/pigeons",
-  },
-
-  {
     slug: "poc",
     type: "fullstack",
 
@@ -86,7 +46,7 @@ export const projects: Project[] = [
     stack: ["TypeScript", "React.js", "Node.js", "Prisma"],
 
     backend: {
-      api: "REST (Express)",
+      api: "REST",
       database: "Prisma",
     },
 

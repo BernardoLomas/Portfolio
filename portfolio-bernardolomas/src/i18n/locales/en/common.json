@@ -70,41 +70,62 @@
     }
   },
 
+
+
+
+
+
+
+
+
+
   "projects": {
     "title": "Projects",
     "subtitle": "Selected projects showcasing my experience in full stack web developent.",
     "code": "Code",
     "backend": "Backend",
 
-    "pigeons": {
-      "title": "Pigeons System",
-      "shortDescription": "Complete ordering system focused on scalable architecture.",
-      "longDescription": "A full-stack project focused on <1>real-world ordering flow</1>, with modular backend and relational database integration.",
+    "poc": {
+      "title": "Bernardo Lomas Watches",
+      "shortDescription": "Full-stack watch e-commerce application focused on scalable architecture and clean code.",
+      "longDescription": "Full-stack project simulating a <1>real-world online purchase flow</1>, from product catalog to checkout, featuring a modular backend, Swagger documentation, and data persistence using Prisma/SQLite.",
 
       "highlights": [
-        "Complete ordering flow from client to admin",
-        "Admin dashboard with metrics",
-        "Modular REST architecture"
+        "Dynamic product catalog consuming a REST API",
+        "Shopping cart with quantity validation",
+        "Complete simulated checkout flow",
+        "API documentation with Swagger (OpenAPI)",
+        "Layered architecture following the SRP principle"
       ],
 
       "challenges": [
-        "Proper entity modeling",
-        "Transaction management in the database"
+        "Designing a well-structured layered backend architecture",
+        "Managing global state correctly using Context API",
+        "Ensuring full responsiveness across mobile and desktop",
+        "Maintaining commit standardization using Conventional Commits"
       ],
 
       "learnings": [
-        "Advanced REST architecture",
-        "Data persistence best practices"
+        "Clear separation of responsibilities (SRP)",
+        "End-to-end frontend-backend integration",
+        "Data modeling using Prisma ORM",
+        "Scalable and maintainable full-stack project organization"
       ]
-    },
-
-    "poc": {
-      "title": "Bernardo Lomas Watches",
-      "shortDescription": "A full-stack e-commerce application for watches was developed as a technical challenge.",
-      "longDescription": "This is a full-stack e-commerce application for watches, developed as a technical challenge. The main focus was delivering clean code, a scalable architecture, and a fluid and responsive user experience (UX). The project simulates the complete watch purchase flow, from browsing the catalog to finalizing the order. It was designed following best practices in modern software development."
-      
     }
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   "sections": {
     "stack": "Tech Stack",

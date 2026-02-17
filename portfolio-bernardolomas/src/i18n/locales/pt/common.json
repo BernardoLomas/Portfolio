@@ -75,25 +75,32 @@
     "title": "Projetos",
     "subtitle": "Projetos que demonstram minhas habiliades em desenvolvimento de software",
     "code": "Código",
-    "pigeons": {
-      "title": "Pombos",
-      "shortDescription": "Sistema completo de pedidos com foco em arquitetura escalável.",
-      "longDescription": "Projeto full-stack focado em <1>fluxo real de pedidos</1>, com backend modular e integração com banco de dados relacional.",
+
+    "poc": {
+      "title": "Bernardo Lomas Watches",
+      "shortDescription": "Aplicação full-stack de e-commerce de relógios com foco em arquitetura escalável e código limpo.",
+      "longDescription": "Projeto full-stack simulando um <1>fluxo real de compra online</1>, desde o catálogo até o checkout, com backend modular, documentação Swagger e persistência via Prisma/SQLite.",
 
       "highlights": [
-        "Fluxo completo de pedidos do cliente ao admin",
-        "Dashboard administrativo com métricas",
-        "Arquitetura REST modular"
+        "Catálogo dinâmico consumindo API REST",
+        "Carrinho de compras com validação de quantidade",
+        "Fluxo completo de checkout simulado",
+        "Documentação da API com Swagger (OpenAPI)",
+        "Arquitetura em camadas seguindo SRP"
       ],
 
       "challenges": [
-        "Modelagem correta das entidades",
-        "Gerenciamento de transações no banco"
+        "Organização da arquitetura backend em camadas bem definidas",
+        "Gerenciamento correto do estado global com Context API",
+        "Garantir responsividade entre mobile e desktop",
+        "Padronização de commits seguindo Conventional Commits"
       ],
 
       "learnings": [
-        "Arquitetura REST avançada",
-        "Boas práticas de persistência de dados"
+        "Separação clara de responsabilidades (SRP)",
+        "Integração frontend-backend em fluxo completo de pedido",
+        "Modelagem de dados com Prisma ORM",
+        "Boas práticas de organização e escalabilidade em projetos full-stack"
       ]
     }
   },

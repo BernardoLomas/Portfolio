@@ -13,7 +13,7 @@ export default function Video() {
         "
       >
         <video
-          src="/videos/coding.mp4"
+          src=""
           autoPlay
           loop
           muted
