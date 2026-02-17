@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bernardolomas.dev/sitemap.xml
+Sitemap: https://bernardolomasdev.com.br/sitemap.xml
