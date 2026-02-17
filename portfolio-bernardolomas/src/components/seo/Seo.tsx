@@ -11,7 +11,7 @@ interface Props {
 export default function Seo({
   title,
   description,
-  image = "https://bernardolomas.dev/og.png",
+  image = "https://bernardolomasdev.com.br/og.png",
   url,
 }: Props) {
   const { i18n } = useTranslation();
@@ -20,7 +20,7 @@ export default function Seo({
     url ??
     (typeof window !== "undefined"
       ? window.location.href
-      : "https://bernardolomas.dev");
+      : "https://bernardolomasdev.com.br");
 
   const fullTitle = `${title} | Bernardo Lomas`;
 
