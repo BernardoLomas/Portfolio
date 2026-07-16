@@ -11,8 +11,10 @@ export default function Navbar() {
   const { t } = useTranslation();
   const links = [
     { label: t("navbar.links.home"), to: "/" },
+    { label: t("navbar.links.sap"), to: "/sap-abap" },
+    { label: t("navbar.links.english"), to: "/english-teacher" },
+    { label: t("navbar.links.web"), to: "/web-development" },
     { label: t("navbar.links.projects"), to: "/projects" },
-    { label: t("navbar.links.about"), to: "/about" },
   ];
   
   return (

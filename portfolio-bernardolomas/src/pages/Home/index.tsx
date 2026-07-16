@@ -4,6 +4,7 @@ import Section from "../../components/layout/Section";
 import Hero from "./Hero";
 import Highlights from "./Highlights";
 import Experience from "./Experience";
+import LandingCards from "./LandingCards";
 import { useTranslation } from "react-i18next";
 
 export default function Home() {
@@ -19,6 +20,12 @@ export default function Home() {
       <Section variant="first">
         <Container>
           <Hero />
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <LandingCards />
         </Container>
       </Section>
 
