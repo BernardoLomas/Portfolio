@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bernardolomasdev.com.br/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://bernardolomasdev.com.br/projects</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bernardolomasdev.com.br/about</loc>
-    <priority>0.8</priority>
-  </url>
+<url><loc>https://bernardolomasdev.com.br/</loc></url><url><loc>https://bernardolomasdev.com.br/projects</loc></url><url><loc>https://bernardolomasdev.com.br/projects/api-orders</loc></url><url><loc>https://bernardolomasdev.com.br/projects/poc</loc></url><url><loc>https://bernardolomasdev.com.br/about</loc></url>
+<url><loc>https://bernardolomasdev.com.br/pt</loc></url><url><loc>https://bernardolomasdev.com.br/pt/projects</loc></url><url><loc>https://bernardolomasdev.com.br/pt/projects/api-orders</loc></url><url><loc>https://bernardolomasdev.com.br/pt/projects/poc</loc></url><url><loc>https://bernardolomasdev.com.br/pt/about</loc></url>
 </urlset>

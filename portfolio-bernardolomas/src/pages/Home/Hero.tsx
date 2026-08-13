@@ -1,70 +1,67 @@
-import { motion } from "framer-motion";
-import { fadeInUp } from "../../components/motion/motion.presets";
-import { useTranslation, Trans } from "react-i18next";
-import HeroImage from "./HeroImage";
-import Button from "../../components/ui/Button";
-
+import { useTranslation } from "react-i18next";
+import Container from "../../components/layout/Container";
+import Section from "../../components/layout/Section";
+import { SOCIAL_LINKS, localizedPath } from "../../config/site";
+import { useLocale } from "../../hooks/useLocale";
+import { Link } from "react-router-dom";
 export default function Hero() {
   const { t } = useTranslation();
-
+  const locale = useLocale();
   return (
-    <motion.section
-      variants={fadeInUp}
-      initial="hidden"
-      animate="visible"
-      className="grid gap-10 text-center lg:grid-cols-2 lg:items-center lg:justify-center lg:gap-20 lg:text-left"
-    >
-      <div className="max-w-xl space-y-8 lg:ml-auto">
-        <span className="text-sm uppercase tracking-widest text-emerald-400 space-x-8">
-          {t("hero.role")}
-        </span>
-
-        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-          <Trans
-            i18nKey="hero.title"
-            components={{
-              1: <span className="text-emerald-400" />,
-            }}
-          />
-        </h1>
-
-        <p className="text-base font-semibold text-zinc-300 sm:text-lg">
-          <Trans
-            i18nKey="hero.description"
-            components={{
-              1: <span className="text-emerald-400" />,
-            }}
-          />
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
-          <Button to="/projects" variant="primary">
-            {t("hero.projects")}
-          </Button>
-
-          <Button to="/about">
-            {t("hero.about")}
-          </Button>
-
-          <a
-            href="https://www.linkedin.com/in/bernardolomas/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center  px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
-          >
-            {t("hero.contact")}
-          </a>
-
-          <a
-            href="/cv/Bernardo_Lomas_CV.pdf"
-            download
-            className="inline-flex items-center justify-center  px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
-          >
-            {t("hero.download")}
-          </a>
+    <Section variant="first">
+      <Container>
+        <div className="grid items-center gap-10 lg:grid-cols-[1.25fr_.75fr]">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[.18em] text-emerald-400">
+              {t("hero.eyebrow")}
+            </p>
+            <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
+              {t("hero.title")}
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
+              {t("hero.description")}
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                className="rounded-xl bg-white px-5 py-3 text-sm font-bold text-black"
+                to={localizedPath("/projects", locale)}
+              >
+                {t("hero.projects")}
+              </Link>
+              <Link
+                className="rounded-xl border border-white/15 px-5 py-3 text-sm font-bold"
+                to={localizedPath("/about", locale)}
+              >
+                {t("hero.about")}
+              </Link>
+              <a
+                className="rounded-xl border border-white/15 px-5 py-3 text-sm font-bold"
+                href={SOCIAL_LINKS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("hero.reach")}
+              </a>
+              <a
+                className="rounded-xl border border-emerald-400/30 px-5 py-3 text-sm font-bold text-emerald-300"
+                href={SOCIAL_LINKS.resume}
+              >
+                {t("hero.resume")}
+              </a>
+            </div>
+          </div>
+          <div className="mx-auto max-w-sm">
+            <img
+              src="/images/FotoProfi.jpeg"
+              alt={t("hero.photo")}
+              width="600"
+              height="600"
+              fetchPriority="high"
+              className="aspect-square rounded-3xl border border-emerald-400/30 object-cover shadow-2xl shadow-emerald-950"
+            />
+          </div>
         </div>
-      </div>
-      <HeroImage />
-    </motion.section>
+      </Container>
+    </Section>
   );
 }
