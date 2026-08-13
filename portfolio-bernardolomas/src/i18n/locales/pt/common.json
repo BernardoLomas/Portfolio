@@ -12,7 +12,7 @@
   },
   "hero": {
     "eyebrow": "Desenvolvedor de Software Júnior | Backend",
-    "title": "Construindo soluções backend e software corporativo.",
+    "title": "Construindo soluções <accent>backend</accent> e <accent>software corporativo</accent>.",
     "description": "Sou Bernardo Lomas, estudante de Sistemas de Informação e <strong>Desenvolvedor de Software Júnior</strong>, com experiência profissional no desenvolvimento de software corporativo com <strong>SAP ABAP</strong>. Também desenvolvo projetos backend com <strong>C#/.NET</strong>, APIs REST, bancos de dados relacionais e testes automatizados.",
     "projects": "Projetos",
     "about": "Sobre mim",
@@ -22,7 +22,7 @@
   },
   "featured": {
     "eyebrow": "Trabalhos selecionados",
-    "title": "Projetos selecionados",
+    "title": "Projetos <accent>selecionados</accent>",
     "description": "Uma seleção compacta de projetos que demonstram meu desenvolvimento técnico.",
     "all": "Ver todos os projetos"
   },
@@ -45,7 +45,7 @@
   },
   "experience": {
     "eyebrow": "Trajetória profissional",
-    "title": "Experiência e Formação",
+    "title": "Experiência e <accent>Formação</accent>",
     "description": "Conheça os marcos que constroem minha atuação em desenvolvimento de software.",
     "professional": "Profissional",
     "academic": "Acadêmico",
@@ -56,14 +56,15 @@
   },
   "about": {
     "eyebrow": "Sobre",
-    "title": "Desenvolvedor de Software Júnior focado em backend e evolução contínua.",
+    "title": "Desenvolvedor de Software Júnior focado em <accent>backend</accent> e evolução contínua.",
+    "photoAlt": "Bernardo Lomas no Cristo Redentor",
     "intro1": "Sou estudante de Sistemas de Informação e <strong>Desenvolvedor de Software Júnior</strong> na SEIDOR, onde trabalho com <strong>SAP ABAP</strong> e sistemas corporativos. Fora da atuação profissional com SAP, desenvolvo minha base em backend com <strong>C#/.NET</strong>, APIs, bancos de dados relacionais e testes automatizados.",
     "intro2": "A experiência como professor de inglês fortaleceu minha comunicação profissional e a capacidade de explicar ideias complexas com clareza. Como monitor de Desenvolvimento de Aplicações Web, também consolido meu aprendizado técnico ao compartilhar conhecimento.",
     "foundation": "Base Técnica",
     "foundationDescription": "Tecnologias e práticas de engenharia agrupadas pelo contexto em que as utilizo e estudo.",
-    "technologies": "Tecnologias",
+    "technologies": "<accent>Tecnologias</accent>",
     "technologiesDescription": "Tecnologias que utilizo em trabalhos profissionais, acadêmicos e projetos pessoais.",
-    "engineering": "Competências de Engenharia",
+    "engineering": "Competências de <accent>Engenharia</accent>",
     "engineeringDescription": "Conceitos e práticas de engenharia de software que apoiam meu desenvolvimento backend."
   },
   "caseStudy": {
@@ -93,7 +94,6 @@
     "resume": "Currículo",
     "social": "Perfis profissionais",
     "photo": "Retrato de Bernardo Lomas",
-    "linkedin": "Ver LinkedIn",
     "copyright": "Copyright"
   },
   "notFound": {

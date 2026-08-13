@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import Hero from "./Hero";
 import Seo from "../../components/seo/Seo";
 import Section from "../../components/layout/Section";
@@ -43,39 +43,25 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
             <SectionHeading
               eyebrow={t("featured.eyebrow")}
-              title={t("featured.title")}
+              title={
+                <Trans
+                  i18nKey="featured.title"
+                  components={{ accent: <span className="text-emerald-300" /> }}
+                />
+              }
               description={t("featured.description")}
             />
             <Button to={localizedPath("/projects", locale)}>
               {t("featured.all")}
             </Button>
           </div>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:max-w-5xl">
-            {projects.slice(0, 2).map((project) => (
+          <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.slice(0, 3).map((project) => (
               <ProjectCard key={project.slug} project={project} compact />
             ))}
           </div>
         </Container>
       </Section>
     </>
-  );
-}
-function Header({
-  eyebrow,
-  title,
-  description,
-}: {
-  eyebrow: string;
-  title: string;
-  description: string;
-}) {
-  return (
-    <div className="max-w-3xl">
-      <p className="text-sm font-bold uppercase tracking-widest text-emerald-400">
-        {eyebrow}
-      </p>
-      <h2 className="mt-3 text-3xl font-bold sm:text-4xl">{title}</h2>
-      <p className="mt-3 leading-7 text-zinc-400">{description}</p>
-    </div>
   );
 }
