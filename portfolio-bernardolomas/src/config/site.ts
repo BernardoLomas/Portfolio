@@ -4,7 +4,7 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/bernardolomas/",
   github: "https://github.com/BernardoLomas",
   email: "mailto:bernardo.lomasb@gmail.com",
-  resume: "/cv/Bernardo_Lomas_CV.pdf",
+  resume: "/cv/Currículo-BernardoLomas.pdf",
 } as const;
 
 export const localizedPath = (path: string, locale: "en" | "pt") => {
