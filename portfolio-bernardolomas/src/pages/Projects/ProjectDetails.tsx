@@ -169,3 +169,33 @@ export default function ProjectDetails() {
     </>
   );
 }
+function Block({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <article className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
+      <h2 className="text-2xl font-bold text-emerald-300">{title}</h2>
+      <div className="mt-4 leading-7 text-zinc-300">{children}</div>
+    </article>
+  );
+}
+function List({ title, items }: { title: string; items: string[] }) {
+  return (
+    <Block title={title}>
+      <ul className="space-y-3">
+        {items.map((x) => (
+          <li key={x} className="flex gap-3">
+            <span aria-hidden="true" className="text-emerald-400">
+              ▹
+            </span>
+            <span>{x}</span>
+          </li>
+        ))}
+      </ul>
+    </Block>
+  );
+}

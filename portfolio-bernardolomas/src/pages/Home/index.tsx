@@ -60,3 +60,22 @@ export default function Home() {
     </>
   );
 }
+function Header({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow: string;
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="max-w-3xl">
+      <p className="text-sm font-bold uppercase tracking-widest text-emerald-400">
+        {eyebrow}
+      </p>
+      <h2 className="mt-3 text-3xl font-bold sm:text-4xl">{title}</h2>
+      <p className="mt-3 leading-7 text-zinc-400">{description}</p>
+    </div>
+  );
+}
