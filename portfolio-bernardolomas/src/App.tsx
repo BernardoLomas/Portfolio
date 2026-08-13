@@ -1,13 +1,12 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./components/layout/AppLayout";
-import ProjectDetails from "./pages/Projects/ProjectDetails";
-
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import ProjectDetails from "./pages/Projects/ProjectDetails";
 import About from "./pages/About";
-import LandingPage from "./pages/Landing";
+import NotFound from "./pages/NotFound";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,11 +15,13 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetails />} />
           <Route path="/about" element={<About />} />
-          <Route path="/:slug" element={<LandingPage />} />
+          <Route path="/pt" element={<Home />} />
+          <Route path="/pt/projects" element={<Projects />} />
+          <Route path="/pt/projects/:slug" element={<ProjectDetails />} />
+          <Route path="/pt/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;

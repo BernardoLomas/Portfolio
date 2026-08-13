@@ -27,3 +27,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+:focus-visible { outline: 2px solid #34d399; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+
+.icon-button {
+  @apply inline-flex h-11 w-11 items-center justify-center rounded-xl border-2 border-white/15 bg-zinc-900/60 text-zinc-200 transition duration-200 hover:-translate-y-0.5 hover:border-emerald-400/50 hover:text-emerald-300 motion-reduce:transform-none;
+}
+.chip { @apply rounded-full px-2.5 py-1 text-xs font-semibold; }
+.emerald-icon { filter: brightness(0) saturate(100%) invert(75%) sepia(81%) saturate(364%) hue-rotate(83deg); }
+@keyframes content-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.journey-enter { animation: content-enter 220ms ease-out; }
+@media (prefers-reduced-motion: reduce) { .journey-enter { animation: none; } }

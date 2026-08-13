@@ -1,112 +1,101 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import Container from "../layout/Container";
-import LanguageSwitcher from "../ui/Switcher";
+import { useEffect, useRef, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
-
+import Container from "../layout/Container";
+import { SOCIAL_LINKS, localizedPath } from "../../config/site";
+import { useLocale } from "../../hooks/useLocale";
+import Button from "../ui/Button";
+import Icon from "../ui/Icon";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const first = useRef<HTMLAnchorElement>(null);
   const { t } = useTranslation();
-  const links = [
-    { label: t("navbar.links.home"), to: "/" },
-    { label: t("navbar.links.sap"), to: "/sap-abap" },
-    { label: t("navbar.links.english"), to: "/english-teacher" },
-    { label: t("navbar.links.web"), to: "/web-development" },
-    { label: t("navbar.links.projects"), to: "/projects" },
-  ];
-  
+  const locale = useLocale();
+  const { pathname } = useLocation();
+  const paths = ["/", "/projects", "/about"];
+  useEffect(() => {
+    if (open) first.current?.focus();
+  }, [open]);
+  const links = paths.map((path, i) => ({
+    to: localizedPath(path, locale),
+    label: t(["nav.home", "nav.projects", "nav.about"][i]),
+  }));
+  const navigation = (mobile = false) =>
+    links.map((link, i) => (
+      <NavLink
+        ref={mobile && i === 0 ? first : undefined}
+        key={link.to}
+        to={link.to}
+        onClick={() => setOpen(false)}
+        className={({ isActive }) =>
+          `rounded px-2 py-1 font-semibold transition ${isActive ? "text-emerald-400" : "text-zinc-300 hover:text-white"}`
+        }
+      >
+        {link.label}
+      </NavLink>
+    ));
   return (
-    <>
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/70 backdrop-blur">
-        <Container>
-          <nav className="flex h-16 items-center justify-between">
-            <LanguageSwitcher />
-
-            <div className="flex hidden items-center gap-8 md:flex">
-              {links.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  className={({ isActive }) =>
-                    `text-md font-semibold transition ${
-                      isActive
-                        ? "text-emerald-400"
-                        : "text-zinc-300 hover:text-white"
-                    }`
-                  }
-                >
-                  {link.label}
-                </NavLink>
-              ))}
-            </div>
-
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/85 backdrop-blur">
+      <Container>
+        <nav
+          aria-label={t("nav.navigationLabel")}
+          className="grid h-16 grid-cols-[1fr_auto] items-center md:grid-cols-3"
+        >
+          <div>
+            <NavLink
+              aria-label={t("nav.language")}
+              to={localizedPath(pathname, locale === "en" ? "pt" : "en")}
+              className="inline-flex rounded-lg border-2 border-white/15 px-3 py-2 text-sm font-bold transition hover:border-emerald-400/50"
+            >
+              {locale === "en" ? "PT" : "EN"}
+            </NavLink>
+          </div>
+          <div className="hidden items-center justify-center gap-7 md:flex">
+            {navigation()}
+          </div>
+          <div className="flex justify-end gap-2">
             <div className="hidden md:block">
-              <a
-                href="https://www.linkedin.com/in/bernardolomas/"
+              <Button
+                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white/10 bg-zinc-900/60 transition hover:border-emerald-400/40"
               >
-                {t("navbar.buttons.talk")}
-              </a>
+                {t("nav.reach")}
+              </Button>
             </div>
-
             <button
-              onClick={() => setOpen(true)}
-              className="md:hidden text-sm font-semibold"
+              type="button"
+              aria-expanded={open}
+              aria-controls="mobile-navigation"
+              aria-label={open ? t("nav.close") : t("nav.menu")}
+              onClick={() => setOpen(!open)}
+              className="icon-button md:hidden"
             >
-              {t("navbar.mobile.menu")}
+              <Icon name={open ? "close" : "menu"} />
             </button>
-          </nav>
-        </Container>
-      </header>
-
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-zinc-950"
+          </div>
+        </nav>
+      </Container>
+      {open && (
+        <div
+          id="mobile-navigation"
+          className="border-t border-white/10 bg-zinc-950 px-6 py-6 md:hidden"
+        >
+          <nav
+            aria-label={t("nav.mobileNavigationLabel")}
+            className="flex flex-col gap-5"
           >
-            <motion.div
-              initial={{ y: 20 }}
-              animate={{ y: 0 }}
-              exit={{ y: 20 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-              className="flex h-full flex-col items-center justify-center gap-10"
+            {navigation(true)}
+            <Button
+              href={SOCIAL_LINKS.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <button
-                onClick={() => setOpen(false)}
-                className="absolute top-6 right-6 text-sm text-zinc-400"
-              >
-                {t("navbar.mobile.close")}
-              </button>
-
-              {links.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  onClick={() => setOpen(false)}
-                  className="text-2xl font-semibold"
-                >
-                  {link.label}
-                </NavLink>
-              ))}
-
-              <a
-                href="https://www.linkedin.com/in/bernardolomas/"
-                target="_blank"
-                className="inline-flex items-center justify-center rounded-md border border-white/50 px-6 py-3 text-sm font-semibold transition hover:border-emerald-400/40"
-              >
-                {t("navbar.mobile.reachOut")}
-              </a>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </>
+              {t("nav.reach")}
+            </Button>
+          </nav>
+        </div>
+      )}
+    </header>
   );
 }
