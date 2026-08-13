@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Container from "../layout/Container";
 import { SOCIAL_LINKS } from "../../config/site";
-import Button from "../ui/Button";
 export default function Footer() {
   const { t } = useTranslation();
   const links = [
@@ -70,18 +69,10 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="lg:max-w-sm">
             <p className="text-left text-sm leading-7 text-zinc-300 md:text-justify">
               {t("footer.about")}
             </p>
-            <Button
-              href={SOCIAL_LINKS.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5"
-            >
-              {t("footer.linkedin")}
-            </Button>
           </div>
         </div>
         <div className="border-t border-white/10 py-5 text-center text-xs text-zinc-500">

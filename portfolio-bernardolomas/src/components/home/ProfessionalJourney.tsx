@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useState, type CSSProperties } from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { experiences } from "../../data/experience";
 import { useLocale } from "../../hooks/useLocale";
 import Card from "../ui/Card";
@@ -16,11 +16,29 @@ export default function ProfessionalJourney() {
     <div>
       <SectionHeading
         eyebrow={t("experience.eyebrow")}
-        title={t("experience.title")}
+        title={
+          <Trans
+            i18nKey="experience.title"
+            components={{ accent: <span className="text-emerald-300" /> }}
+          />
+        }
         description={t("experience.description")}
       />
-      <div className="mt-10 overflow-x-auto pb-3">
-        <div className="relative flex min-w-[620px] justify-between px-4 before:absolute before:left-10 before:right-10 before:top-3 before:h-0.5 before:bg-white/15">
+      <div className="mt-8 overflow-x-auto px-1 pb-4 pt-4">
+        <div
+          className="relative flex min-w-[620px] justify-between px-4"
+          style={
+            {
+              "--journey-progress": `${experiences.length > 1 ? (active / (experiences.length - 1)) * 100 : 0}%`,
+            } as CSSProperties
+          }
+        >
+          <div
+            aria-hidden="true"
+            className="absolute left-20 right-20 top-3 h-0.5 overflow-hidden rounded-full bg-white/15"
+          >
+            <span className="journey-progress block h-full w-[var(--journey-progress)] rounded-full bg-emerald-400" />
+          </div>
           {experiences.map((entry, index) => (
             <button
               key={`${entry.organization.en}-${index}`}
@@ -31,7 +49,7 @@ export default function ProfessionalJourney() {
               className="group relative z-10 flex w-32 flex-col items-center gap-3 text-center"
             >
               <span
-                className={`h-6 w-6 rounded-full border-4 border-zinc-950 transition ${active === index ? "bg-emerald-400 ring-4 ring-emerald-400/20" : "bg-zinc-600 group-hover:bg-emerald-500"}`}
+                className={`h-6 w-6 rounded-full border-4 border-zinc-950 transition duration-300 ${active >= index ? "bg-emerald-400" : "bg-zinc-600 group-hover:bg-emerald-500"} ${active === index ? "-translate-y-0.5 ring-4 ring-emerald-400/20 shadow-lg shadow-emerald-500/30 motion-reduce:transform-none" : "group-hover:-translate-y-0.5 motion-reduce:transform-none"}`}
               />
               <span
                 className={`text-sm font-semibold ${active === index ? "text-emerald-300" : "text-zinc-400"}`}

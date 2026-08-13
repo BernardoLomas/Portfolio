@@ -17,7 +17,10 @@ export default function Hero() {
               {t("hero.eyebrow")}
             </p>
             <h1 className="mt-5 max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
-              {t("hero.title")}
+              <Trans
+                i18nKey="hero.title"
+                components={{ accent: <span className="text-emerald-300" /> }}
+              />
             </h1>
             <p className="mt-6 max-w-3xl text-left text-lg leading-8 text-zinc-300 md:text-justify">
               <Trans

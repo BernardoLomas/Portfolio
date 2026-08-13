@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import Seo from "../../components/seo/Seo";
 import Section from "../../components/layout/Section";
@@ -10,6 +11,7 @@ import Card from "../../components/ui/Card";
 export default function About() {
   const { t } = useTranslation();
   const locale = useLocale();
+  const [photoAvailable, setPhotoAvailable] = useState(true);
   return (
     <>
       <Seo
@@ -19,25 +21,45 @@ export default function About() {
       />
       <Section variant="first">
         <Container>
-          <div className="max-w-4xl">
-            <p className="text-sm font-bold uppercase tracking-widest text-emerald-400">
-              {t("about.eyebrow")}
-            </p>
-            <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-              {t("about.title")}
-            </h1>
-            <div className="mt-7 space-y-4 text-left text-lg leading-8 text-zinc-300 md:text-justify">
-              <p>
-                <Trans
-                  i18nKey="about.intro1"
-                  components={{
-                    strong: (
-                      <strong className="font-semibold text-emerald-300" />
-                    ),
-                  }}
-                />
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,.65fr)] lg:gap-14">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-widest text-emerald-400">
+                {t("about.eyebrow")}
               </p>
-              <p>{t("about.intro2")}</p>
+              <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+                <Trans
+                  i18nKey="about.title"
+                  components={{ accent: <span className="text-emerald-300" /> }}
+                />
+              </h1>
+              <div className="mt-7 space-y-4 text-left text-lg leading-8 text-zinc-300 md:text-justify">
+                <p>
+                  <Trans
+                    i18nKey="about.intro1"
+                    components={{
+                      strong: (
+                        <strong className="font-semibold text-emerald-300" />
+                      ),
+                    }}
+                  />
+                </p>
+                <p>{t("about.intro2")}</p>
+              </div>
+            </div>
+            <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border-2 border-emerald-400/35 bg-zinc-900 shadow-2xl shadow-emerald-950/70">
+              {photoAvailable && (
+                <img
+                  src="/images/about-personal.webp"
+                  alt={t("about.photoAlt")}
+                  width="640"
+                  height="800"
+                  onError={() => setPhotoAvailable(false)}
+                  className="h-full w-full object-cover object-center"
+                />
+              )}
+              {!photoAvailable && (
+                <div aria-hidden="true" className="h-full w-full bg-zinc-900" />
+              )}
             </div>
           </div>
         </Container>
@@ -46,7 +68,12 @@ export default function About() {
         <Container>
           <SectionHeading
             eyebrow={t("about.foundation")}
-            title={t("about.technologies")}
+            title={
+              <Trans
+                i18nKey="about.technologies"
+                components={{ accent: <span className="text-emerald-300" /> }}
+              />
+            }
             description={t("about.technologiesDescription")}
           />
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -60,7 +87,12 @@ export default function About() {
         <Container>
           <SectionHeading
             eyebrow={t("about.foundation")}
-            title={t("about.engineering")}
+            title={
+              <Trans
+                i18nKey="about.engineering"
+                components={{ accent: <span className="text-emerald-300" /> }}
+              />
+            }
             description={t("about.engineeringDescription")}
           />
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

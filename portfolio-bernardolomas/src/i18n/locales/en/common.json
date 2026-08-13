@@ -12,7 +12,7 @@
   },
   "hero": {
     "eyebrow": "Junior Software Developer | Backend",
-    "title": "Building reliable backend and enterprise software.",
+    "title": "Building reliable <accent>backend</accent> and <accent>enterprise software</accent>.",
     "description": "I'm Bernardo Lomas, an Information Systems student and <strong>Junior Software Developer</strong> with professional experience developing enterprise software with <strong>SAP ABAP</strong>. I also build backend projects with <strong>C#/.NET</strong>, REST APIs, relational databases and automated testing.",
     "projects": "Projects",
     "about": "About me",
@@ -22,7 +22,7 @@
   },
   "featured": {
     "eyebrow": "Selected work",
-    "title": "Selected Projects",
+    "title": "Selected <accent>Projects</accent>",
     "description": "A compact selection of projects that demonstrate my technical development.",
     "all": "View all projects"
   },
@@ -45,7 +45,7 @@
   },
   "experience": {
     "eyebrow": "Professional journey",
-    "title": "Experience and Education",
+    "title": "Experience and <accent>Education</accent>",
     "description": "Explore the milestones that shape my work in software development.",
     "professional": "Professional",
     "academic": "Academic",
@@ -56,14 +56,15 @@
   },
   "about": {
     "eyebrow": "About",
-    "title": "Junior Software Developer focused on backend development and continuous growth.",
+    "title": "Junior Software Developer focused on <accent>backend development</accent> and continuous growth.",
+    "photoAlt": "Bernardo Lomas at Cristo Redentor",
     "intro1": "I am an Information Systems student and <strong>Junior Software Developer</strong> at SEIDOR, working with <strong>SAP ABAP</strong> and enterprise systems. Outside my professional SAP work, I build backend foundations with <strong>C#/.NET</strong>, APIs, relational databases and automated tests.",
     "intro2": "Teaching English strengthened my professional communication and my ability to explain complex ideas clearly. As a Teaching Assistant in Web Application Development, I also reinforce technical learning through knowledge sharing.",
     "foundation": "Technical Foundation",
     "foundationDescription": "Technologies and engineering practices grouped by the context in which I use and study them.",
-    "technologies": "Technologies",
+    "technologies": "<accent>Technologies</accent>",
     "technologiesDescription": "Technologies I use across professional, academic and personal software work.",
-    "engineering": "Engineering Skills",
+    "engineering": "Engineering <accent>Skills</accent>",
     "engineeringDescription": "Software engineering concepts and practices that support my backend development."
   },
   "caseStudy": {
@@ -93,7 +94,6 @@
     "resume": "Resume",
     "social": "Social profiles",
     "photo": "Portrait of Bernardo Lomas",
-    "linkedin": "View LinkedIn",
     "copyright": "Copyright"
   },
   "notFound": {
