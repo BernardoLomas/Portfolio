@@ -6,12 +6,14 @@
     "reach": "Entre em contato",
     "menu": "Abrir menu de navegação",
     "close": "Fechar menu de navegação",
-    "language": "Mudar para inglês"
+    "language": "Mudar para inglês",
+    "navigationLabel": "Navegação principal",
+    "mobileNavigationLabel": "Navegação móvel"
   },
   "hero": {
-    "eyebrow": "Desenvolvedor de Software Júnior • Backend",
-    "title": "Construindo software backend e empresarial confiável.",
-    "description": "Sou Bernardo Lomas, estudante de Sistemas de Informação e Desenvolvedor de Software Júnior. Trabalho profissionalmente com SAP ABAP e sistemas empresariais, enquanto desenvolvo projetos backend com C#/.NET, APIs REST, SQL e testes automatizados.",
+    "eyebrow": "Desenvolvedor de Software Júnior | Backend",
+    "title": "Construindo soluções backend e software corporativo.",
+    "description": "Sou Bernardo Lomas, estudante de Sistemas de Informação e <strong>Desenvolvedor de Software Júnior</strong>, com experiência profissional no desenvolvimento de software corporativo com <strong>SAP ABAP</strong>. Também desenvolvo projetos backend com <strong>C#/.NET</strong>, APIs REST, bancos de dados relacionais e testes automatizados.",
     "projects": "Projetos",
     "about": "Sobre mim",
     "reach": "Entre em contato",
@@ -20,8 +22,8 @@
   },
   "featured": {
     "eyebrow": "Trabalhos selecionados",
-    "title": "Projetos em destaque",
-    "description": "Projetos práticos nos quais desenvolvo e documento fundamentos de engenharia de software.",
+    "title": "Projetos selecionados",
+    "description": "Uma seleção compacta de projetos que demonstram meu desenvolvimento técnico.",
     "all": "Ver todos os projetos"
   },
   "projects": {
@@ -38,30 +40,31 @@
       "backend": "Backend",
       "web": "Web",
       "academic": "Acadêmico"
-    }
+    },
+    "filtersLabel": "Filtros de projetos"
   },
   "experience": {
-    "eyebrow": "Base profissional",
+    "eyebrow": "Trajetória profissional",
     "title": "Experiência e Formação",
-    "description": "Desenvolvimento empresarial, prática acadêmica e ensino em uma única trajetória profissional.",
+    "description": "Conheça os marcos que constroem minha atuação em desenvolvimento de software.",
     "professional": "Profissional",
     "academic": "Acadêmico",
     "teaching": "Ensino",
-    "periodPending": "Data a confirmar"
-  },
-  "cta": {
-    "title": "Vamos conversar.",
-    "description": "Conheça meu código ou entre em contato sobre oportunidades júnior em backend e desenvolvimento de software.",
-    "linkedin": "LinkedIn",
-    "email": "E-mail"
+    "previous": "Marco anterior",
+    "next": "Próximo marco",
+    "select": "Selecionar marco profissional"
   },
   "about": {
     "eyebrow": "Sobre",
-    "title": "Desenvolvedor de Software focado em backend e evolução contínua.",
-    "intro1": "Sou estudante de Sistemas de Informação e Desenvolvedor de Software Júnior na SEIDOR, onde trabalho com SAP ABAP e sistemas empresariais. Fora do trabalho profissional com SAP, desenvolvo fundamentos de backend com C#/.NET, APIs, bancos de dados relacionais e testes automatizados.",
-    "intro2": "Ensinar inglês fortaleceu minha comunicação profissional e minha capacidade de explicar ideias complexas com clareza. Como monitor de Desenvolvimento de Aplicações Web, também consolido o aprendizado técnico por meio do compartilhamento de conhecimento.",
+    "title": "Desenvolvedor de Software Júnior focado em backend e evolução contínua.",
+    "intro1": "Sou estudante de Sistemas de Informação e <strong>Desenvolvedor de Software Júnior</strong> na SEIDOR, onde trabalho com <strong>SAP ABAP</strong> e sistemas corporativos. Fora da atuação profissional com SAP, desenvolvo minha base em backend com <strong>C#/.NET</strong>, APIs, bancos de dados relacionais e testes automatizados.",
+    "intro2": "A experiência como professor de inglês fortaleceu minha comunicação profissional e a capacidade de explicar ideias complexas com clareza. Como monitor de Desenvolvimento de Aplicações Web, também consolido meu aprendizado técnico ao compartilhar conhecimento.",
     "foundation": "Base Técnica",
-    "foundationDescription": "Tecnologias e práticas de engenharia agrupadas pelo contexto em que as utilizo e estudo."
+    "foundationDescription": "Tecnologias e práticas de engenharia agrupadas pelo contexto em que as utilizo e estudo.",
+    "technologies": "Tecnologias",
+    "technologiesDescription": "Tecnologias que utilizo em trabalhos profissionais, acadêmicos e projetos pessoais.",
+    "engineering": "Competências de Engenharia",
+    "engineeringDescription": "Conceitos e práticas de engenharia de software que apoiam meu desenvolvimento backend."
   },
   "caseStudy": {
     "context": "Contexto / Problema",
@@ -77,13 +80,21 @@
     "persistence": "Persistência",
     "authentication": "Autenticação",
     "testing": "Testes",
-    "architecture": "Arquitetura"
+    "architecture": "Arquitetura",
+    "overview": "Visão Geral do Projeto",
+    "breakdown": "Detalhamento Técnico",
+    "notes": "Notas de Engenharia",
+    "tabsLabel": "Seções das notas de engenharia"
   },
   "footer": {
     "about": "Desenvolvedor de Software Júnior focado em backend, com experiência profissional em SAP ABAP e projetos em C#/.NET.",
     "links": "Conecte-se",
     "rights": "Todos os direitos reservados.",
-    "resume": "Currículo"
+    "resume": "Currículo",
+    "social": "Perfis profissionais",
+    "photo": "Retrato de Bernardo Lomas",
+    "linkedin": "Ver LinkedIn",
+    "copyright": "Copyright"
   },
   "notFound": {
     "title": "Página não encontrada",
@@ -100,7 +111,7 @@
       "description": "Projetos backend e de software de Bernardo Lomas, incluindo estudos em C#/.NET e trabalhos acadêmicos full stack."
     },
     "about": {
-      "title": "Sobre | Bernardo Lomas — Desenvolvedor de Software Júnior",
+      "title": "Sobre | Bernardo Lomas, Desenvolvedor de Software Júnior",
       "description": "Sobre Bernardo Lomas, estudante de Sistemas de Informação e Desenvolvedor de Software Júnior focado em backend e software empresarial."
     }
   }

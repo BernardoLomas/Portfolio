@@ -6,12 +6,14 @@
     "reach": "Reach out",
     "menu": "Open navigation menu",
     "close": "Close navigation menu",
-    "language": "Switch to Portuguese"
+    "language": "Switch to Portuguese",
+    "navigationLabel": "Primary navigation",
+    "mobileNavigationLabel": "Mobile navigation"
   },
   "hero": {
-    "eyebrow": "Junior Software Developer • Backend",
+    "eyebrow": "Junior Software Developer | Backend",
     "title": "Building reliable backend and enterprise software.",
-    "description": "I'm Bernardo Lomas, an Information Systems student and Junior Software Developer. I work professionally with SAP ABAP and enterprise systems while building backend projects with C#/.NET, REST APIs, SQL and automated testing.",
+    "description": "I'm Bernardo Lomas, an Information Systems student and <strong>Junior Software Developer</strong> with professional experience developing enterprise software with <strong>SAP ABAP</strong>. I also build backend projects with <strong>C#/.NET</strong>, REST APIs, relational databases and automated testing.",
     "projects": "Projects",
     "about": "About me",
     "reach": "Reach out",
@@ -20,8 +22,8 @@
   },
   "featured": {
     "eyebrow": "Selected work",
-    "title": "Featured Projects",
-    "description": "Practical projects where I develop and document software engineering fundamentals.",
+    "title": "Selected Projects",
+    "description": "A compact selection of projects that demonstrate my technical development.",
     "all": "View all projects"
   },
   "projects": {
@@ -38,30 +40,31 @@
       "backend": "Backend",
       "web": "Web",
       "academic": "Academic"
-    }
+    },
+    "filtersLabel": "Project filters"
   },
   "experience": {
-    "eyebrow": "Professional foundation",
-    "title": "Experience & Education",
-    "description": "Enterprise development, academic practice, and teaching experience in one professional path.",
+    "eyebrow": "Professional journey",
+    "title": "Experience and Education",
+    "description": "Explore the milestones that shape my work in software development.",
     "professional": "Professional",
     "academic": "Academic",
     "teaching": "Teaching",
-    "periodPending": "Date to be confirmed"
-  },
-  "cta": {
-    "title": "Let’s connect.",
-    "description": "Explore my code or contact me about junior backend and software development opportunities.",
-    "linkedin": "LinkedIn",
-    "email": "Email"
+    "previous": "Previous milestone",
+    "next": "Next milestone",
+    "select": "Select professional milestone"
   },
   "about": {
     "eyebrow": "About",
-    "title": "Software Developer focused on backend engineering and continuous growth.",
-    "intro1": "I am an Information Systems student and Junior Software Developer at SEIDOR, where I work with SAP ABAP and enterprise systems. Outside my professional SAP work, I develop backend foundations with C#/.NET, APIs, relational databases, and automated tests.",
-    "intro2": "Teaching English strengthened my professional communication and ability to explain complex ideas clearly. As a Teaching Assistant in Web Application Development, I also reinforce technical learning through knowledge sharing.",
+    "title": "Junior Software Developer focused on backend development and continuous growth.",
+    "intro1": "I am an Information Systems student and <strong>Junior Software Developer</strong> at SEIDOR, working with <strong>SAP ABAP</strong> and enterprise systems. Outside my professional SAP work, I build backend foundations with <strong>C#/.NET</strong>, APIs, relational databases and automated tests.",
+    "intro2": "Teaching English strengthened my professional communication and my ability to explain complex ideas clearly. As a Teaching Assistant in Web Application Development, I also reinforce technical learning through knowledge sharing.",
     "foundation": "Technical Foundation",
-    "foundationDescription": "Technologies and engineering practices grouped by the context in which I use and study them."
+    "foundationDescription": "Technologies and engineering practices grouped by the context in which I use and study them.",
+    "technologies": "Technologies",
+    "technologiesDescription": "Technologies I use across professional, academic and personal software work.",
+    "engineering": "Engineering Skills",
+    "engineeringDescription": "Software engineering concepts and practices that support my backend development."
   },
   "caseStudy": {
     "context": "Context / Problem",
@@ -77,13 +80,21 @@
     "persistence": "Persistence",
     "authentication": "Authentication",
     "testing": "Testing",
-    "architecture": "Architecture"
+    "architecture": "Architecture",
+    "overview": "Project Overview",
+    "breakdown": "Technical Breakdown",
+    "notes": "Engineering Notes",
+    "tabsLabel": "Engineering note sections"
   },
   "footer": {
     "about": "Junior Software Developer focused on backend engineering, with professional SAP ABAP experience and C#/.NET projects.",
     "links": "Connect",
     "rights": "All rights reserved.",
-    "resume": "Resume"
+    "resume": "Resume",
+    "social": "Social profiles",
+    "photo": "Portrait of Bernardo Lomas",
+    "linkedin": "View LinkedIn",
+    "copyright": "Copyright"
   },
   "notFound": {
     "title": "Page not found",
@@ -100,7 +111,7 @@
       "description": "Backend and software projects by Bernardo Lomas, including C#/.NET learning projects and full-stack academic work."
     },
     "about": {
-      "title": "About | Bernardo Lomas — Junior Software Developer",
+      "title": "About | Bernardo Lomas, Junior Software Developer",
       "description": "About Bernardo Lomas, an Information Systems student and Junior Software Developer focused on backend engineering and enterprise software."
     }
   }

@@ -4,7 +4,8 @@ export type Experience = {
   category: "professional" | "academic" | "teaching";
   period?: string;
   role: Localized;
-  organization: string;
+  organization: Localized;
+  label: Localized;
   description: Localized;
   points: Record<Locale, string[]>;
 };
@@ -16,7 +17,8 @@ export const experiences: Experience[] = [
       en: "Junior SAP ABAP Developer",
       pt: "Desenvolvedor SAP ABAP Júnior",
     },
-    organization: "SEIDOR",
+    organization: { en: "SEIDOR", pt: "SEIDOR" },
+    label: { en: "SEIDOR", pt: "SEIDOR" },
     description: {
       en: "Professional enterprise software development in the SAP ecosystem.",
       pt: "Desenvolvimento profissional de software empresarial no ecossistema SAP.",
@@ -39,7 +41,8 @@ export const experiences: Experience[] = [
   {
     category: "academic",
     role: { en: "Information Systems", pt: "Sistemas de Informação" },
-    organization: "PUC Minas",
+    organization: { en: "PUC Minas", pt: "PUC Minas" },
+    label: { en: "PUC Minas", pt: "PUC Minas" },
     description: {
       en: "Degree studies that build a foundation in software development and engineering.",
       pt: "Graduação que desenvolve uma base em desenvolvimento e engenharia de software.",
@@ -58,10 +61,11 @@ export const experiences: Experience[] = [
   {
     category: "academic",
     role: {
-      en: "Teaching Assistant — Web Application Development",
-      pt: "Monitor — Desenvolvimento de Aplicações Web",
+      en: "Teaching Assistant , Web Application Development",
+      pt: "Monitor , Desenvolvimento de Aplicações Web",
     },
-    organization: "PUC Minas",
+    organization: { en: "PUC Minas", pt: "PUC Minas" },
+    label: { en: "Teaching Assistant", pt: "Monitoria" },
     description: {
       en: "Supports student learning across backend and frontend web development.",
       pt: "Apoia o aprendizado de estudantes em desenvolvimento web backend e frontend.",
@@ -80,7 +84,8 @@ export const experiences: Experience[] = [
   {
     category: "teaching",
     role: { en: "English Teacher", pt: "Professor de Inglês" },
-    organization: "Independent",
+    organization: { en: "Independent", pt: "Autônomo" },
+    label: { en: "English Teaching", pt: "Ensino de Inglês" },
     description: {
       en: "Teaching experience that developed clear professional communication and presentation skills.",
       pt: "Experiência de ensino que desenvolveu comunicação profissional clara e capacidade de apresentação.",

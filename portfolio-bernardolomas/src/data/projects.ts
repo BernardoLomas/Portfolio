@@ -11,7 +11,7 @@ export type Project = {
   summary: Localized;
   context: Localized;
   approach: Localized;
-  stack: string[];
+  stack: Localized[];
   media: { src: string; alt: Localized }[];
   backend?: Partial<
     Record<
@@ -21,7 +21,7 @@ export type Project = {
       | "authentication"
       | "testing"
       | "architecture",
-      string
+      string | Localized
     >
   >;
   highlights: Record<Locale, string[]>;
@@ -50,7 +50,15 @@ export const projects: Project[] = [
       en: "The solution is being developed in C# and .NET with domain modeling, object-oriented design, business rules, layered responsibilities, and dependency injection as its learning goals. Only capabilities currently evidenced by the public project are described here.",
       pt: "A solução está sendo desenvolvida em C# e .NET, tendo modelagem de domínio, orientação a objetos, regras de negócio, responsabilidades em camadas e injeção de dependência como objetivos de aprendizado. Apenas capacidades evidenciadas pelo projeto público são descritas aqui.",
     },
-    stack: ["C#", ".NET", "OOP", "Dependency Injection"],
+    stack: [
+      { en: "C#", pt: "C#" },
+      { en: ".NET", pt: ".NET" },
+      {
+        en: "Object-Oriented Programming",
+        pt: "Programação Orientada a Objetos",
+      },
+      { en: "Dependency Injection", pt: "Injeção de Dependência" },
+    ],
     media: [
       {
         src: "/projects/api-orders-architecture.svg",
@@ -60,7 +68,12 @@ export const projects: Project[] = [
         },
       },
     ],
-    backend: { architecture: "Layered responsibilities (in development)" },
+    backend: {
+      architecture: {
+        en: "Layered responsibilities (in development)",
+        pt: "Responsabilidades em camadas (em desenvolvimento)",
+      },
+    },
     highlights: {
       en: [
         "Models an enterprise purchase-order domain",
@@ -111,7 +124,12 @@ export const projects: Project[] = [
       en: "It combines a React and TypeScript interface with a Node.js backend and Prisma, preserving its original full-stack scope.",
       pt: "Combina uma interface em React e TypeScript com backend Node.js e Prisma, preservando seu escopo full stack original.",
     },
-    stack: ["TypeScript", "React", "Node.js", "Prisma"],
+    stack: [
+      { en: "TypeScript", pt: "TypeScript" },
+      { en: "React", pt: "React" },
+      { en: "Node.js", pt: "Node.js" },
+      { en: "Prisma", pt: "Prisma" },
+    ],
     media: [
       {
         src: "/projects/poc-architecture.svg",

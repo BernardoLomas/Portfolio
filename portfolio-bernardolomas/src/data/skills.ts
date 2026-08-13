@@ -1,56 +1,23 @@
-export const skillGroups = [
-  {
-    key: "backend",
-    title: { en: "Backend", pt: "Backend" },
-    items: [
-      "C#",
-      ".NET",
-      "REST APIs",
-      "Object-Oriented Programming",
-      "Layered Architecture",
-      "Dependency Injection",
-    ],
-  },
-  {
-    key: "databases",
-    title: { en: "Databases", pt: "Bancos de Dados" },
-    items: [
-      "SQL",
-      "Relational Databases",
-      "Data Modeling",
-      "Normalization",
-      "Transactions / ACID",
-    ],
-  },
-  {
-    key: "sap",
-    title: { en: "Enterprise / SAP", pt: "Empresarial / SAP" },
-    items: [
-      "SAP ABAP",
-      "ABAP Objects",
-      "SAP S/4HANA",
-      "ABAP Unit",
-      "Debugging",
-      "Integrations",
-    ],
-  },
-  {
-    key: "engineering",
-    title: { en: "Testing & Engineering", pt: "Testes e Engenharia" },
-    items: [
-      "xUnit",
-      "ABAP Unit",
-      "Test Doubles",
-      "Git",
-      "Azure DevOps",
-      "SOLID",
-      "Clean Code / Refactoring",
-    ],
-  },
-  {
-    key: "web",
-    title: { en: "Additional Web Experience", pt: "Experiência Web Adicional" },
-    items: ["JavaScript", "TypeScript", "React", "HTML / CSS", "Tailwind CSS"],
-    secondary: true,
-  },
+import type { Localized } from "./projects";
+export const technologies = [
+  { name: "C#", icon: "/icons/csharp.svg" },
+  { name: ".NET", icon: "/icons/backend.svg" },
+  { name: "SAP ABAP", icon: "/icons/code.svg" },
+  { name: "SQL", icon: "/icons/backend.svg" },
+  { name: "Git", icon: "/icons/git.svg" },
+  { name: "JavaScript", icon: "/icons/javascript.svg" },
+  { name: "TypeScript", icon: "/icons/typescript.svg" },
+  { name: "React", icon: "/icons/react.svg" },
 ] as const;
+export const engineeringSkills: Localized[] = [
+  { en: "Object-Oriented Programming", pt: "Programação Orientada a Objetos" },
+  { en: "REST APIs", pt: "APIs REST" },
+  { en: "Layered Architecture", pt: "Arquitetura em Camadas" },
+  { en: "Dependency Injection", pt: "Injeção de Dependência" },
+  { en: "SOLID", pt: "SOLID" },
+  { en: "Unit Testing", pt: "Testes Unitários" },
+  { en: "Test Doubles", pt: "Dublês de Teste" },
+  { en: "Relational Data Modeling", pt: "Modelagem de Dados Relacionais" },
+  { en: "Debugging", pt: "Depuração" },
+  { en: "Clean Code and Refactoring", pt: "Código Limpo e Refatoração" },
+];
